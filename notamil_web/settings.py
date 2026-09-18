@@ -71,12 +71,32 @@ TEMPLATES = [
 WSGI_APPLICATION = "notamil_web.wsgi.application"
 ASGI_APPLICATION = "notamil_web.asgi.application"
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+# Banco: SQLite por padrão (desenvolvimento). Definindo DJANGO_DB_NAME o projeto
+# passa a usar MySQL — veja a seção "Banco de dados" do README.
+if os.getenv("DJANGO_DB_NAME"):
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": os.getenv("DJANGO_DB_NAME"),
+            "USER": os.getenv("DJANGO_DB_USER", "root"),
+            "PASSWORD": os.getenv("DJANGO_DB_PASSWORD", ""),
+            "HOST": os.getenv("DJANGO_DB_HOST", "127.0.0.1"),
+            "PORT": os.getenv("DJANGO_DB_PORT", "3306"),
+            "OPTIONS": {
+                "charset": "utf8mb4",
+                # Modo estrito evita que o MySQL corte texto silenciosamente.
+                "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+            },
+            "CONN_MAX_AGE": 60,
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 
 AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},

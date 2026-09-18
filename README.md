@@ -58,11 +58,45 @@ gunicorn notamil_web.wsgi           # ou o Procfile incluído
 
 Confira a configuração com `python manage.py check --deploy`.
 
-### 3. Pontos de atenção
+### 3. Banco de dados
 
-- **Banco**: o padrão é SQLite (`db.sqlite3`), que fica fora do Git. Em hosts com disco
-  efêmero (Render free, por exemplo) os resultados somem a cada deploy — use um disco
-  persistente ou troque `DATABASES` para PostgreSQL.
+O padrão é **SQLite** (`db.sqlite3`), que fica fora do Git e basta para desenvolvimento.
+Em hosts com disco efêmero (Render free, por exemplo) os resultados somem a cada deploy.
+
+Para usar **MySQL**, basta definir as variáveis abaixo — a presença de `DJANGO_DB_NAME`
+já troca o banco, sem mexer em código:
+
+| Variável | Exemplo |
+| --- | --- |
+| `DJANGO_DB_NAME` | `notamil` |
+| `DJANGO_DB_USER` | `notamil_app` |
+| `DJANGO_DB_PASSWORD` | *(senha do usuário)* |
+| `DJANGO_DB_HOST` | `127.0.0.1` |
+| `DJANGO_DB_PORT` | `3306` |
+
+Crie o banco com acentuação correta antes do primeiro `migrate`:
+
+```sql
+CREATE DATABASE notamil CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'notamil_app'@'%' IDENTIFIED BY 'senha-forte';
+GRANT ALL PRIVILEGES ON notamil.* TO 'notamil_app'@'%';
+FLUSH PRIVILEGES;
+```
+
+Depois: `python manage.py migrate` e `python manage.py seed_questoes`.
+O driver `mysqlclient` já está no `requirements.txt` (no Linux pode exigir
+`sudo apt install python3-dev default-libmysqlclient-dev build-essential`).
+
+Para levar os dados que já existem no SQLite:
+
+```bash
+python manage.py dumpdata simulados --indent 2 > dados.json   # sem as variaveis do MySQL
+# com as variaveis do MySQL definidas:
+python manage.py migrate
+python manage.py loaddata dados.json
+```
+
+### 4. Pontos de atenção
 - **Questões**: rode `seed_questoes` uma vez no servidor, senão o banco nasce vazio.
 - **QR Code**: ele aponta para o endereço usado para abrir a página, então funciona
   automaticamente depois de hospedado (e a turma consegue escanear de qualquer lugar).
