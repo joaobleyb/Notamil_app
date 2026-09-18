@@ -92,6 +92,7 @@ main { flex: 1 0 auto; }
   width: 320px;
   height: 320px;
   background: radial-gradient(circle, rgba(143, 226, 168, .35), transparent 65%);
+  pointer-events: none;  /* o brilho decorativo nao pode roubar o clique do botao */
 }
 .hero h1 { font-weight: 700; letter-spacing: -.5px; }
 .hero .badge-hero {

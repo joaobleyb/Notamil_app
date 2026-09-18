@@ -1,15 +1,34 @@
-"""Configurações do projeto Notamil."""
+"""Configurações do projeto Notamil.
+
+Em produção, ajuste pelas variáveis de ambiente (veja o README):
+DJANGO_DEBUG, DJANGO_SECRET_KEY, DJANGO_ALLOWED_HOSTS e DJANGO_CSRF_ORIGINS.
+"""
+import os
 from pathlib import Path
 
 from django.contrib.messages import constants as message_constants
+from django.core.management.utils import get_random_secret_key
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-notamil-web-troque-esta-chave-em-producao"
 
-DEBUG = True
+def _lista(nome, padrao=""):
+    """Variável de ambiente separada por vírgula -> lista, ignorando itens vazios."""
+    return [item.strip() for item in os.getenv(nome, padrao).split(",") if item.strip()]
 
-ALLOWED_HOSTS = ["*"]
+
+# Fora de produção continua ligado: rode com DJANGO_DEBUG=1 na sua máquina.
+DEBUG = os.getenv("DJANGO_DEBUG", "0") == "1"
+
+# Sem chave no ambiente, gera uma aleatória a cada boot (derruba sessões do admin).
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY") or (
+    "django-insecure-notamil-desenvolvimento" if DEBUG else get_random_secret_key()
+)
+
+ALLOWED_HOSTS = _lista("DJANGO_ALLOWED_HOSTS", "*")
+
+# Domínios https do site — obrigatório para os formulários funcionarem atrás de HTTPS.
+CSRF_TRUSTED_ORIGINS = _lista("DJANGO_CSRF_ORIGINS")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -23,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -73,6 +93,19 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# WhiteNoise serve os arquivos estáticos direto pelo Django, sem precisar de Nginx.
+STORAGES = {
+    "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
+}
+
+if not DEBUG:
+    # O host fica atrás de um proxy https (Render, PythonAnywhere, Nginx...).
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_SSL_REDIRECT = os.getenv("DJANGO_SSL_REDIRECT", "0") == "1"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 

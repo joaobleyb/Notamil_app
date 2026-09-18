@@ -25,6 +25,50 @@ Acesse <http://127.0.0.1:8000/>.
 
 Para usar o admin (`/admin/`): `python manage.py createsuperuser`.
 
+> Em desenvolvimento, rode com `DJANGO_DEBUG=1` (no Windows: `set DJANGO_DEBUG=1`).
+> Sem essa variável o projeto assume modo de produção.
+
+## Hospedagem
+
+O projeto já vai pronto para um host WSGI (Render, Railway, PythonAnywhere, VPS com
+Nginx...). Os arquivos estáticos são servidos pelo próprio Django via WhiteNoise, então
+não é preciso configurar Nginx para o CSS e as imagens.
+
+### 1. Variáveis de ambiente
+
+| Variável | Exemplo | Para que serve |
+| --- | --- | --- |
+| `DJANGO_DEBUG` | `0` | Mantenha `0` em produção (nunca `1`). |
+| `DJANGO_SECRET_KEY` | *(string longa e aleatória)* | Assina sessões e CSRF. Sem ela, uma chave nova é gerada a cada reinício e o login do admin cai. |
+| `DJANGO_ALLOWED_HOSTS` | `notamil.escola.br,www.notamil.escola.br` | Domínios que podem servir o site. |
+| `DJANGO_CSRF_ORIGINS` | `https://notamil.escola.br` | Obrigatório em HTTPS, senão os formulários dão erro 403. |
+| `DJANGO_SSL_REDIRECT` | `1` | Opcional: força http → https (deixe `0` se o proxy já redireciona). |
+
+Gerar uma chave: `python -c "from django.core.management.utils import get_random_secret_key as k; print(k())"`
+
+### 2. Comandos do deploy
+
+```bash
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py seed_questoes      # só na primeira vez
+python manage.py collectstatic --noinput
+gunicorn notamil_web.wsgi           # ou o Procfile incluído
+```
+
+Confira a configuração com `python manage.py check --deploy`.
+
+### 3. Pontos de atenção
+
+- **Banco**: o padrão é SQLite (`db.sqlite3`), que fica fora do Git. Em hosts com disco
+  efêmero (Render free, por exemplo) os resultados somem a cada deploy — use um disco
+  persistente ou troque `DATABASES` para PostgreSQL.
+- **Questões**: rode `seed_questoes` uma vez no servidor, senão o banco nasce vazio.
+- **QR Code**: ele aponta para o endereço usado para abrir a página, então funciona
+  automaticamente depois de hospedado (e a turma consegue escanear de qualquer lugar).
+- **Sem login**: quem tiver o link de uma tentativa consegue abri-la. É um simulado de
+  estudo, não uma prova valendo nota com identificação de aluno.
+
 ## Estrutura
 
 ```
