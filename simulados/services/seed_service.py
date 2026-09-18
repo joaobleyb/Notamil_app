@@ -21,9 +21,8 @@ CAMPOS = [
 def carregar_questoes_iniciais():
     """Insere (ou atualiza) as questões do arquivo de fixture.
 
-    A deduplicação usa área + ano + número + idioma, como no app Android
-    (que dedupe por área/ano/número; o idioma entra na chave porque as
-    questões de Inglês e Espanhol repetem a numeração da prova).
+    A deduplicação usa área + ano + número + idioma. O idioma entra na chave
+    porque as questões de Inglês e Espanhol repetem a numeração da prova.
     Retorna a tupla (criadas, atualizadas).
     """
     with FIXTURE.open(encoding="utf-8") as arquivo:

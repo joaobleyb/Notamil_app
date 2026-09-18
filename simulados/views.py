@@ -1,4 +1,4 @@
-"""Views do Notamil — um fluxo por tela do app Android."""
+"""Views do NotaMil — uma função por tela do simulado."""
 from django.contrib import messages
 from django.shortcuts import get_object_or_404, redirect, render
 
@@ -160,7 +160,7 @@ def analisar_tentativa(request, tentativa_id, ordem):
 
 
 def redacao(request):
-    """Tela de redação — ainda não implementada, como no app Android."""
+    """Tela de redação — ainda não implementada."""
     return render(request, "simulados/redacao.html")
 
 

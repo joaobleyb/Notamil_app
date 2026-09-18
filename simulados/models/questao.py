@@ -4,7 +4,7 @@ from django.templatetags.static import static
 
 
 class Questao(models.Model):
-    """Questão do ENEM, espelhando a tabela `questoes` do app Android."""
+    """Questão do ENEM com enunciado, textos de apoio e as cinco alternativas."""
 
     AREA_LINGUAGENS = "Linguagens"
     AREA_HUMANAS = "Humanas"
@@ -72,7 +72,7 @@ class Questao(models.Model):
     # ------------------------------------------------------------------ #
     @property
     def origem(self):
-        """Texto de origem da questão, como no app Android."""
+        """Texto de origem exibido no cabeçalho da questão."""
         return f"Questão {self.numero} - Caderno azul - ENEM {self.ano}"
 
     @property
