@@ -1,8 +1,7 @@
 # NotaMil
 
-Versão web do simulador **NotaMil** (simulados no estilo ENEM), feita com
-**Django + Bootstrap 5**. Mantém o mesmo fluxo do app: gerar prova → resolver →
-resultado → analisar tentativa.
+Simulador de provas no estilo ENEM, feito com **Django + Bootstrap 5**.
+O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 
 ## Recursos
 
@@ -119,7 +118,7 @@ notamil_web/
     │   ├── prova_service.py   # sorteio, criação da tentativa, correção
     │   └── seed_service.py    # carga do banco de questões
     ├── management/commands/seed_questoes.py
-    ├── fixtures/questoes.json # 71 questões extraídas do app Android
+    ├── fixtures/questoes.json # banco inicial com 71 questões do ENEM
     ├── static/simulados/      # css, js e as 21 imagens das questões
     ├── templates/simulados/
     ├── forms.py · urls.py · views.py · admin.py · tests.py
@@ -127,16 +126,16 @@ notamil_web/
 
 ## Telas
 
-| Rota | Tela | Equivalente no Android |
-|---|---|---|
-| `/` | Menu inicial | `MenuInicialActivity` |
-| `/gerar-prova/` | Configuração do simulado | `GerarProvaActivity` |
-| `/simulado/<uuid>/<n>/` | Resolução das questões | `SimuladoActivity` |
-| `/resultado/<uuid>/` | Acertos e aproveitamento | `ResultadoSimuladoActivity` |
-| `/analisar/<uuid>/<n>/` | Revisão com gabarito | `AnalisarTentativaActivity` |
-| `/redacao/` | Redação (em desenvolvimento) | `RedacaoActivity` |
-| `/turma/<codigo>/` | Código gerado para compartilhar a prova | — (novo) |
-| `/entrar-com-codigo/` | Entrada na prova da turma pelo código | `EntrarComCodigoActivity` |
+| Rota | Tela |
+|---|---|
+| `/` | Menu inicial |
+| `/gerar-prova/` | Configuração do simulado |
+| `/simulado/<uuid>/<n>/` | Resolução das questões |
+| `/resultado/<uuid>/` | Acertos e aproveitamento |
+| `/analisar/<uuid>/<n>/` | Revisão com gabarito |
+| `/redacao/` | Redação (em desenvolvimento) |
+| `/turma/<codigo>/` | Código gerado para compartilhar a prova |
+| `/entrar-com-codigo/` | Entrada na prova da turma pelo código |
 
 ## Código de turma
 
