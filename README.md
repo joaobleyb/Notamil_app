@@ -147,20 +147,6 @@ Ao gerar uma prova, ligue a opção **Criar código**: o sorteio é congelado em
 pessoa com a sua própria tentativa. A tela do código mostra o resumo por área e
 quantas pessoas já finalizaram.
 
-## Diferenças em relação ao app Android
-
-- **Código de turma implementado**: no app a tela existia só como interface.
-- **Tentativas persistidas**: a prova sorteada vira um registro `Tentativa`, o que
-  permite navegar por URL e rever o resultado depois (no app o estado se perdia).
-- **Idioma estrangeiro normalizado**: o seed grava `ingles` / `espanhol`, alinhado
-  com o filtro da geração da prova (no app o seed gravava `Inglês` / `Espanhol` e o
-  filtro nunca casava).
-- **Deduplicação por área + ano + número + idioma**: as 5 questões de Inglês e as 5
-  de Espanhol usam a mesma numeração de prova; sem o idioma na chave, as de Inglês
-  eram sobrescritas.
-- **Elementos ordenados em tabela própria** (`ElementoQuestao`) em vez de JSON em
-  coluna de texto.
-
 ## Testes
 
 ```bash
