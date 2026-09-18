@@ -21,6 +21,10 @@ python manage.py seed_questoes     # carrega as 71 questões do ENEM
 python manage.py runserver
 ```
 
+O projeto usa **MySQL** (veja [Banco de dados](#3-banco-de-dados) para criar o banco e
+definir as credenciais). Para rodar sem o servidor MySQL ligado — testes rápidos, por
+exemplo — use `DJANGO_DB_ENGINE=sqlite`.
+
 Acesse <http://127.0.0.1:8000/>.
 
 Para usar o admin (`/admin/`): `python manage.py createsuperuser`.
@@ -60,19 +64,16 @@ Confira a configuração com `python manage.py check --deploy`.
 
 ### 3. Banco de dados
 
-O padrão é **SQLite** (`db.sqlite3`), que fica fora do Git e basta para desenvolvimento.
-Em hosts com disco efêmero (Render free, por exemplo) os resultados somem a cada deploy.
+O banco padrão é **MySQL** (8.0+). As credenciais vêm do ambiente:
 
-Para usar **MySQL**, basta definir as variáveis abaixo — a presença de `DJANGO_DB_NAME`
-já troca o banco, sem mexer em código:
-
-| Variável | Exemplo |
-| --- | --- |
-| `DJANGO_DB_NAME` | `notamil` |
-| `DJANGO_DB_USER` | `notamil_app` |
-| `DJANGO_DB_PASSWORD` | *(senha do usuário)* |
-| `DJANGO_DB_HOST` | `127.0.0.1` |
-| `DJANGO_DB_PORT` | `3306` |
+| Variável | Padrão | Exemplo |
+| --- | --- | --- |
+| `DJANGO_DB_NAME` | `notamil` | `notamil` |
+| `DJANGO_DB_USER` | `root` | `notamil_app` |
+| `DJANGO_DB_PASSWORD` | *(vazio)* | *(senha do usuário)* |
+| `DJANGO_DB_HOST` | `127.0.0.1` | `db.escola.br` |
+| `DJANGO_DB_PORT` | `3306` | `3306` |
+| `DJANGO_DB_ENGINE` | `mysql` | `sqlite` para rodar sem o MySQL |
 
 Crie o banco com acentuação correta antes do primeiro `migrate`:
 
@@ -87,11 +88,10 @@ Depois: `python manage.py migrate` e `python manage.py seed_questoes`.
 O driver `mysqlclient` já está no `requirements.txt` (no Linux pode exigir
 `sudo apt install python3-dev default-libmysqlclient-dev build-essential`).
 
-Para levar os dados que já existem no SQLite:
+Para levar dados de um SQLite antigo para o MySQL:
 
 ```bash
-python manage.py dumpdata simulados --indent 2 > dados.json   # sem as variaveis do MySQL
-# com as variaveis do MySQL definidas:
+DJANGO_DB_ENGINE=sqlite python manage.py dumpdata simulados --indent 2 > dados.json
 python manage.py migrate
 python manage.py loaddata dados.json
 ```

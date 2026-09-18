@@ -71,13 +71,20 @@ TEMPLATES = [
 WSGI_APPLICATION = "notamil_web.wsgi.application"
 ASGI_APPLICATION = "notamil_web.asgi.application"
 
-# Banco: SQLite por padrão (desenvolvimento). Definindo DJANGO_DB_NAME o projeto
-# passa a usar MySQL — veja a seção "Banco de dados" do README.
-if os.getenv("DJANGO_DB_NAME"):
+# Banco: MySQL por padrão. Para rodar sem o servidor MySQL (testes rápidos, notebook
+# sem o serviço ligado), use DJANGO_DB_ENGINE=sqlite.
+if os.getenv("DJANGO_DB_ENGINE", "mysql") == "sqlite":
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
+else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.mysql",
-            "NAME": os.getenv("DJANGO_DB_NAME"),
+            "NAME": os.getenv("DJANGO_DB_NAME", "notamil"),
             "USER": os.getenv("DJANGO_DB_USER", "root"),
             "PASSWORD": os.getenv("DJANGO_DB_PASSWORD", ""),
             "HOST": os.getenv("DJANGO_DB_HOST", "127.0.0.1"),
@@ -88,13 +95,7 @@ if os.getenv("DJANGO_DB_NAME"):
                 "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
             },
             "CONN_MAX_AGE": 60,
-        }
-    }
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
+            "TEST": {"CHARSET": "utf8mb4", "COLLATION": "utf8mb4_unicode_ci"},
         }
     }
 
