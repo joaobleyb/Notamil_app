@@ -1,0 +1,18 @@
+{% extends "simulados/base.html" %}
+
+{% block titulo %}Redação — NotaMil{% endblock %}
+
+{% block conteudo %}
+<div class="card-notamil p-4 p-lg-5 text-center mx-auto" style="max-width: 600px;">
+    <div class="icone icone-redacao mx-auto"><i class="bi bi-pencil-square"></i></div>
+    <h1 class="h3 mb-2">Redação</h1>
+    <p class="text-secondary mb-4">
+        Esta área ainda está em desenvolvimento, assim como no aplicativo.
+        Em breve será possível treinar a redação dissertativa-argumentativa por aqui.
+    </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="{% url 'simulados:gerar_prova' %}" class="btn btn-brand btn-lg px-4">Gerar uma prova</a>
+        <a href="{% url 'simulados:menu' %}" class="btn btn-outline-brand btn-lg px-4">Voltar ao início</a>
+    </div>
+</div>
+{% endblock %}

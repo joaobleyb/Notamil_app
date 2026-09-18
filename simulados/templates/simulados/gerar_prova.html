@@ -1,0 +1,104 @@
+{% extends "simulados/base.html" %}
+{% load static %}
+
+{% block titulo %}Gerar prova — NotaMil{% endblock %}
+
+{% block conteudo %}
+<div class="d-flex align-items-center gap-3 mb-4">
+    <a href="{% url 'simulados:menu' %}" class="btn btn-outline-brand btn-sm rounded-circle" title="Voltar">
+        <i class="bi bi-arrow-left"></i>
+    </a>
+    <div>
+        <h1 class="h3 mb-0">Gerar prova</h1>
+        <p class="text-secondary mb-0 small">{{ total_disponivel }} questões disponíveis no banco</p>
+    </div>
+</div>
+
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row g-3 g-lg-4">
+        {% for area in areas %}
+        <div class="col-lg-6">
+            <div class="area-card h-100 d-flex align-items-center justify-content-between gap-3">
+                <div>
+                    <div class="area-nome">{{ area.rotulo }}</div>
+                    <div class="disponiveis">{{ area.disponiveis }} questões cadastradas</div>
+                </div>
+                <div class="contador">
+                    <button type="button" class="btn-passo btn-menos" data-passo="-1" data-alvo="id_{{ area.campo }}"
+                            aria-label="Diminuir quantidade">&minus;</button>
+                    <input type="number" min="0" id="id_{{ area.campo }}" name="{{ area.campo }}"
+                           value="{{ area.valor }}" inputmode="numeric">
+                    <button type="button" class="btn-passo btn-mais" data-passo="1" data-alvo="id_{{ area.campo }}"
+                            aria-label="Aumentar quantidade">+</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="idioma-toggle d-flex flex-wrap align-items-center justify-content-between gap-3 mt-4">
+        <div>
+            <div class="fw-semibold"><i class="bi bi-translate me-1"></i> Língua estrangeira</div>
+            <div class="text-secondary small">Define o idioma das questões de Linguagens.</div>
+        </div>
+        <div class="btn-group" role="group">
+            {% for valor, rotulo in idiomas %}
+            <input type="radio" class="btn-check" name="idioma_estrangeiro" id="idioma_{{ valor }}"
+                   value="{{ valor }}" {% if valor == idioma_selecionado %}checked{% endif %}>
+            <label class="btn btn-outline-brand" for="idioma_{{ valor }}">{{ rotulo }}</label>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="idioma-toggle d-flex flex-wrap align-items-center justify-content-between gap-3 mt-3">
+        <div>
+            <div class="fw-semibold"><i class="bi bi-people me-1"></i> Código de turma</div>
+            <div class="text-secondary small">Gera um código para a turma responder exatamente esta prova.</div>
+        </div>
+        <div class="form-check form-switch fs-5 m-0">
+            <input class="form-check-input" type="checkbox" role="switch" id="gerar_codigo_turma"
+                   name="gerar_codigo_turma" value="1" {% if gerar_codigo_turma %}checked{% endif %}>
+            <label class="form-check-label fs-6" for="gerar_codigo_turma">Criar código</label>
+        </div>
+    </div>
+
+    <div class="idioma-toggle sub-opcao d-flex flex-wrap align-items-center justify-content-between gap-3 mt-2"
+         id="linhaEmbaralhar">
+        <div>
+            <div class="fw-semibold"><i class="bi bi-shuffle me-1"></i> Embaralhar por aluno</div>
+            <div class="text-secondary small">Mesmas questões para todos, em ordem diferente em cada prova.</div>
+        </div>
+        <div class="form-check form-switch fs-5 m-0">
+            <input class="form-check-input" type="checkbox" role="switch" id="embaralhar_questoes"
+                   name="embaralhar_questoes" value="1" {% if embaralhar_questoes %}checked{% endif %}>
+            <label class="form-check-label fs-6" for="embaralhar_questoes">Embaralhar</label>
+        </div>
+    </div>
+
+    <div class="d-grid d-sm-flex justify-content-sm-end mt-4">
+        <button type="submit" class="btn btn-brand btn-lg px-5">
+            <i class="bi bi-shuffle me-1"></i> Gerar prova
+        </button>
+    </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'simulados/js/contadores.js' %}"></script>
+<script>
+    // A opcao de embaralhar so faz sentido junto com o codigo de turma.
+    (function () {
+        const codigo = document.getElementById("gerar_codigo_turma");
+        const linha = document.getElementById("linhaEmbaralhar");
+        const embaralhar = document.getElementById("embaralhar_questoes");
+        function sincronizar() {
+            linha.classList.toggle("desligada", !codigo.checked);
+            embaralhar.disabled = !codigo.checked;
+            if (!codigo.checked) embaralhar.checked = false;
+        }
+        codigo.addEventListener("change", sincronizar);
+        sincronizar();
+    })();
+</script>
+{% endblock %}

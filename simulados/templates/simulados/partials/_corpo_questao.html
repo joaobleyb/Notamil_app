@@ -1,0 +1,12 @@
+{% comment %}Corpo da questão: textos de apoio, imagens e referências na ordem original.{% endcomment %}
+{% for elemento in corpo %}
+    {% if elemento.tipo == "TEXTO_APOIO" %}
+        <div class="texto-apoio">{{ elemento.conteudo }}</div>
+    {% elif elemento.tipo == "IMAGEM" %}
+        <img src="{{ elemento.url }}" alt="Imagem da questão" class="imagem-questao" loading="lazy">
+    {% elif elemento.tipo == "REFERENCIA" %}
+        <div class="referencia">{{ elemento.conteudo }}</div>
+    {% endif %}
+{% endfor %}
+
+<p class="enunciado mt-3 mb-0">{{ questao.enunciado }}</p>

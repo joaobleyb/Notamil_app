@@ -1,0 +1,83 @@
+{% extends "simulados/base.html" %}
+
+{% block titulo %}Análise da questão {{ ordem }} — NotaMil{% endblock %}
+
+{% block conteudo %}
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+    <div class="d-flex align-items-center gap-3">
+        <a href="{% url 'simulados:resultado' tentativa.id %}" class="btn btn-outline-brand btn-sm rounded-circle" title="Voltar">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+        <div>
+            <h1 class="h4 mb-0">Análise da tentativa</h1>
+            <span class="text-secondary small">Questão {{ ordem }} de {{ total }}</span>
+        </div>
+    </div>
+    {% if resposta.correta %}
+        <span class="badge rounded-pill bg-success-subtle text-success-emphasis px-3 py-2">
+            <i class="bi bi-check-circle-fill me-1"></i> Você acertou
+        </span>
+    {% elif resposta.respondida %}
+        <span class="badge rounded-pill bg-danger-subtle text-danger-emphasis px-3 py-2">
+            <i class="bi bi-x-circle-fill me-1"></i> Você errou
+        </span>
+    {% else %}
+        <span class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis px-3 py-2">
+            <i class="bi bi-dash-circle me-1"></i> Sem resposta
+        </span>
+    {% endif %}
+</div>
+
+<div class="card-notamil overflow-hidden">
+    <div class="questao-cabecalho d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>
+            <div class="fw-semibold">Questão {{ ordem }} de {{ total }}</div>
+            <div class="origem">{{ questao.origem }}</div>
+        </div>
+        <span class="badge rounded-pill bg-light text-dark px-3 py-2">{{ questao.area }}</span>
+    </div>
+
+    <div class="p-3 p-lg-4">
+        {% include "simulados/partials/_corpo_questao.html" %}
+
+        <div class="mt-4">
+            {% for letra, texto in questao.alternativas %}
+            <div class="alternativa {% if letra == questao.resposta_correta %}correta{% elif letra == resposta.alternativa %}errada{% endif %}">
+                <input type="radio" disabled {% if resposta.alternativa == letra %}checked{% endif %}>
+                <label>
+                    <span class="letra">{{ letra }}</span>
+                    <span class="texto">{{ texto }}</span>
+                    {% if letra == questao.resposta_correta %}
+                        <span class="marcador"><i class="bi bi-check-lg"></i> Gabarito</span>
+                    {% elif letra == resposta.alternativa %}
+                        <span class="marcador"><i class="bi bi-x-lg"></i> Sua resposta</span>
+                    {% endif %}
+                </label>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-between gap-2 mt-4">
+    {% if tem_anterior %}
+        <a href="{% url 'simulados:analisar' tentativa.id ordem|add:'-1' %}" class="btn btn-outline-brand btn-lg px-4">
+            <i class="bi bi-arrow-left me-1"></i> Anterior
+        </a>
+    {% else %}
+        <button class="btn btn-outline-brand btn-lg px-4" disabled>
+            <i class="bi bi-arrow-left me-1"></i> Anterior
+        </button>
+    {% endif %}
+
+    {% if tem_proxima %}
+        <a href="{% url 'simulados:analisar' tentativa.id ordem|add:'1' %}" class="btn btn-brand btn-lg px-4">
+            Próxima <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    {% else %}
+        <a href="{% url 'simulados:menu' %}" class="btn btn-verde btn-lg px-4">
+            Concluir <i class="bi bi-check-lg ms-1"></i>
+        </a>
+    {% endif %}
+</div>
+{% endblock %}

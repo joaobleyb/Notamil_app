@@ -1,0 +1,65 @@
+{% extends "simulados/base.html" %}
+
+{% block titulo %}Questão {{ ordem }} de {{ total }} — NotaMil{% endblock %}
+
+{% block conteudo %}
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+    <span class="text-secondary small">
+        <i class="bi bi-check2-circle me-1"></i>{{ respondidas }} de {{ total }} respondidas
+    </span>
+    <span class="text-secondary small">
+        {% if tentativa.prova_compartilhada %}
+            <span class="badge rounded-pill bg-light text-dark me-2">
+                <i class="bi bi-people me-1"></i>Turma {{ tentativa.prova_compartilhada.codigo }}
+            </span>
+        {% endif %}
+        {{ progresso }}%
+    </span>
+</div>
+<div class="progress barra-progresso mb-4">
+    <div class="progress-bar" role="progressbar" style="width: {{ progresso }}%"
+         aria-valuenow="{{ progresso }}" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<form method="post">
+    {% csrf_token %}
+    <div class="card-notamil overflow-hidden">
+        <div class="questao-cabecalho d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div>
+                <div class="fw-semibold">Questão {{ ordem }} de {{ total }}</div>
+                <div class="origem">{{ questao.origem }}</div>
+            </div>
+            <span class="badge rounded-pill bg-light text-dark px-3 py-2">{{ questao.area }}</span>
+        </div>
+
+        <div class="p-3 p-lg-4">
+            {% include "simulados/partials/_corpo_questao.html" %}
+
+            <div class="mt-4">
+                {% for letra, texto in questao.alternativas %}
+                <div class="alternativa">
+                    <input type="radio" name="alternativa" id="alt{{ letra }}" value="{{ letra }}"
+                           {% if resposta.alternativa == letra %}checked{% endif %}>
+                    <label for="alt{{ letra }}">
+                        <span class="letra">{{ letra }}</span>
+                        <span class="texto">{{ texto }}</span>
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end gap-2 mt-4">
+        {% if ultima %}
+            <button type="submit" name="acao" value="finalizar" class="btn btn-verde btn-lg px-4">
+                <i class="bi bi-flag-fill me-1"></i> Finalizar
+            </button>
+        {% else %}
+            <button type="submit" name="acao" value="proxima" class="btn btn-brand btn-lg px-4">
+                Próxima <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+        {% endif %}
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "simulados/base.html" %}
+
+{% block titulo %}NotaMil — início{% endblock %}
+
+{% block conteudo %}
+<section class="hero p-4 p-lg-5 mb-4 mb-lg-5">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+            <span class="badge badge-hero rounded-pill px-3 py-2 mb-3">
+                <i class="bi bi-database-check me-1"></i> {{ total_questoes }} questões reais do ENEM
+            </span>
+            <h1 class="display-5 mb-2">Monte seu simulado em segundos</h1>
+            <p class="lead mb-0 opacity-75">
+                Escolha quantas questões quer de cada área, resolva no seu ritmo e receba a correção
+                com a análise questão a questão.
+            </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+            <a href="{% url 'simulados:gerar_prova' %}" class="btn btn-verde btn-lg px-4">
+                <i class="bi bi-play-fill me-1"></i> Começar agora
+            </a>
+        </div>
+    </div>
+</section>
+
+<h2 class="h5 text-uppercase text-secondary mb-3" style="letter-spacing:.8px;">Escolha uma matéria para estudar</h2>
+
+<div class="row g-3 g-lg-4">
+    <div class="col-md-6">
+        <a href="{% url 'simulados:gerar_prova' %}" class="acao">
+            <div class="icone icone-prova"><i class="bi bi-ui-checks-grid"></i></div>
+            <h3>Gerar Prova</h3>
+            <p>Sorteie questões de Linguagens, Humanas, Natureza e Matemática e escolha o idioma estrangeiro.</p>
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a href="{% url 'simulados:redacao' %}" class="acao">
+            <div class="icone icone-redacao"><i class="bi bi-pencil-square"></i></div>
+            <h3>Redação</h3>
+            <p>Espaço para treinar a redação dissertativa-argumentativa. Em desenvolvimento.</p>
+        </a>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="{% url 'simulados:entrar_com_codigo' %}" class="text-decoration-none fw-semibold">
+        <i class="bi bi-key me-1"></i> Entrar com código de turma
+    </a>
+</div>
+{% endblock %}
