@@ -10,6 +10,10 @@ O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 - Embaralhar por aluno (opcional): mesmas questões, ordem diferente em cada prova — evita cola.
 - QR Code do código, para a turma entrar pela câmera do celular.
 - Correção automática com análise questão a questão.
+- Navegação livre entre as questões: botão Anterior e índice numerado com salto
+  direto, marcando o que já foi respondido.
+- Só finaliza com a prova inteira respondida — a validação é no servidor, não só no
+  formulário.
 - Proteções contra uso abusivo: teto de questões por prova, limite por IP,
   tentativa presa à sessão e faxina das tentativas antigas.
 
@@ -18,7 +22,7 @@ O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 ```bash
 pip install -r requirements.txt
 python manage.py migrate
-python manage.py seed_questoes     # carrega as 71 questões do ENEM
+python manage.py seed_questoes     # carrega as 2643 questões do ENEM
 python manage.py runserver
 ```
 
@@ -30,7 +34,8 @@ Acesse <http://127.0.0.1:8000/>.
 
 Para usar o admin (`/admin/`): `python manage.py createsuperuser`.
 
-> Em desenvolvimento, rode com `DJANGO_DEBUG=1` (no Windows: `set DJANGO_DEBUG=1`).
+> Em desenvolvimento, rode com `DJANGO_DEBUG=1` (no PowerShell: `$env:DJANGO_DEBUG="1"`).
+> Sem ele o CSS vem da cópia em `staticfiles/`, e só muda depois de `collectstatic`.
 > Sem essa variável o projeto assume modo de produção.
 
 ## Hospedagem
@@ -121,6 +126,7 @@ As barreiras são estas:
 | `services/protecao_service.py` | Limite por IP: **20 provas/hora** em `/gerar-prova/` e **40/hora** em `/entrar-com-codigo/`. | `LIMITES` |
 | `services/protecao_service.py` | A tentativa é gravada na sessão; `/simulado/`, `/resultado/` e `/analisar/` devolvem 404 para quem não a criou. | `MAX_TENTATIVAS_LEMBRADAS` |
 | `services/prova_service.py` | O sorteio usa `random.sample` sobre os ids em vez de `ORDER BY RAND()`, que percorre e ordena a tabela inteira a cada prova. | — |
+| `views.py` | Finalizar exige **todas as questões respondidas**. O `required` do HTML cobre só a questão da tela e o aluno contorna; a checagem que vale é a do servidor, via `ordens_pendentes`. | — |
 | `views.py` | A correção só abre com a prova **finalizada**. Antes disso dava para ler o gabarito em `/analisar/` com a prova em branco, ou responder uma questão por vez e consultar o total de acertos em `/resultado/` até acertar todas. | — |
 | `management/commands/limpar_tentativas.py` | Apaga tentativas antigas. | `--dias` |
 
@@ -163,8 +169,8 @@ notamil_web/
     ├── management/commands/
     │   ├── seed_questoes.py
     │   └── limpar_tentativas.py
-    ├── fixtures/questoes.json # banco inicial com 71 questões do ENEM
-    ├── static/simulados/      # css, js e as 21 imagens das questões
+    ├── fixtures/questoes.json # banco inicial com 2643 questões do ENEM
+    ├── static/simulados/      # css, js e as 1014 imagens das questões
     ├── templates/simulados/
     ├── forms.py · urls.py · views.py · admin.py · tests.py
 ```
