@@ -288,3 +288,60 @@ class LimpezaTests(TestCase):
 
     def test_comando_de_limpeza_roda(self):
         call_command("limpar_tentativas", "--dias", "1", verbosity=0)
+
+class NavegacaoTests(TestCase):
+    """Só finaliza com tudo respondido; dá para voltar e revisar antes disso."""
+
+    def setUp(self):
+        cache.clear()
+        for numero in range(1, 6):
+            criar_questao(numero=numero)
+        self.client.post(reverse("simulados:gerar_prova"), {"quantidade_matematica": 3})
+        self.tentativa = Tentativa.objects.get()
+
+    def _url(self, ordem):
+        return reverse("simulados:simulado", args=[self.tentativa.id, ordem])
+
+    def test_finalizar_com_questao_em_branco_nao_finaliza(self):
+        resposta = self.client.post(self._url(1), {"acao": "finalizar"})
+        self.tentativa.refresh_from_db()
+        self.assertFalse(self.tentativa.finalizada)
+        # Volta para a primeira pendente, não para onde o aluno estava.
+        self.assertRedirects(resposta, self._url(1))
+
+    def test_finalizar_aponta_a_questao_que_faltou(self):
+        self.client.post(self._url(1), {"alternativa": "A", "acao": "proxima"})
+        self.client.post(self._url(2), {"ir_para": "3"})
+        resposta = self.client.post(self._url(3), {"alternativa": "B", "acao": "finalizar"})
+        self.tentativa.refresh_from_db()
+        self.assertFalse(self.tentativa.finalizada)
+        self.assertRedirects(resposta, self._url(2))
+
+    def test_finaliza_quando_todas_estao_respondidas(self):
+        for ordem in (1, 2):
+            self.client.post(self._url(ordem), {"alternativa": "A", "acao": "proxima"})
+        resposta = self.client.post(self._url(3), {"alternativa": "A", "acao": "finalizar"})
+        self.tentativa.refresh_from_db()
+        self.assertTrue(self.tentativa.finalizada)
+        self.assertRedirects(
+            resposta, reverse("simulados:resultado", args=[self.tentativa.id])
+        )
+
+    def test_anterior_volta_uma_questao_e_guarda_a_resposta(self):
+        resposta = self.client.post(self._url(2), {"alternativa": "D", "acao": "anterior"})
+        self.assertRedirects(resposta, self._url(1))
+        self.assertEqual(self.tentativa.respostas.get(ordem=2).alternativa, "D")
+
+    def test_anterior_na_primeira_questao_fica_na_primeira(self):
+        resposta = self.client.post(self._url(1), {"acao": "anterior"})
+        self.assertRedirects(resposta, self._url(1))
+
+    def test_indice_salta_para_a_questao_escolhida(self):
+        resposta = self.client.post(self._url(1), {"alternativa": "E", "ir_para": "3"})
+        self.assertRedirects(resposta, self._url(3))
+        self.assertEqual(self.tentativa.respostas.get(ordem=1).alternativa, "E")
+
+    def test_destino_fora_da_prova_e_ignorado(self):
+        for destino in ("999", "0", "-1", "abc", ""):
+            resposta = self.client.post(self._url(1), {"alternativa": "A", "ir_para": destino})
+            self.assertRedirects(resposta, self._url(2), msg_prefix=f"destino={destino!r}")

@@ -12,6 +12,7 @@ from .services import (
     dentro_do_limite,
     finalizar_tentativa,
     iniciar_prova_da_turma,
+    ordens_pendentes,
     registrar_tentativa_na_sessao,
     salvar_resposta,
     sortear_questoes,
@@ -20,6 +21,9 @@ from .services import (
 
 MENSAGEM_LIMITE = "Você gerou muitas provas seguidas. Aguarde alguns minutos e tente de novo."
 MENSAGEM_NAO_FINALIZADA = "Finalize o simulado para ver a correção."
+MENSAGEM_PENDENTES = (
+    "Responda todas as questões antes de finalizar. Faltam {quantidade}: {numeros}."
+)
 
 
 def _tentativa_da_sessao(request, tentativa_id):
@@ -117,6 +121,15 @@ def gerar_prova(request):
     )
 
 
+def _ordem_valida(valor, total):
+    """Converte o destino do índice em um número de questão válido, ou None."""
+    try:
+        ordem = int(valor)
+    except (TypeError, ValueError):
+        return None
+    return ordem if 1 <= ordem <= total else None
+
+
 def simulado(request, tentativa_id, ordem):
     """Resolução das questões, uma a uma."""
     tentativa = _tentativa_da_sessao(request, tentativa_id)
@@ -126,10 +139,37 @@ def simulado(request, tentativa_id, ordem):
 
     if request.method == "POST":
         salvar_resposta(tentativa, ordem, request.POST.get("alternativa"))
-        if request.POST.get("acao") == "finalizar":
+
+        # Salto direto pelo índice de questões: o destino vem do botão clicado.
+        destino = _ordem_valida(request.POST.get("ir_para"), total)
+        if destino:
+            return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=destino)
+
+        acao = request.POST.get("acao")
+        if acao == "anterior":
+            return redirect(
+                "simulados:simulado", tentativa_id=tentativa.id, ordem=max(1, ordem - 1)
+            )
+        if acao == "finalizar":
+            # Guarda de verdade: o HTML valida a questão da tela, mas só aqui dá
+            # para saber se alguma ficou para trás.
+            pendentes = ordens_pendentes(tentativa)
+            if pendentes:
+                messages.error(
+                    request,
+                    MENSAGEM_PENDENTES.format(
+                        quantidade=len(pendentes),
+                        numeros=", ".join(str(numero) for numero in pendentes),
+                    ),
+                )
+                return redirect(
+                    "simulados:simulado", tentativa_id=tentativa.id, ordem=pendentes[0]
+                )
             finalizar_tentativa(tentativa)
             return redirect("simulados:resultado", tentativa_id=tentativa.id)
         return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=ordem + 1)
+
+    pendentes = set(ordens_pendentes(tentativa))
 
     return render(
         request,
@@ -141,9 +181,15 @@ def simulado(request, tentativa_id, ordem):
             "corpo": resposta.questao.corpo(),
             "ordem": ordem,
             "total": total,
-            "progresso": round(ordem * 100 / total) if total else 0,
-            "respondidas": tentativa.respostas.exclude(alternativa="").count(),
+            "progresso": round((total - len(pendentes)) * 100 / total) if total else 0,
+            "respondidas": total - len(pendentes),
             "ultima": ordem == total,
+            "tem_anterior": ordem > 1,
+            "pendentes": len(pendentes),
+            "indice": [
+                {"numero": numero, "respondida": numero not in pendentes, "atual": numero == ordem}
+                for numero in range(1, total + 1)
+            ],
         },
     )
 

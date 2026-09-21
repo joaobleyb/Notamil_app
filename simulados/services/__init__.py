@@ -12,6 +12,7 @@ from .prova_service import (
     criar_tentativa,
     finalizar_tentativa,
     iniciar_prova_da_turma,
+    ordens_pendentes,
     salvar_resposta,
     sortear_questoes,
 )
@@ -24,6 +25,7 @@ __all__ = [
     "iniciar_prova_da_turma",
     "criar_tentativa",
     "finalizar_tentativa",
+    "ordens_pendentes",
     "salvar_resposta",
     "sortear_questoes",
     "carregar_questoes_iniciais",

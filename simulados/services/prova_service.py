@@ -85,6 +85,15 @@ def salvar_resposta(tentativa, ordem, alternativa):
     return resposta
 
 
+def ordens_pendentes(tentativa):
+    """Números das questões ainda sem alternativa marcada, em ordem."""
+    return list(
+        tentativa.respostas.filter(alternativa="")
+        .order_by("ordem")
+        .values_list("ordem", flat=True)
+    )
+
+
 def finalizar_tentativa(tentativa):
     """Marca a tentativa como concluída e devolve o total de acertos."""
     if not tentativa.finalizada:

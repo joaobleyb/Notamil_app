@@ -39,7 +39,7 @@
                 {% for letra, texto in questao.alternativas %}
                 <div class="alternativa">
                     <input type="radio" name="alternativa" id="alt{{ letra }}" value="{{ letra }}"
-                           {% if resposta.alternativa == letra %}checked{% endif %}>
+                           required {% if resposta.alternativa == letra %}checked{% endif %}>
                     <label for="alt{{ letra }}">
                         <span class="letra">{{ letra }}</span>
                         <span class="texto">{{ texto }}</span>
@@ -50,7 +50,16 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-end gap-2 mt-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-4">
+        {% if tem_anterior %}
+            <button type="submit" name="acao" value="anterior" formnovalidate
+                    class="btn btn-outline-brand btn-lg px-4">
+                <i class="bi bi-arrow-left me-1"></i> Anterior
+            </button>
+        {% else %}
+            <span></span>
+        {% endif %}
+
         {% if ultima %}
             <button type="submit" name="acao" value="finalizar" class="btn btn-verde btn-lg px-4">
                 <i class="bi bi-flag-fill me-1"></i> Finalizar
@@ -60,6 +69,29 @@
                 Próxima <i class="bi bi-arrow-right ms-1"></i>
             </button>
         {% endif %}
+    </div>
+
+    <div class="indice-questoes mt-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-3">
+            <span class="fw-semibold">Índice das questões</span>
+            {% if pendentes %}
+                <span class="pendentes-aviso">
+                    <i class="bi bi-exclamation-circle me-1"></i>{{ pendentes }} sem resposta
+                </span>
+            {% else %}
+                <span class="tudo-pronto">
+                    <i class="bi bi-check2-all me-1"></i>Todas respondidas
+                </span>
+            {% endif %}
+        </div>
+        <div class="grade-indice">
+            {% for item in indice %}
+                <button type="submit" name="ir_para" value="{{ item.numero }}" formnovalidate
+                        class="salto{% if item.respondida %} respondida{% endif %}{% if item.atual %} atual{% endif %}"
+                        aria-label="Ir para a questão {{ item.numero }}{% if item.respondida %}, respondida{% else %}, sem resposta{% endif %}"
+                        {% if item.atual %}aria-current="true"{% endif %}>{{ item.numero }}</button>
+            {% endfor %}
+        </div>
     </div>
 </form>
 {% endblock %}
