@@ -6,3 +6,7 @@ venv/
 /staticfiles/
 .env
 .DS_Store
+
+# Rascunho de trabalho do TCC, nao versionado
+DOCUMENTACAO_TCC.md
+RESUMO_SEGURANCA.md
