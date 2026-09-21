@@ -1,5 +1,6 @@
 """Views do NotaMil — uma função por tela do simulado."""
 from django.contrib import messages
+from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .forms import EntrarComCodigoForm, GerarProvaForm
@@ -8,11 +9,36 @@ from .services import (
     contar_questoes_por_area,
     criar_prova_compartilhada,
     criar_tentativa,
+    dentro_do_limite,
     finalizar_tentativa,
     iniciar_prova_da_turma,
+    registrar_tentativa_na_sessao,
     salvar_resposta,
     sortear_questoes,
+    tentativa_da_sessao,
 )
+
+MENSAGEM_LIMITE = "Você gerou muitas provas seguidas. Aguarde alguns minutos e tente de novo."
+MENSAGEM_NAO_FINALIZADA = "Finalize o simulado para ver a correção."
+
+
+def _tentativa_da_sessao(request, tentativa_id):
+    """Tentativa criada nesta sessão — as dos outros não são acessíveis pelo link."""
+    if not tentativa_da_sessao(request, tentativa_id):
+        raise Http404("Tentativa não encontrada.")
+    return get_object_or_404(Tentativa, pk=tentativa_id)
+
+
+def _correcao_bloqueada(request, tentativa):
+    """Redireciona de volta à prova enquanto ela não foi finalizada.
+
+    Sem isso, dá para abrir a correção com a prova em branco e copiar o gabarito —
+    ou responder uma questão por vez e ler o total de acertos até acertar todas.
+    """
+    if tentativa.finalizada:
+        return None
+    messages.warning(request, MENSAGEM_NAO_FINALIZADA)
+    return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=1)
 
 
 def menu_inicial(request):
@@ -30,7 +56,10 @@ def gerar_prova(request):
 
     if request.method == "POST":
         form = GerarProvaForm(request.POST)
-        if form.is_valid():
+        if not dentro_do_limite(request, "gerar_prova"):
+            # Mantém o formulário preenchido: quem esbarrou no teto tenta de novo depois.
+            messages.error(request, MENSAGEM_LIMITE)
+        elif form.is_valid():
             dados = form.cleaned_data
             idioma = dados["idioma_estrangeiro"]
             questoes = sortear_questoes(
@@ -55,6 +84,7 @@ def gerar_prova(request):
                     return redirect("simulados:prova_da_turma", codigo=prova.codigo)
 
                 tentativa = criar_tentativa(questoes, idioma)
+                registrar_tentativa_na_sessao(request, tentativa)
                 return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=1)
         else:
             for erro in form.non_field_errors():
@@ -89,7 +119,7 @@ def gerar_prova(request):
 
 def simulado(request, tentativa_id, ordem):
     """Resolução das questões, uma a uma."""
-    tentativa = get_object_or_404(Tentativa, pk=tentativa_id)
+    tentativa = _tentativa_da_sessao(request, tentativa_id)
     total = tentativa.total
     ordem = max(1, min(ordem, total))
     resposta = get_object_or_404(tentativa.respostas.select_related("questao"), ordem=ordem)
@@ -120,7 +150,11 @@ def simulado(request, tentativa_id, ordem):
 
 def resultado(request, tentativa_id):
     """Acertos, total e percentual de aproveitamento."""
-    tentativa = get_object_or_404(Tentativa, pk=tentativa_id)
+    tentativa = _tentativa_da_sessao(request, tentativa_id)
+    bloqueio = _correcao_bloqueada(request, tentativa)
+    if bloqueio:
+        return bloqueio
+
     acertos = tentativa.acertos
     total = tentativa.total
     return render(
@@ -138,7 +172,11 @@ def resultado(request, tentativa_id):
 
 def analisar_tentativa(request, tentativa_id, ordem):
     """Revisão questão a questão com o gabarito destacado."""
-    tentativa = get_object_or_404(Tentativa, pk=tentativa_id)
+    tentativa = _tentativa_da_sessao(request, tentativa_id)
+    bloqueio = _correcao_bloqueada(request, tentativa)
+    if bloqueio:
+        return bloqueio
+
     total = tentativa.total
     ordem = max(1, min(ordem, total))
     resposta = get_object_or_404(tentativa.respostas.select_related("questao"), ordem=ordem)
@@ -182,7 +220,11 @@ def prova_da_turma(request, codigo):
 def entrar_com_codigo(request):
     """Entrada na prova da turma a partir do código."""
     form = EntrarComCodigoForm(request.POST or None)
-    if request.method == "POST" and form.is_valid():
-        tentativa = iniciar_prova_da_turma(form.prova)
-        return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=1)
+    if request.method == "POST":
+        if not dentro_do_limite(request, "entrar_com_codigo"):
+            messages.error(request, MENSAGEM_LIMITE)
+        elif form.is_valid():
+            tentativa = iniciar_prova_da_turma(form.prova)
+            registrar_tentativa_na_sessao(request, tentativa)
+            return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=1)
     return render(request, "simulados/entrar_com_codigo.html", {"form": form})

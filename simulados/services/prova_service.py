@@ -24,7 +24,11 @@ def contar_questoes_por_area():
 
 
 def _sortear_por_area(area, quantidade, idioma_estrangeiro=None):
-    """Sorteia `quantidade` questões da área (equivale ao ORDER BY RANDOM LIMIT)."""
+    """Sorteia `quantidade` questões da área.
+
+    O sorteio é feito sobre a lista de ids em vez de `ORDER BY ?`: no MySQL o
+    `ORDER BY RAND()` percorre e ordena a tabela inteira a cada prova gerada.
+    """
     if quantidade <= 0:
         return []
 
@@ -33,7 +37,11 @@ def _sortear_por_area(area, quantidade, idioma_estrangeiro=None):
         questoes = questoes.filter(
             Q(idioma_estrangeiro=idioma_estrangeiro) | Q(idioma_estrangeiro="")
         )
-    return list(questoes.order_by("?")[:quantidade])
+
+    ids = list(questoes.values_list("pk", flat=True))
+    if len(ids) > quantidade:
+        ids = random.sample(ids, quantidade)
+    return list(Questao.objects.filter(pk__in=ids))
 
 
 def sortear_questoes(qtd_linguagens, qtd_humanas, qtd_natureza, qtd_matematica, idioma_estrangeiro):

@@ -1,4 +1,10 @@
 """Pacote de services do app de simulados."""
+from .limpeza_service import limpar_tentativas_antigas
+from .protecao_service import (
+    dentro_do_limite,
+    registrar_tentativa_na_sessao,
+    tentativa_da_sessao,
+)
 from .prova_service import (
     buscar_prova_por_codigo,
     contar_questoes_por_area,
@@ -21,4 +27,8 @@ __all__ = [
     "salvar_resposta",
     "sortear_questoes",
     "carregar_questoes_iniciais",
+    "dentro_do_limite",
+    "registrar_tentativa_na_sessao",
+    "tentativa_da_sessao",
+    "limpar_tentativas_antigas",
 ]

@@ -8,6 +8,11 @@ from .services import buscar_prova_por_codigo
 class GerarProvaForm(forms.Form):
     """Quantidade de questões por área + idioma estrangeiro do simulado."""
 
+    # Teto do que uma única prova pode pedir. Sem isso, um POST com
+    # quantidade_matematica=10**9 vira um SELECT gigante no banco.
+    MAX_POR_AREA = 90
+    MAX_TOTAL = 180
+
     CAMPOS_POR_AREA = {
         Questao.AREA_LINGUAGENS: "quantidade_linguagens",
         Questao.AREA_HUMANAS: "quantidade_humanas",
@@ -35,8 +40,18 @@ class GerarProvaForm(forms.Form):
         dados = super().clean()
         for campo in self.CAMPOS_POR_AREA.values():
             dados[campo] = self._quantidade(campo)
-        if sum(dados[campo] for campo in self.CAMPOS_POR_AREA.values()) == 0:
+
+        quantidades = [dados[campo] for campo in self.CAMPOS_POR_AREA.values()]
+        if sum(quantidades) == 0:
             raise forms.ValidationError("Selecione pelo menos uma questão.")
+        if max(quantidades) > self.MAX_POR_AREA:
+            raise forms.ValidationError(
+                f"No máximo {self.MAX_POR_AREA} questões por área."
+            )
+        if sum(quantidades) > self.MAX_TOTAL:
+            raise forms.ValidationError(
+                f"No máximo {self.MAX_TOTAL} questões por prova."
+            )
         return dados
 
     @property
