@@ -71,9 +71,9 @@ TEMPLATES = [
 WSGI_APPLICATION = "notamil_web.wsgi.application"
 ASGI_APPLICATION = "notamil_web.asgi.application"
 
-# Banco: MySQL por padrão. Para rodar sem o servidor MySQL (testes rápidos, notebook
-# sem o serviço ligado), use DJANGO_DB_ENGINE=sqlite.
-if os.getenv("DJANGO_DB_ENGINE", "mysql") == "sqlite":
+# Banco: SQLite por padrão (nada para instalar ou ligar). Em produção, ou para usar o
+# servidor MySQL, defina DJANGO_DB_ENGINE=mysql.
+if os.getenv("DJANGO_DB_ENGINE", "sqlite") == "sqlite":
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
