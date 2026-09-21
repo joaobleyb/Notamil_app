@@ -124,7 +124,10 @@ class Questao(models.Model):
         """Elemento pronto para o template (imagens já com a URL estática)."""
         elemento = {"tipo": tipo, "conteudo": conteudo}
         if tipo == ElementoQuestao.IMAGEM:
-            elemento["url"] = static(f"simulados/img/questoes/{conteudo}.png")
+            # As questões antigas guardam o nome sem extensão (sempre .png); as
+            # importadas do banco do ENEM já trazem a extensão original.
+            arquivo = conteudo if "." in conteudo else f"{conteudo}.png"
+            elemento["url"] = static(f"simulados/img/questoes/{arquivo}")
         return elemento
 
     def corpo(self):
