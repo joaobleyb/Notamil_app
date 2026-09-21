@@ -44,6 +44,12 @@ O projeto já vai pronto para um host WSGI (Render, Railway, PythonAnywhere, VPS
 Nginx...). Os arquivos estáticos são servidos pelo próprio Django via WhiteNoise, então
 não é preciso configurar Nginx para o CSS e as imagens.
 
+> **Cuidado com o disco do host.** O banco padrão é um arquivo (`db.sqlite3`). Em hosts
+> de disco efêmero — Render e Railway, entre outros — esse arquivo é descartado a cada
+> deploy ou reinício, levando junto as tentativas dos alunos. Nesses hosts, use um banco
+> gerenciado (`DJANGO_DB_ENGINE=mysql`) ou um disco persistente. Em hosts de disco
+> permanente, como o PythonAnywhere, o SQLite serve sem ajuste nenhum.
+
 ### 1. Variáveis de ambiente
 
 | Variável | Exemplo | Para que serve |
