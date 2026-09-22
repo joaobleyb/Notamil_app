@@ -57,7 +57,7 @@ python manage.py runserver
 ```
 
 O banco padrão é o **SQLite** do próprio Django: não precisa instalar nem ligar nada.
-Para usar **MySQL** (veja [Banco de dados](#3-banco-de-dados)), defina
+Para usar **MySQL** (veja [Hospedagem](#hospedagem)), defina
 `DJANGO_DB_ENGINE=mysql` e as credenciais.
 
 Acesse <http://127.0.0.1:8000/>.
@@ -70,133 +70,130 @@ Para usar o admin (`/admin/`): `python manage.py createsuperuser`.
 
 ## Hospedagem
 
-O projeto já vai pronto para um host WSGI (Render, Railway, PythonAnywhere, VPS com
-Nginx...). Os arquivos estáticos são servidos pelo próprio Django via WhiteNoise, então
-não é preciso configurar Nginx para o CSS e as imagens.
+Passo a passo do deploy em um servidor Ubuntu com Nginx. Os arquivos estáticos são
+servidos pelo próprio Django via WhiteNoise, então não é preciso configurar o Nginx para
+o CSS e as imagens.
 
-> **Cuidado com o disco do host.** O banco padrão é um arquivo (`db.sqlite3`). Em hosts
-> de disco efêmero — Render e Railway, entre outros — esse arquivo é descartado a cada
-> deploy ou reinício, levando junto as tentativas dos alunos. Nesses hosts, use um banco
-> gerenciado (`DJANGO_DB_ENGINE=mysql`) ou um disco persistente. Em hosts de disco
-> permanente, como o PythonAnywhere, o SQLite serve sem ajuste nenhum.
+Em produção use **MySQL**, não o SQLite. O SQLite é um arquivo local: se o site roda em
+mais de uma instância, cada uma fica com a sua própria cópia, e a prova gerada em uma
+não existe na outra — gerar a prova funciona, mas a tela seguinte devolve **404 Not
+Found**. Em hosts de disco efêmero, como Render e Railway, o arquivo ainda é descartado
+a cada deploy, levando junto as tentativas dos alunos.
 
-### 1. Variáveis de ambiente
-
-| Variável | Exemplo | Para que serve |
-| --- | --- | --- |
-| `DJANGO_DEBUG` | `0` | Mantenha `0` em produção (nunca `1`). |
-| `DJANGO_SECRET_KEY` | *(string longa e aleatória)* | Assina sessões e CSRF. Sem ela, uma chave nova é gerada a cada reinício e o login do admin cai. |
-| `DJANGO_ALLOWED_HOSTS` | `notamil.escola.br,www.notamil.escola.br` | Domínios que podem servir o site. |
-| `DJANGO_CSRF_ORIGINS` | `https://notamil.escola.br` | Obrigatório em HTTPS, senão os formulários dão erro 403. |
-| `DJANGO_SSL_REDIRECT` | `1` | Opcional: força http → https (deixe `0` se o proxy já redireciona). |
-
-Gerar uma chave: `python -c "from django.core.management.utils import get_random_secret_key as k; print(k())"`
-
-### 2. Comandos do deploy
+### 1. Instalar o MySQL
 
 ```bash
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py seed_questoes      # só na primeira vez
-python manage.py collectstatic --noinput
-gunicorn notamil_web.wsgi           # ou o Procfile incluído
+sudo apt update
+sudo apt install -y mysql-server
+sudo systemctl enable --now mysql
 ```
 
-Confira a configuração com `python manage.py check --deploy`.
+### 2. Criar o banco e o usuário
 
-### 3. Banco de dados
-
-O banco padrão é o **SQLite** (arquivo `db.sqlite3` na raiz do projeto) — basta
-`migrate` e `seed_questoes`. Para **MySQL** (8.0+), defina `DJANGO_DB_ENGINE=mysql`; as
-demais credenciais vêm do ambiente:
-
-| Variável | Padrão | Exemplo |
-| --- | --- | --- |
-| `DJANGO_DB_NAME` | `notamil` | `notamil` |
-| `DJANGO_DB_USER` | `root` | `notamil_app` |
-| `DJANGO_DB_PASSWORD` | *(vazio)* | *(senha do usuário)* |
-| `DJANGO_DB_HOST` | `127.0.0.1` | `db.escola.br` |
-| `DJANGO_DB_PORT` | `3306` | `3306` |
-| `DJANGO_DB_ENGINE` | `sqlite` | `mysql` para usar o MySQL |
-
-Crie o banco com acentuação correta antes do primeiro `migrate`:
+```bash
+sudo mysql
+```
 
 ```sql
 CREATE DATABASE notamil CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'notamil_app'@'%' IDENTIFIED BY 'senha-forte';
-GRANT ALL PRIVILEGES ON notamil.* TO 'notamil_app'@'%';
+CREATE USER 'notamil_app'@'localhost' IDENTIFIED BY 'TROQUE-ESTA-SENHA';
+GRANT ALL PRIVILEGES ON notamil.* TO 'notamil_app'@'localhost';
 FLUSH PRIVILEGES;
+EXIT;
 ```
 
-Depois: `python manage.py migrate` e `python manage.py seed_questoes`.
-O driver `mysqlclient` fica separado, em `requirements-mysql.txt` — instale com
-`pip install -r requirements-mysql.txt` (no Linux pode exigir
-`sudo apt install python3-dev default-libmysqlclient-dev build-essential`).
+> Em contêineres Docker, troque `'localhost'` por `'%'` e use o IP do host (ou o nome do
+> serviço no compose) no `DJANGO_DB_HOST` — de dentro do contêiner, `127.0.0.1` aponta
+> para ele mesmo, não para o MySQL.
 
-Para levar os dados do SQLite para o MySQL:
+### 3. Instalar as dependências
 
 ```bash
-python manage.py dumpdata simulados --indent 2 > dados.json
-DJANGO_DB_ENGINE=mysql python manage.py migrate
-DJANGO_DB_ENGINE=mysql python manage.py loaddata dados.json
+sudo apt install -y python3-dev default-libmysqlclient-dev build-essential pkg-config
 ```
 
-### 4. Várias instâncias
-
-Se o site roda em **mais de uma instância** atrás do mesmo domínio — duas réplicas, dois
-contêineres ou dois serviços no `upstream` do Nginx —, o SQLite deixa de servir: cada
-instância fica com o seu próprio arquivo `db.sqlite3`, e nenhuma enxerga o que a outra
-gravou.
-
-O sintoma é específico. Gerar a prova funciona, porque as questões foram carregadas em
-todas as cópias, mas a tela seguinte devolve **404 Not Found**:
-
-```
-POST /gerar-prova/          → 302  Location: /simulado/<uuid>/1/
-GET  /simulado/<uuid>/1/    → 404
-```
-
-A `Tentativa` e a sessão foram gravadas no banco da instância que atendeu o POST; o
-redirect cai em outra, que não tem esse registro, e `views.py` responde 404 — o mesmo
-404 de quem tenta abrir a prova de outra pessoa.
-
-Para confirmar, repita **a mesma URL com o mesmo cookie** várias vezes:
+Na venv de **cada instância** da aplicação:
 
 ```bash
-for i in $(seq 1 12); do
-  curl -s -b cookies.txt -o /dev/null -w "%{http_code} " https://SEU-SITE/simulado/<uuid>/1/
-done
+pip install -r requirements.txt
+pip install -r requirements-mysql.txt     # driver do MySQL
 ```
 
-Alternar entre `200` e `404` confirma o diagnóstico: a proporção de acertos indica
-quantas instâncias existem (6 de 12 → duas). Erro de cookie ou de rota falharia sempre.
+### 4. Variáveis de ambiente
 
-A correção é dar um **banco compartilhado** a todas elas — o MySQL da
-[seção 3](#3-banco-de-dados), que já guarda também as sessões. Três cuidados:
-
-- As variáveis `DJANGO_DB_*` precisam chegar a **todas** as instâncias, não só a uma.
-- `migrate` e `seed_questoes` rodam **uma vez só**, de qualquer uma delas.
-- Defina o mesmo `DJANGO_SECRET_KEY` em todas. Sem ele cada processo sorteia uma chave
-  própria a cada reinício, e o login do admin cai sozinho.
-
-Para conferir depois, rode em cada instância — os números têm que bater:
+Gere a chave secreta — **uma só**, a mesma para todas as instâncias:
 
 ```bash
+python -c "from django.core.management.utils import get_random_secret_key as k; print(k())"
+```
+
+Crie `/etc/notamil.env` com o domínio real do site:
+
+```bash
+DJANGO_DEBUG=0
+DJANGO_SECRET_KEY=cole-a-chave-gerada-aqui
+DJANGO_ALLOWED_HOSTS=notamil.escola.br
+DJANGO_CSRF_ORIGINS=https://notamil.escola.br
+DJANGO_DB_ENGINE=mysql
+DJANGO_DB_NAME=notamil
+DJANGO_DB_USER=notamil_app
+DJANGO_DB_PASSWORD=TROQUE-ESTA-SENHA
+DJANGO_DB_HOST=127.0.0.1
+DJANGO_DB_PORT=3306
+```
+
+```bash
+sudo chmod 600 /etc/notamil.env
+```
+
+Quatro delas não são opcionais:
+
+- `DJANGO_DEBUG=0` — nunca `1` em produção.
+- `DJANGO_SECRET_KEY` — sem ela cada processo sorteia uma chave nova a cada reinício, e
+  o login do admin cai sozinho. Use a mesma em todas as instâncias.
+- `DJANGO_ALLOWED_HOSTS` — sem o domínio aqui, o site responde erro 400.
+- `DJANGO_CSRF_ORIGINS` — obrigatória em HTTPS, senão os formulários dão erro 403.
+
+Opcional: `DJANGO_SSL_REDIRECT=1` força http → https (deixe fora se o Nginx já
+redireciona).
+
+### 5. Preparar o banco — uma vez só
+
+```bash
+set -a; . /etc/notamil.env; set +a     # carrega as variáveis no shell
+cd /caminho/do/notamil_web
+source .venv/bin/activate
+python manage.py migrate
+python manage.py seed_questoes          # as 2643 questões; sem isso o banco nasce vazio
+python manage.py collectstatic --noinput
+```
+
+Com várias instâncias, isto roda em **uma** delas: todas leem o mesmo banco.
+
+### 6. Subir a aplicação
+
+O `Procfile` incluído já serve: `gunicorn notamil_web.wsgi`. Ligue o arquivo de
+variáveis em **todas** as instâncias:
+
+- **systemd** — em cada unit, na seção `[Service]`: `EnvironmentFile=/etc/notamil.env`,
+  depois `sudo systemctl daemon-reload` e `sudo systemctl restart <serviço>`.
+- **Docker Compose** — em cada serviço: `env_file: /etc/notamil.env`, depois
+  `docker compose up -d --force-recreate`.
+
+### 7. Verificar
+
+```bash
+python manage.py check --deploy
 python manage.py shell -c "from simulados.models import Questao, Tentativa; print(Questao.objects.count(), Tentativa.objects.count())"
 ```
 
-> Manter uma instância só também resolve o 404, mas com SQLite os dados continuam
-> sumindo a cada deploy se o disco não for persistente.
+O esperado é `2643 0`. Com várias instâncias, rode o segundo comando em cada uma: os
+números têm que ser iguais. Depois gere uma prova pelo site e repita — se o contador de
+tentativas subir em **todas**, o banco está compartilhado.
 
-### 5. Pontos de atenção
-- **Questões**: rode `seed_questoes` uma vez no servidor, senão o banco nasce vazio.
-- **QR Code**: ele aponta para o endereço usado para abrir a página, então funciona
-  automaticamente depois de hospedado (e a turma consegue escanear de qualquer lugar).
-- **Sem login**: a tentativa fica presa à sessão de quem a criou — o link não abre em
-  outro navegador. Ainda assim é um simulado de estudo, não uma prova valendo nota com
-  identificação de aluno (limpar os cookies perde o acesso às tentativas antigas).
-- **Faxina**: agende `limpar_tentativas` (veja [Proteção contra abuso](#proteção-contra-abuso)),
-  senão as tentativas abandonadas se acumulam.
+Se ainda aparecer 404 ao abrir a prova, repita a mesma URL com o mesmo cookie umas doze
+vezes: alternar entre `200` e `404` significa que as instâncias continuam em bancos
+separados, e a proporção indica quantas são.
 
 ## Proteção contra abuso
 
@@ -215,8 +212,8 @@ As barreiras são estas:
 | `management/commands/limpar_tentativas.py` | Apaga tentativas antigas. | `--dias` |
 
 > **Vários workers:** o limite por IP usa o cache do Django, que por padrão é local ao
-> processo — com 4 workers do gunicorn o teto real fica 4x maior (e o mesmo vale para
-> cada instância, veja [Várias instâncias](#4-várias-instâncias)). Para um limite exato,
+> processo — com 4 workers do gunicorn o teto real fica 4x maior (e o mesmo vale
+> para cada instância, veja [Hospedagem](#hospedagem)). Para um limite exato,
 > configure `CACHES` com Redis ou Memcached compartilhado.
 
 ### Faxina das tentativas
