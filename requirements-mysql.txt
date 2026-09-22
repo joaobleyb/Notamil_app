@@ -1,0 +1,3 @@
+# Driver do MySQL. Instale apenas se for usar DJANGO_DB_ENGINE=mysql:
+#   pip install -r requirements-mysql.txt
+mysqlclient>=2.2

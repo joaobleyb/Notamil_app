@@ -1,0 +1,6 @@
+# O script do Mac precisa de LF: um CRLF no shebang vira "bad interpreter: /bin/bash^M".
+*.command text eol=lf
+*.sh      text eol=lf
+
+# O script do Windows precisa de CRLF.
+*.bat     text eol=crlf

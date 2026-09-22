@@ -19,6 +19,36 @@ O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 
 ## Como rodar
 
+Depois de baixar o projeto do GitHub, entre na pasta `notamil_web` e rode o script da
+sua plataforma. Ele cria o ambiente virtual, instala as dependências, prepara o banco,
+carrega as 2643 questões do ENEM na primeira execução e sobe o servidor em
+<http://127.0.0.1:8000/>. Nas próximas vezes ele só liga o servidor.
+
+### macOS e Linux
+
+Dê **dois cliques** em `iniciar.command`, ou no terminal:
+
+```bash
+./iniciar.command
+```
+
+Para parar: `Control + C`.
+
+> Se o duplo clique não abrir, o arquivo perdeu a permissão de execução no caminho até a
+> sua máquina. Rode uma vez `chmod +x iniciar.command` na pasta do projeto.
+
+### Windows
+
+Dê **dois cliques** em `iniciar.bat`, ou no terminal, dentro da pasta:
+
+```bat
+iniciar
+```
+
+Para parar: `Ctrl + C`.
+
+### Manualmente, passo a passo
+
 ```bash
 pip install -r requirements.txt
 python manage.py migrate
@@ -99,7 +129,8 @@ FLUSH PRIVILEGES;
 ```
 
 Depois: `python manage.py migrate` e `python manage.py seed_questoes`.
-O driver `mysqlclient` já está no `requirements.txt` (no Linux pode exigir
+O driver `mysqlclient` fica separado, em `requirements-mysql.txt` — instale com
+`pip install -r requirements-mysql.txt` (no Linux pode exigir
 `sudo apt install python3-dev default-libmysqlclient-dev build-essential`).
 
 Para levar os dados do SQLite para o MySQL:
@@ -160,6 +191,8 @@ Agende no servidor (cron diário às 4h):
 ```
 notamil_web/
 ├── manage.py
+├── iniciar.command            # instala e roda tudo com um comando (macOS, Linux)
+├── iniciar.bat                # o mesmo, no Windows
 ├── requirements.txt
 ├── notamil_web/              # projeto (settings, urls, wsgi, asgi)
 └── simulados/                 # app
