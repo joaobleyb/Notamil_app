@@ -141,7 +141,54 @@ DJANGO_DB_ENGINE=mysql python manage.py migrate
 DJANGO_DB_ENGINE=mysql python manage.py loaddata dados.json
 ```
 
-### 4. Pontos de atenção
+### 4. Várias instâncias
+
+Se o site roda em **mais de uma instância** atrás do mesmo domínio — duas réplicas, dois
+contêineres ou dois serviços no `upstream` do Nginx —, o SQLite deixa de servir: cada
+instância fica com o seu próprio arquivo `db.sqlite3`, e nenhuma enxerga o que a outra
+gravou.
+
+O sintoma é específico. Gerar a prova funciona, porque as questões foram carregadas em
+todas as cópias, mas a tela seguinte devolve **404 Not Found**:
+
+```
+POST /gerar-prova/          → 302  Location: /simulado/<uuid>/1/
+GET  /simulado/<uuid>/1/    → 404
+```
+
+A `Tentativa` e a sessão foram gravadas no banco da instância que atendeu o POST; o
+redirect cai em outra, que não tem esse registro, e `views.py` responde 404 — o mesmo
+404 de quem tenta abrir a prova de outra pessoa.
+
+Para confirmar, repita **a mesma URL com o mesmo cookie** várias vezes:
+
+```bash
+for i in $(seq 1 12); do
+  curl -s -b cookies.txt -o /dev/null -w "%{http_code} " https://SEU-SITE/simulado/<uuid>/1/
+done
+```
+
+Alternar entre `200` e `404` confirma o diagnóstico: a proporção de acertos indica
+quantas instâncias existem (6 de 12 → duas). Erro de cookie ou de rota falharia sempre.
+
+A correção é dar um **banco compartilhado** a todas elas — o MySQL da
+[seção 3](#3-banco-de-dados), que já guarda também as sessões. Três cuidados:
+
+- As variáveis `DJANGO_DB_*` precisam chegar a **todas** as instâncias, não só a uma.
+- `migrate` e `seed_questoes` rodam **uma vez só**, de qualquer uma delas.
+- Defina o mesmo `DJANGO_SECRET_KEY` em todas. Sem ele cada processo sorteia uma chave
+  própria a cada reinício, e o login do admin cai sozinho.
+
+Para conferir depois, rode em cada instância — os números têm que bater:
+
+```bash
+python manage.py shell -c "from simulados.models import Questao, Tentativa; print(Questao.objects.count(), Tentativa.objects.count())"
+```
+
+> Manter uma instância só também resolve o 404, mas com SQLite os dados continuam
+> sumindo a cada deploy se o disco não for persistente.
+
+### 5. Pontos de atenção
 - **Questões**: rode `seed_questoes` uma vez no servidor, senão o banco nasce vazio.
 - **QR Code**: ele aponta para o endereço usado para abrir a página, então funciona
   automaticamente depois de hospedado (e a turma consegue escanear de qualquer lugar).
@@ -168,7 +215,8 @@ As barreiras são estas:
 | `management/commands/limpar_tentativas.py` | Apaga tentativas antigas. | `--dias` |
 
 > **Vários workers:** o limite por IP usa o cache do Django, que por padrão é local ao
-> processo — com 4 workers do gunicorn o teto real fica 4x maior. Para um limite exato,
+> processo — com 4 workers do gunicorn o teto real fica 4x maior (e o mesmo vale para
+> cada instância, veja [Várias instâncias](#4-várias-instâncias)). Para um limite exato,
 > configure `CACHES` com Redis ou Memcached compartilhado.
 
 ### Faxina das tentativas
