@@ -513,5 +513,18 @@ html[data-fonte="grande"] { font-size: 125%; }
 [data-bs-theme="dark"] .btn-outline-brand:hover,
 [data-bs-theme="dark"] .btn-check:checked + .btn-outline-brand { color: #fff !important; }
 [data-bs-theme="dark"] .contador input { background: var(--surface); }
+[data-bs-theme="dark"] .hero .btn-verde {
+  background: var(--bg);
+  border-color: var(--brand-texto);
+  color: var(--brand-texto);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+}
+[data-bs-theme="dark"] .hero .btn-verde:hover,
+[data-bs-theme="dark"] .hero .btn-verde:focus-visible {
+  background: var(--surface);
+  border-color: var(--brand-texto);
+  color: var(--brand-texto);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .45);
+}
 [data-bs-theme="dark"] .rodape,
 [data-bs-theme="dark"] .navbar-notamil { background: #0a3d1c; }
