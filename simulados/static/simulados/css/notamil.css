@@ -426,3 +426,58 @@ main { flex: 1 0 auto; }
   }
   .acao:hover { transform: none; }
 }
+
+/* ---------- Botoes de acessibilidade (navbar) ---------- */
+.btn-acessibilidade {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, .45);
+  background: transparent;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background .15s ease, border-color .15s ease;
+}
+.btn-acessibilidade:hover { background: rgba(255, 255, 255, .12); border-color: #fff; }
+.btn-acessibilidade[aria-pressed="true"] { background: #fff; border-color: #fff; color: var(--brand-dark); }
+
+/* ---------- Letras ampliadas: tudo em rem acompanha a raiz ---------- */
+html[data-fonte="grande"] { font-size: 125%; }
+
+/* ---------- Modo escuro: redefine so os tokens e as cores fixas ---------- */
+[data-bs-theme="dark"] {
+  --ink: #e4e8e5;
+  --muted: #a4ada7;
+  --line: #2f3a33;
+  --surface: #1a211d;
+  --bg: #111613;
+  /* Verde claro para textos sobre fundo escuro; fundos seguem com --brand. */
+  --brand-texto: #6fd394;
+}
+[data-bs-theme="dark"] .texto-apoio { background: #151b17; color: var(--ink); }
+[data-bs-theme="dark"] .referencia { color: var(--muted); }
+[data-bs-theme="dark"] .area-card .area-nome,
+[data-bs-theme="dark"] .contador input,
+[data-bs-theme="dark"] .alternativa .letra,
+[data-bs-theme="dark"] .grade-indice .salto:hover,
+[data-bs-theme="dark"] .grade-indice .salto.respondida,
+[data-bs-theme="dark"] .aro-resultado .valor,
+[data-bs-theme="dark"] .codigo-turma,
+[data-bs-theme="dark"] .icone-prova,
+[data-bs-theme="dark"] .indice-questoes .tudo-pronto,
+[data-bs-theme="dark"] .alternativa.correta .marcador,
+[data-bs-theme="dark"] .btn-outline-brand,
+[data-bs-theme="dark"] h1[style*="--brand"],
+[data-bs-theme="dark"] h2[style*="--brand"] { color: var(--brand-texto) !important; }
+[data-bs-theme="dark"] .alternativa input:checked + label .letra,
+[data-bs-theme="dark"] .alternativa.correta .letra,
+[data-bs-theme="dark"] .alternativa.errada .letra,
+[data-bs-theme="dark"] .grade-indice .salto.atual,
+[data-bs-theme="dark"] .btn-outline-brand:hover,
+[data-bs-theme="dark"] .btn-check:checked + .btn-outline-brand { color: #fff !important; }
+[data-bs-theme="dark"] .contador input { background: var(--surface); }
+[data-bs-theme="dark"] .rodape,
+[data-bs-theme="dark"] .navbar-notamil { background: #0a3d1c; }
