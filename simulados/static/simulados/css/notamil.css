@@ -104,6 +104,9 @@ main { flex: 1 0 auto; }
   color: #e9f6ee;
   font-weight: 500;
 }
+/* Borda preta para o botao nao se perder no degrade verde. */
+.hero .btn-verde,
+.hero .btn-verde:hover { border: 2px solid #000; }
 
 /* ---------- Cartoes de acao do menu ---------- */
 .acao {
