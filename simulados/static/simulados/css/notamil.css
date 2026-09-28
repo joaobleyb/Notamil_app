@@ -402,6 +402,23 @@ main { flex: 1 0 auto; }
 .btn-outline-brand { border-color: var(--brand); color: var(--brand); }
 .btn-outline-brand:hover { background: var(--brand); color: #fff; }
 
+/* Escolha do idioma: a opcao marcada fica preenchida e com check. */
+.idioma-toggle .btn-check + .btn-outline-brand { opacity: .7; }
+.idioma-toggle .btn-check:checked + .btn-outline-brand {
+  background: var(--brand);
+  border-color: var(--brand-dark);
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 0 0 3px rgba(23, 130, 63, .25);
+  position: relative;
+  z-index: 1;
+}
+.idioma-toggle .btn-check:checked + .btn-outline-brand::before {
+  content: "\2713";
+  font-weight: 700;
+  margin-right: .4rem;
+}
+
 @media (max-width: 575.98px) {
   .navbar-notamil .logo-instituicao { height: 26px; padding: 3px 6px; }
   .aro-resultado { width: 160px; height: 160px; }
