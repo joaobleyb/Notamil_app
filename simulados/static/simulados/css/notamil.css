@@ -104,9 +104,23 @@ main { flex: 1 0 auto; }
   color: #e9f6ee;
   font-weight: 500;
 }
-/* Borda preta para o botao nao se perder no degrade verde. */
-.hero .btn-verde,
-.hero .btn-verde:hover { border: 2px solid #000; }
+/* Botao invertido (branco) para nao se perder no degrade verde. */
+.hero .btn-verde {
+  background: #fff;
+  border-color: #fff;
+  color: var(--brand-dark);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.hero .btn-verde:hover,
+.hero .btn-verde:focus-visible {
+  background: #f1faf4;
+  border-color: #f1faf4;
+  color: var(--brand-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .24);
+}
+.hero .btn-verde:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
 
 /* ---------- Cartoes de acao do menu ---------- */
 .acao {
