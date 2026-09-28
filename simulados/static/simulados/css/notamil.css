@@ -220,9 +220,8 @@ main { flex: 1 0 auto; }
   color: #2c3138;
   font-family: var(--fonte-leitura);
   font-size: 1rem;
-  /* Serifada pede entrelinha maior; a medida evita a linha longa demais. */
+  /* Serifada pede entrelinha maior. */
   line-height: 1.75;
-  max-width: 66ch;
   white-space: pre-line;
   margin-bottom: .85rem;
 }
@@ -248,7 +247,6 @@ main { flex: 1 0 auto; }
   line-height: 1.75;
   font-weight: 500;
   color: var(--ink);
-  max-width: 66ch;
   white-space: pre-line;
 }
 
