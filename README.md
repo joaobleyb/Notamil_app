@@ -9,6 +9,10 @@ O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 - Banco com 2969 questões do ENEM de 2009 a 2025, com filtro opcional por ano na hora de
   gerar a prova (sem nenhum ano marcado, sorteia de todos).
 - Código de turma: a turma inteira responde exatamente a mesma prova.
+- Painel do gestor: quem cria a prova acompanha, por um link secreto, quantos estão
+  fazendo, quantos terminaram e os nomes de cada um.
+- Ranking da turma (mini game): cada aluno entra com o seu nome e, ao finalizar, vê o
+  ranking por acertos (desempate pelo menor tempo) e a própria posição.
 - Embaralhar por aluno (opcional): mesmas questões, ordem diferente em cada prova — evita cola.
 - QR Code do código, para a turma entrar pela câmera do celular.
 - Correção automática com análise questão a questão.
@@ -212,6 +216,7 @@ As barreiras são estas:
 | `forms.py` | Teto de **90 questões por área** e **180 por prova**. Sem ele, um POST com `quantidade_matematica=10**9` viraria um `SELECT` gigante. | `GerarProvaForm.MAX_POR_AREA` / `MAX_TOTAL` |
 | `services/protecao_service.py` | Limite por IP: **20 provas/hora** em `/gerar-prova/` e **40/hora** em `/entrar-com-codigo/`. | `LIMITES` |
 | `services/protecao_service.py` | A tentativa é gravada na sessão; `/simulado/`, `/resultado/` e `/analisar/` devolvem 404 para quem não a criou. | `MAX_TENTATIVAS_LEMBRADAS` |
+| `views.py` | O painel do gestor só abre com o token secreto da prova (comparado em tempo constante); token errado dá 404. A página pública da turma não mostra nomes nem contagens. | — |
 | `services/prova_service.py` | O sorteio usa `random.sample` sobre os ids em vez de `ORDER BY RAND()`, que percorre e ordena a tabela inteira a cada prova. | — |
 | `views.py` | Finalizar exige **todas as questões respondidas**. O `required` do HTML cobre só a questão da tela e o aluno contorna; a checagem que vale é a do servidor, via `ordens_pendentes`. | — |
 | `views.py` | A correção só abre com a prova **finalizada**. Antes disso dava para ler o gabarito em `/analisar/` com a prova em branco, ou responder uma questão por vez e consultar o total de acertos em `/resultado/` até acertar todas. | — |
@@ -252,15 +257,15 @@ notamil_web/
     │   ├── prova_compartilhada.py  # ProvaCompartilhada + ItemProvaCompartilhada (código de turma)
     │   └── tentativa.py       # Tentativa + RespostaTentativa
     ├── services/              # regras de negócio
-    │   ├── prova_service.py   # sorteio, criação da tentativa, correção
-    │   ├── protecao_service.py # limite por IP e posse da tentativa pela sessão
+    │   ├── prova_service.py   # sorteio, criação da tentativa, correção, ranking da turma
+    │   ├── protecao_service.py # limite por IP, posse da tentativa e gestor pela sessão
     │   ├── limpeza_service.py # remoção das tentativas antigas
     │   └── seed_service.py    # carga do banco de questões
     ├── management/commands/
     │   ├── seed_questoes.py
     │   └── limpar_tentativas.py
     ├── fixtures/questoes.json # banco inicial com 2969 questões do ENEM
-    ├── static/simulados/      # css, js e as 1014 imagens das questões
+    ├── static/simulados/      # css, js e as 1187 imagens das questões
     ├── templates/simulados/
     ├── forms.py · urls.py · views.py · admin.py · tests.py
 ```
@@ -274,9 +279,10 @@ notamil_web/
 | `/simulado/<uuid>/<n>/` | Resolução das questões |
 | `/resultado/<uuid>/` | Acertos e aproveitamento *(só após finalizar)* |
 | `/analisar/<uuid>/<n>/` | Revisão com gabarito *(só após finalizar)* |
-| `/redacao/` | Redação (em desenvolvimento) |
+| `/redacao/` | Redação (em desenvolvimento; sem link no menu) |
 | `/turma/<codigo>/` | Código gerado para compartilhar a prova |
-| `/entrar-com-codigo/` | Entrada na prova da turma pelo código |
+| `/turma/<codigo>/gestor/<token>/` | Painel do gestor *(só com o link secreto)* |
+| `/entrar-com-codigo/` | Entrada na prova da turma pelo código e nome |
 
 ## Código de turma
 
@@ -284,8 +290,19 @@ Ao gerar uma prova, ligue a opção **Criar código**: o sorteio é congelado em
 `ProvaCompartilhada` e o sistema devolve um código de 6 caracteres (sem `O`, `0`,
 `I` e `1` para evitar confusão). Quem entrar com esse código em
 `/entrar-com-codigo/` responde exatamente as mesmas questões, na mesma ordem — cada
-pessoa com a sua própria tentativa. A tela do código mostra o resumo por área e
-quantas pessoas já finalizaram.
+pessoa com a sua própria tentativa. A tela do código mostra o resumo por área.
+
+Cada aluno informa o **nome** junto com o código. Ao finalizar, o resultado mostra o
+**ranking da turma**: ordem por acertos e, no empate, pelo menor tempo de prova, com a
+posição do aluno em destaque ("Você ficou em 3º de 12").
+
+Quem gerou a prova vira **gestor** naquele navegador. Na tela do código aparecem dois
+botões: **Abrir painel**, que abre o painel em outra aba, e **Copiar link do gestor**,
+para abrir o painel em outro aparelho. O link tem um token secreto
+(`/turma/<codigo>/gestor/<token>/`) e não deve ser compartilhado com a turma. O painel
+mostra quantos estão fazendo a prova e quantos terminaram, com nome, progresso e
+horário de início de cada um, além do ranking completo, e se atualiza sozinho a cada
+15 segundos.
 
 ## Testes
 
