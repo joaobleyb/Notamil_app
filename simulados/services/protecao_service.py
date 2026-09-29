@@ -5,6 +5,8 @@ tentativas. Aqui ficam as duas barreiras baratas contra isso:
 
 * `dentro_do_limite` — teto de provas criadas por IP em uma janela de tempo.
 * sessão — só quem criou a tentativa consegue abri-la depois.
+
+A sessão também guarda de quais provas de turma o visitante é gestor.
 """
 from django.core.cache import cache
 
@@ -15,6 +17,8 @@ LIMITES = {
 }
 
 CHAVE_SESSAO = "tentativas"
+# Códigos das provas de turma que esta sessão gerencia (criou ou abriu pelo link do gestor).
+CHAVE_SESSAO_GESTOR = "provas_gestor"
 # Quantas tentativas a mesma sessão continua conseguindo reabrir.
 MAX_TENTATIVAS_LEMBRADAS = 50
 
@@ -53,3 +57,17 @@ def registrar_tentativa_na_sessao(request, tentativa):
 def tentativa_da_sessao(request, tentativa_id):
     """A tentativa foi criada nesta sessão?"""
     return str(tentativa_id) in request.session.get(CHAVE_SESSAO, [])
+
+
+def registrar_gestor_na_sessao(request, prova):
+    """Marca quem está navegando como gestor da prova da turma."""
+    codigos = request.session.get(CHAVE_SESSAO_GESTOR, [])
+    if prova.codigo not in codigos:
+        codigos.append(prova.codigo)
+        request.session[CHAVE_SESSAO_GESTOR] = codigos[-MAX_TENTATIVAS_LEMBRADAS:]
+    return prova
+
+
+def gestor_da_sessao(request, prova):
+    """Quem está navegando é o gestor desta prova?"""
+    return prova.codigo in request.session.get(CHAVE_SESSAO_GESTOR, [])

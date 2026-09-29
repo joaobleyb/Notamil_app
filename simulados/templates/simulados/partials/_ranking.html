@@ -1,0 +1,26 @@
+{% comment %}Ranking da turma. Recebe `ranking` e, opcionalmente, `destaque` (id da tentativa de quem está vendo).{% endcomment %}
+{% if ranking %}
+<ol class="list-group text-start">
+    {% for linha in ranking %}
+    <li class="list-group-item d-flex align-items-center gap-3 py-2{% if linha.tentativa_id == destaque %} list-group-item-success fw-semibold{% endif %}">
+        <span class="fs-4 text-center" style="width: 2.25rem;" aria-label="{{ linha.posicao }}º lugar">
+            {% if linha.posicao == 1 %}🥇{% elif linha.posicao == 2 %}🥈{% elif linha.posicao == 3 %}🥉{% else %}<span class="fs-6 text-secondary">{{ linha.posicao }}º</span>{% endif %}
+        </span>
+        <div class="flex-grow-1 text-truncate">
+            {{ linha.nome }}{% if linha.tentativa_id == destaque %} <span class="badge bg-success ms-1">você</span>{% endif %}
+            <div class="progress mt-1" style="height: 6px;" role="progressbar"
+                 aria-valuenow="{{ linha.acertos }}" aria-valuemin="0" aria-valuemax="{{ linha.total }}">
+                <div class="progress-bar bg-success" style="width: {% widthratio linha.acertos linha.total 100 %}%"></div>
+            </div>
+        </div>
+        <div class="text-end small text-nowrap">
+            <div class="fw-semibold">{{ linha.acertos }}/{{ linha.total }}</div>
+            <div class="text-secondary"><i class="bi bi-stopwatch me-1"></i>{{ linha.tempo }}</div>
+        </div>
+    </li>
+    {% endfor %}
+</ol>
+<p class="text-secondary small mt-2 mb-0">Empate em acertos: fica na frente quem terminou em menos tempo.</p>
+{% else %}
+<p class="text-secondary mb-0">Ninguém finalizou ainda.</p>
+{% endif %}

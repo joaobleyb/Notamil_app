@@ -16,6 +16,7 @@ from .services import (
     criar_tentativa,
     iniciar_prova_da_turma,
     limpar_tentativas_antigas,
+    ranking_da_turma,
     salvar_resposta,
     sortear_questoes,
 )
@@ -115,9 +116,11 @@ class CodigoTurmaTests(TestCase):
     def test_entrar_com_codigo_cria_tentativa_com_a_mesma_prova(self):
         prova = criar_prova_compartilhada(self.questoes, Questao.IDIOMA_INGLES)
         resposta = self.client.post(
-            reverse("simulados:entrar_com_codigo"), {"codigo": prova.codigo.lower()}
+            reverse("simulados:entrar_com_codigo"),
+            {"codigo": prova.codigo.lower(), "nome": "  Ana   Maria "},
         )
         self.assertEqual(resposta.status_code, 302)
+        self.assertEqual(prova.tentativas.get().nome_aluno, "Ana Maria")
 
         tentativa = prova.tentativas.get()
         self.assertEqual(
@@ -127,7 +130,7 @@ class CodigoTurmaTests(TestCase):
 
     def test_codigo_inexistente_mostra_erro(self):
         resposta = self.client.post(
-            reverse("simulados:entrar_com_codigo"), {"codigo": "ZZZZZZ"}
+            reverse("simulados:entrar_com_codigo"), {"codigo": "ZZZZZZ", "nome": "Ana"}
         )
         self.assertEqual(resposta.status_code, 200)
         self.assertContains(resposta, "Código não encontrado")
@@ -145,6 +148,90 @@ class CodigoTurmaTests(TestCase):
         prova = criar_prova_compartilhada(self.questoes, Questao.IDIOMA_INGLES)
         tentativa = iniciar_prova_da_turma(prova)
         self.assertEqual(tentativa.prova_compartilhada, prova)
+
+
+class GestorTurmaTests(TestCase):
+    """Painel do gestor, nome do aluno e ranking da prova da turma."""
+
+    def setUp(self):
+        cache.clear()
+        self.questoes = [criar_questao(numero=numero) for numero in range(1, 4)]
+        self.prova = criar_prova_compartilhada(self.questoes, Questao.IDIOMA_INGLES)
+        self.url_painel = reverse(
+            "simulados:painel_turma", args=[self.prova.codigo, self.prova.token_gestor]
+        )
+
+    def _finalizada(self, nome, acertos, minutos):
+        tentativa = iniciar_prova_da_turma(self.prova, nome)
+        for resposta in tentativa.respostas.order_by("ordem"):
+            resposta.alternativa = "C" if resposta.ordem <= acertos else "A"
+            resposta.save()
+        Tentativa.objects.filter(pk=tentativa.pk).update(
+            finalizada_em=tentativa.criada_em + timedelta(minutes=minutos)
+        )
+        return tentativa
+
+    def test_entrar_sem_nome_nao_cria_tentativa(self):
+        resposta = self.client.post(
+            reverse("simulados:entrar_com_codigo"), {"codigo": self.prova.codigo, "nome": "   "}
+        )
+        self.assertEqual(resposta.status_code, 200)
+        self.assertContains(resposta, "Informe seu nome")
+        self.assertFalse(self.prova.tentativas.exists())
+
+    def test_tela_do_codigo_nao_mostra_painel_para_aluno(self):
+        self._finalizada("Ana", 3, 5)
+        resposta = self.client.get(reverse("simulados:prova_da_turma", args=[self.prova.codigo]))
+        self.assertEqual(resposta.status_code, 200)
+        self.assertNotContains(resposta, self.prova.token_gestor)
+        self.assertNotContains(resposta, "Ana")
+
+    def test_quem_cria_a_prova_ve_o_link_do_painel(self):
+        resposta = self.client.post(
+            reverse("simulados:gerar_prova"),
+            {"quantidade_matematica": 2, "gerar_codigo_turma": "1"},
+            follow=True,
+        )
+        prova = ProvaCompartilhada.objects.exclude(pk=self.prova.pk).get()
+        self.assertContains(resposta, prova.token_gestor)
+
+    def test_painel_exige_o_token_certo(self):
+        errado = reverse("simulados:painel_turma", args=[self.prova.codigo, "chute"])
+        self.assertEqual(self.client.get(errado).status_code, 404)
+        self.assertEqual(self.client.get(self.url_painel).status_code, 200)
+
+    def test_painel_mostra_quem_faz_e_quem_terminou(self):
+        iniciar_prova_da_turma(self.prova, "Bruno")
+        self._finalizada("Ana", 2, 5)
+        resposta = self.client.get(self.url_painel)
+        self.assertEqual(resposta.context["andamento"][0]["nome"], "Bruno")
+        self.assertEqual([linha["nome"] for linha in resposta.context["ranking"]], ["Ana"])
+        self.assertContains(resposta, "Bruno")
+
+    def test_ranking_ordena_por_acertos_e_desempata_pelo_tempo(self):
+        self._finalizada("Lento", 3, 20)
+        self._finalizada("Rapido", 3, 5)
+        self._finalizada("Errou", 1, 1)
+        ranking = ranking_da_turma(self.prova)
+        self.assertEqual([linha["nome"] for linha in ranking], ["Rapido", "Lento", "Errou"])
+        self.assertEqual([linha["acertos"] for linha in ranking], [3, 3, 1])
+        self.assertEqual([linha["posicao"] for linha in ranking], [1, 2, 3])
+
+    def test_resultado_mostra_o_ranking_e_a_posicao_do_aluno(self):
+        self._finalizada("Ana", 3, 5)
+        self.client.post(
+            reverse("simulados:entrar_com_codigo"), {"codigo": self.prova.codigo, "nome": "Bia"}
+        )
+        tentativa = self.prova.tentativas.get(nome_aluno="Bia")
+        for ordem in range(1, 4):
+            self.client.post(
+                reverse("simulados:simulado", args=[tentativa.id, ordem]),
+                {"alternativa": "A", "acao": "finalizar" if ordem == 3 else "proxima"},
+            )
+        resposta = self.client.get(reverse("simulados:resultado", args=[tentativa.id]))
+        self.assertEqual(resposta.context["minha_posicao"]["posicao"], 2)
+        self.assertContains(resposta, "Ana")
+        self.assertContains(resposta, "Ranking da turma")
 
 
 class ProtecaoTests(TestCase):

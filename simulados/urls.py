@@ -12,6 +12,7 @@ urlpatterns = [
     path("resultado/<uuid:tentativa_id>/", views.resultado, name="resultado"),
     path("analisar/<uuid:tentativa_id>/<int:ordem>/", views.analisar_tentativa, name="analisar"),
     path("turma/<str:codigo>/", views.prova_da_turma, name="prova_da_turma"),
+    path("turma/<str:codigo>/gestor/<str:token>/", views.painel_turma, name="painel_turma"),
     path("redacao/", views.redacao, name="redacao"),
     path("entrar-com-codigo/", views.entrar_com_codigo, name="entrar_com_codigo"),
 ]

@@ -1,7 +1,7 @@
 """Formulários das telas de simulado."""
 from django import forms
 
-from .models import ProvaCompartilhada, Questao
+from .models import ProvaCompartilhada, Questao, Tentativa
 from .services import anos_disponiveis, buscar_prova_por_codigo
 
 
@@ -80,6 +80,27 @@ class EntrarComCodigoForm(forms.Form):
             }
         ),
     )
+
+    nome = forms.CharField(
+        label="Seu nome",
+        max_length=Tentativa._meta.get_field("nome_aluno").max_length,
+        error_messages={"required": "Informe seu nome para entrar no ranking da turma."},
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-control form-control-lg text-center",
+                "placeholder": "Como a turma te conhece",
+                "autocomplete": "name",
+                "maxlength": Tentativa._meta.get_field("nome_aluno").max_length,
+            }
+        ),
+    )
+
+    def clean_nome(self):
+        # Espaços repetidos viram um só: "  Ana   Maria " -> "Ana Maria".
+        nome = " ".join(self.cleaned_data["nome"].split())
+        if not nome:
+            raise forms.ValidationError("Informe seu nome para entrar no ranking da turma.")
+        return nome
 
     def clean_codigo(self):
         codigo = self.cleaned_data["codigo"].strip().upper()

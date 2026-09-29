@@ -2,17 +2,22 @@
 from django.contrib import messages
 from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
 
 from .forms import EntrarComCodigoForm, GerarProvaForm
 from .models import ProvaCompartilhada, Questao, Tentativa
 from .services import (
+    andamento_da_turma,
     contar_questoes_por_area,
     criar_prova_compartilhada,
     criar_tentativa,
     dentro_do_limite,
     finalizar_tentativa,
+    gestor_da_sessao,
     iniciar_prova_da_turma,
     ordens_pendentes,
+    ranking_da_turma,
+    registrar_gestor_na_sessao,
     registrar_tentativa_na_sessao,
     salvar_resposta,
     sortear_questoes,
@@ -86,6 +91,7 @@ def gerar_prova(request):
                     prova = criar_prova_compartilhada(
                         questoes, idioma, embaralhar=dados["embaralhar_questoes"]
                     )
+                    registrar_gestor_na_sessao(request, prova)
                     return redirect("simulados:prova_da_turma", codigo=prova.codigo)
 
                 tentativa = criar_tentativa(questoes, idioma)
@@ -208,6 +214,11 @@ def resultado(request, tentativa_id):
 
     acertos = tentativa.acertos
     total = tentativa.total
+    # Ranking da turma: só aparece para quem já finalizou (garantido pelo bloqueio acima).
+    ranking = ranking_da_turma(tentativa.prova_compartilhada) if tentativa.prova_compartilhada else []
+    minha_posicao = next(
+        (linha for linha in ranking if linha["tentativa_id"] == tentativa.id), None
+    )
     return render(
         request,
         "simulados/resultado.html",
@@ -217,6 +228,8 @@ def resultado(request, tentativa_id):
             "erros": total - acertos,
             "total": total,
             "percentual": tentativa.percentual,
+            "ranking": ranking,
+            "minha_posicao": minha_posicao,
         },
     )
 
@@ -254,16 +267,53 @@ def redacao(request):
 
 
 def prova_da_turma(request, codigo):
-    """Mostra o código gerado para compartilhar a prova com a turma."""
+    """Mostra o código gerado para compartilhar a prova com a turma.
+
+    A página é pública (é ela que o QR Code abre); o acesso ao painel só aparece
+    para o gestor.
+    """
     prova = get_object_or_404(ProvaCompartilhada, codigo=codigo.upper())
+    gestor = gestor_da_sessao(request, prova)
+    link_gestor = (
+        request.build_absolute_uri(
+            reverse("simulados:painel_turma", args=[prova.codigo, prova.token_gestor])
+        )
+        if gestor
+        else ""
+    )
     return render(
         request,
         "simulados/prova_da_turma.html",
         {
             "prova": prova,
-            "link_prova": request.build_absolute_uri(),
+            "link_prova": request.build_absolute_uri(
+                reverse("simulados:prova_da_turma", args=[prova.codigo])
+            ),
             "resumo": prova.resumo_por_area(),
-            "respondidas": prova.tentativas.filter(finalizada_em__isnull=False).count(),
+            "gestor": gestor,
+            "link_gestor": link_gestor,
+        },
+    )
+
+
+def painel_turma(request, codigo, token):
+    """Painel do gestor: quem está fazendo, quem terminou e o ranking com nomes."""
+    prova = get_object_or_404(ProvaCompartilhada, codigo=codigo.upper())
+    if not prova.token_confere(token):
+        raise Http404("Prova não encontrada.")
+    # Abrir o link do gestor em outro aparelho também libera a tela do código ali.
+    registrar_gestor_na_sessao(request, prova)
+
+    andamento = andamento_da_turma(prova)
+    ranking = ranking_da_turma(prova)
+    return render(
+        request,
+        "simulados/painel_turma.html",
+        {
+            "prova": prova,
+            "total": prova.total,
+            "andamento": andamento,
+            "ranking": ranking,
         },
     )
 
@@ -275,7 +325,7 @@ def entrar_com_codigo(request):
         if not dentro_do_limite(request, "entrar_com_codigo"):
             messages.error(request, MENSAGEM_LIMITE)
         elif form.is_valid():
-            tentativa = iniciar_prova_da_turma(form.prova)
+            tentativa = iniciar_prova_da_turma(form.prova, form.cleaned_data["nome"])
             registrar_tentativa_na_sessao(request, tentativa)
             return redirect("simulados:simulado", tentativa_id=tentativa.id, ordem=1)
     return render(request, "simulados/entrar_com_codigo.html", {"form": form})

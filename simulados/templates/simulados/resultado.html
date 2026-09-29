@@ -51,4 +51,23 @@
         <a href="{% url 'simulados:menu' %}" class="btn btn-outline-brand btn-lg px-4">Voltar ao início</a>
     </div>
 </div>
+
+{% if tentativa.prova_compartilhada %}
+<div class="card-notamil p-4 p-lg-5 text-center mx-auto mt-4" style="max-width: 640px;">
+    <h2 class="h4 mb-1"><i class="bi bi-trophy-fill text-warning me-1"></i> Ranking da turma</h2>
+    {% if minha_posicao %}
+    <p class="mb-1 fs-5">
+        Você ficou em <strong>{{ minha_posicao.posicao }}º</strong> de {{ ranking|length }}
+        {% if minha_posicao.posicao == 1 %}🏆{% elif minha_posicao.posicao <= 3 %}🎉{% endif %}
+    </p>
+    {% endif %}
+    <p class="text-secondary small mb-3">A posição muda conforme os colegas finalizam.</p>
+
+    {% include "simulados/partials/_ranking.html" with destaque=tentativa.id %}
+
+    <a href="{% url 'simulados:resultado' tentativa.id %}" class="btn btn-outline-brand btn-sm mt-3">
+        <i class="bi bi-arrow-clockwise me-1"></i> Atualizar ranking
+    </a>
+</div>
+{% endif %}
 {% endblock %}

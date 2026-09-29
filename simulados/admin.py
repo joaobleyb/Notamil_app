@@ -31,7 +31,7 @@ class RespostaTentativaInline(admin.TabularInline):
 
 @admin.register(Tentativa)
 class TentativaAdmin(admin.ModelAdmin):
-    list_display = ("id", "criada_em", "finalizada_em", "idioma_estrangeiro")
+    list_display = ("id", "nome_aluno", "criada_em", "finalizada_em", "idioma_estrangeiro")
     list_filter = ("idioma_estrangeiro",)
     inlines = [RespostaTentativaInline]
 

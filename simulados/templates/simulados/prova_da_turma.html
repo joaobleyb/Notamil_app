@@ -46,20 +46,38 @@
         {% endif %}
     </div>
 
-    <p class="text-secondary small mb-4">
-        <i class="bi bi-people me-1"></i>
-        {% if respondidas == 1 %}1 pessoa já finalizou{% else %}{{ respondidas }} pessoas já finalizaram{% endif %}
-    </p>
+    {% if gestor %}
+    <div class="alert alert-success text-start small mb-4">
+        <div class="fw-semibold mb-1"><i class="bi bi-shield-lock me-1"></i> Painel do gestor</div>
+        <p class="mb-2">Acompanhe quem está fazendo a prova, quem terminou e o ranking. Copie o link do
+            gestor para abrir o painel em outro aparelho — <strong>não compartilhe com a turma</strong>.</p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+            <a href="{{ link_gestor }}" target="_blank" rel="noopener" class="btn btn-brand btn-sm text-nowrap">
+                <i class="bi bi-box-arrow-up-right me-1"></i> Abrir painel
+            </a>
+            <button type="button" class="btn btn-outline-brand btn-sm text-nowrap" id="btnCopiarGestor"
+                    data-link="{{ link_gestor }}">
+                <i class="bi bi-clipboard me-1"></i> Copiar link do gestor
+            </button>
+        </div>
+    </div>
+    {% endif %}
 
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <form method="post" action="{% url 'simulados:entrar_com_codigo' %}" class="d-grid">
-            {% csrf_token %}
-            <input type="hidden" name="codigo" value="{{ prova.codigo }}">
+    <form method="post" action="{% url 'simulados:entrar_com_codigo' %}" class="mx-auto text-start mb-2" style="max-width: 420px;">
+        {% csrf_token %}
+        <input type="hidden" name="codigo" value="{{ prova.codigo }}">
+        <label for="nomeAluno" class="form-label fw-semibold">Seu nome</label>
+        <input type="text" name="nome" id="nomeAluno" class="form-control form-control-lg text-center mb-1"
+               placeholder="Como a turma te conhece" maxlength="60" autocomplete="name" required>
+        <div class="form-text mb-3">Aparece no ranking da turma depois que você finalizar.</div>
+        <div class="d-grid">
             <button type="submit" class="btn btn-brand btn-lg px-4">
                 <i class="bi bi-play-fill me-1"></i> Fazer esta prova agora
             </button>
-        </form>
-        <a href="{% url 'simulados:menu' %}" class="btn btn-outline-brand btn-lg px-4">Voltar ao início</a>
+        </div>
+    </form>
+    <div class="d-grid d-sm-flex justify-content-sm-center">
+        <a href="{% url 'simulados:menu' %}" class="btn btn-outline-brand btn-lg px-4 mt-2">Voltar ao início</a>
     </div>
 </div>
 {% endblock %}
@@ -95,4 +113,16 @@
         }
     });
 </script>
+{% if gestor %}
+<script>
+    document.getElementById("btnCopiarGestor").addEventListener("click", async function () {
+        try {
+            await navigator.clipboard.writeText(this.dataset.link);
+            this.innerHTML = '<i class="bi bi-check-lg me-1"></i> Link copiado!';
+        } catch (erro) {
+            this.innerHTML = '<i class="bi bi-exclamation-triangle me-1"></i> Não foi possível copiar';
+        }
+    });
+</script>
+{% endif %}
 {% endblock %}

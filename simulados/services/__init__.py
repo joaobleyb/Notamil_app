@@ -2,10 +2,13 @@
 from .limpeza_service import limpar_tentativas_antigas
 from .protecao_service import (
     dentro_do_limite,
+    gestor_da_sessao,
+    registrar_gestor_na_sessao,
     registrar_tentativa_na_sessao,
     tentativa_da_sessao,
 )
 from .prova_service import (
+    andamento_da_turma,
     anos_disponiveis,
     buscar_prova_por_codigo,
     contar_questoes_por_area,
@@ -14,12 +17,14 @@ from .prova_service import (
     finalizar_tentativa,
     iniciar_prova_da_turma,
     ordens_pendentes,
+    ranking_da_turma,
     salvar_resposta,
     sortear_questoes,
 )
 from .seed_service import carregar_questoes_iniciais
 
 __all__ = [
+    "andamento_da_turma",
     "anos_disponiveis",
     "buscar_prova_por_codigo",
     "contar_questoes_por_area",
@@ -28,10 +33,13 @@ __all__ = [
     "criar_tentativa",
     "finalizar_tentativa",
     "ordens_pendentes",
+    "ranking_da_turma",
     "salvar_resposta",
     "sortear_questoes",
     "carregar_questoes_iniciais",
     "dentro_do_limite",
+    "gestor_da_sessao",
+    "registrar_gestor_na_sessao",
     "registrar_tentativa_na_sessao",
     "tentativa_da_sessao",
     "limpar_tentativas_antigas",

@@ -14,10 +14,18 @@ def gerar_codigo():
     return "".join(secrets.choice(ALFABETO_CODIGO) for _ in range(TAMANHO_CODIGO))
 
 
+def gerar_token_gestor():
+    """Segredo do link do painel do gestor — o código da turma é público, este não."""
+    return secrets.token_urlsafe(16)
+
+
 class ProvaCompartilhada(models.Model):
     """Conjunto fixo de questões que a turma inteira responde pelo mesmo código."""
 
     codigo = models.CharField("código", max_length=TAMANHO_CODIGO, unique=True)
+    token_gestor = models.CharField(
+        "token do gestor", max_length=32, default=gerar_token_gestor, editable=False
+    )
     criada_em = models.DateTimeField("criada em", auto_now_add=True)
     idioma_estrangeiro = models.CharField(
         "idioma estrangeiro", max_length=10, choices=Questao.IDIOMAS, blank=True, default=""
@@ -41,6 +49,10 @@ class ProvaCompartilhada(models.Model):
 
     def __str__(self):
         return f"Prova {self.codigo}"
+
+    def token_confere(self, token):
+        """Compara em tempo constante, para o token não vazar pelo tempo de resposta."""
+        return secrets.compare_digest(self.token_gestor, token or "")
 
     @property
     def total(self):

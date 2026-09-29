@@ -24,6 +24,8 @@ class Tentativa(models.Model):
         related_name="tentativas",
         verbose_name="prova da turma",
     )
+    # Só preenchido na prova da turma; aparece no painel do gestor e no ranking.
+    nome_aluno = models.CharField("nome do aluno", max_length=60, blank=True, default="")
 
     class Meta:
         verbose_name = "tentativa"

@@ -1,0 +1,73 @@
+{% extends "simulados/base.html" %}
+
+{% block titulo %}Painel {{ prova.codigo }} — NotaMil{% endblock %}
+
+{% block conteudo %}
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+    <div class="d-flex align-items-center gap-3">
+        <a href="{% url 'simulados:prova_da_turma' prova.codigo %}" class="btn btn-outline-brand btn-sm rounded-circle" title="Voltar ao código">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+        <div>
+            <h1 class="h3 mb-0">Painel do gestor</h1>
+            <p class="text-secondary mb-0 small">Prova {{ prova.codigo }} · {{ total }} questões</p>
+        </div>
+    </div>
+    <span class="text-secondary small"><i class="bi bi-arrow-repeat me-1"></i>Atualiza sozinho a cada 15 s</span>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-6">
+        <div class="estatistica">
+            <div class="numero text-warning">{{ andamento|length }}</div>
+            <div class="titulo">Fazendo agora</div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="estatistica">
+            <div class="numero text-success">{{ ranking|length }}</div>
+            <div class="titulo">Terminaram</div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-5">
+        <div class="card-notamil p-4 h-100">
+            <h2 class="h5 mb-3"><i class="bi bi-pencil-square me-1"></i> Fazendo agora</h2>
+            {% if andamento %}
+            <ul class="list-group">
+                {% for aluno in andamento %}
+                <li class="list-group-item py-2">
+                    <div class="d-flex justify-content-between gap-2">
+                        <span class="text-truncate">{{ aluno.nome }}</span>
+                        <span class="small text-secondary text-nowrap">{{ aluno.respondidas }}/{{ total }}</span>
+                    </div>
+                    <div class="progress mt-1" style="height: 6px;" role="progressbar"
+                         aria-valuenow="{{ aluno.respondidas }}" aria-valuemin="0" aria-valuemax="{{ total }}">
+                        <div class="progress-bar bg-warning" style="width: {% widthratio aluno.respondidas total 100 %}%"></div>
+                    </div>
+                    <div class="small text-secondary mt-1">Começou às {{ aluno.iniciada_em|time:"H:i" }}</div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="text-secondary mb-0">Ninguém está fazendo a prova agora.</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card-notamil p-4 h-100">
+            <h2 class="h5 mb-3"><i class="bi bi-trophy-fill text-warning me-1"></i> Ranking</h2>
+            {% include "simulados/partials/_ranking.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Painel ao vivo: recarrega enquanto a aba estiver aberta.
+    setTimeout(function () { window.location.reload(); }, 15000);
+</script>
+{% endblock %}

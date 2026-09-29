@@ -2,7 +2,7 @@
 import random
 
 from django.db import transaction
-from django.db.models import Q
+from django.db.models import Count, DurationField, ExpressionWrapper, F, Q
 from django.utils import timezone
 
 from ..models import (
@@ -70,10 +70,12 @@ def sortear_questoes(
 
 
 @transaction.atomic
-def criar_tentativa(questoes, idioma_estrangeiro, prova_compartilhada=None):
+def criar_tentativa(questoes, idioma_estrangeiro, prova_compartilhada=None, nome_aluno=""):
     """Persiste a prova sorteada como uma tentativa pronta para ser respondida."""
     tentativa = Tentativa.objects.create(
-        idioma_estrangeiro=idioma_estrangeiro, prova_compartilhada=prova_compartilhada
+        idioma_estrangeiro=idioma_estrangeiro,
+        prova_compartilhada=prova_compartilhada,
+        nome_aluno=nome_aluno,
     )
     RespostaTentativa.objects.bulk_create(
         [
@@ -148,7 +150,7 @@ def buscar_prova_por_codigo(codigo):
     return ProvaCompartilhada.objects.filter(codigo=codigo).first()
 
 
-def iniciar_prova_da_turma(prova):
+def iniciar_prova_da_turma(prova, nome_aluno=""):
     """Cria uma tentativa com as questões da prova da turma.
 
     Com `embaralhar` ligado, cada aluno recebe a mesma prova em uma ordem própria —
@@ -157,4 +159,64 @@ def iniciar_prova_da_turma(prova):
     questoes = prova.questoes_ordenadas()
     if prova.embaralhar:
         random.shuffle(questoes)
-    return criar_tentativa(questoes, prova.idioma_estrangeiro, prova_compartilhada=prova)
+    return criar_tentativa(
+        questoes, prova.idioma_estrangeiro, prova_compartilhada=prova, nome_aluno=nome_aluno
+    )
+
+
+def _tempo_legivel(duracao):
+    """Duração da prova em texto curto: "8 min", "1 h 05 min"."""
+    minutos = max(1, round(duracao.total_seconds() / 60))
+    if minutos < 60:
+        return f"{minutos} min"
+    return f"{minutos // 60} h {minutos % 60:02d} min"
+
+
+def ranking_da_turma(prova):
+    """Quem finalizou a prova da turma, do maior para o menor número de acertos.
+
+    Empate em acertos é desempatado pelo menor tempo de prova. Os acertos são
+    contados no banco, numa consulta só, em vez de uma por aluno.
+    """
+    finalizadas = (
+        prova.tentativas.filter(finalizada_em__isnull=False)
+        .annotate(
+            total_acertos=Count(
+                "respostas",
+                filter=Q(respostas__alternativa=F("respostas__questao__resposta_correta")),
+            ),
+            duracao=ExpressionWrapper(
+                F("finalizada_em") - F("criada_em"), output_field=DurationField()
+            ),
+        )
+        .order_by("-total_acertos", "duracao", "finalizada_em")
+    )
+    total = prova.total
+    return [
+        {
+            "posicao": posicao,
+            "tentativa_id": tentativa.id,
+            "nome": tentativa.nome_aluno or "Sem nome",
+            "acertos": tentativa.total_acertos,
+            "total": total,
+            "tempo": _tempo_legivel(tentativa.duracao),
+        }
+        for posicao, tentativa in enumerate(finalizadas, start=1)
+    ]
+
+
+def andamento_da_turma(prova):
+    """Quem começou a prova da turma e ainda não finalizou, com o progresso de cada um."""
+    em_andamento = (
+        prova.tentativas.filter(finalizada_em__isnull=True)
+        .annotate(respondidas=Count("respostas", filter=~Q(respostas__alternativa="")))
+        .order_by("criada_em")
+    )
+    return [
+        {
+            "nome": tentativa.nome_aluno or "Sem nome",
+            "respondidas": tentativa.respondidas,
+            "iniciada_em": tentativa.criada_em,
+        }
+        for tentativa in em_andamento
+    ]
