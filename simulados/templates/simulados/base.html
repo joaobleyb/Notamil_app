@@ -45,10 +45,6 @@
                        href="{% url 'simulados:gerar_prova' %}">Gerar prova</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'redacao' %}active{% endif %}"
-                       href="{% url 'simulados:redacao' %}">Redação</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link {% if request.resolver_match.url_name == 'entrar_com_codigo' %}active{% endif %}"
                        href="{% url 'simulados:entrar_com_codigo' %}">Entrar com código</a>
                 </li>
