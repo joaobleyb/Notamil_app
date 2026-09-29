@@ -513,17 +513,19 @@ html[data-fonte="grande"] { font-size: 125%; }
 [data-bs-theme="dark"] .btn-outline-brand:hover,
 [data-bs-theme="dark"] .btn-check:checked + .btn-outline-brand { color: #fff !important; }
 [data-bs-theme="dark"] .contador input { background: var(--surface); }
+/* Fosco, no mesmo acabamento dos cartoes de acao; o verde fica so no icone. */
 [data-bs-theme="dark"] .hero .btn-verde {
-  background: var(--bg);
-  border-color: var(--brand-texto);
-  color: var(--brand-texto);
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
   box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
 }
+[data-bs-theme="dark"] .hero .btn-verde i { color: var(--brand-texto); }
 [data-bs-theme="dark"] .hero .btn-verde:hover,
 [data-bs-theme="dark"] .hero .btn-verde:focus-visible {
   background: var(--surface);
-  border-color: var(--brand-texto);
-  color: var(--brand-texto);
+  border-color: rgba(111, 211, 148, .35);
+  color: var(--ink);
   box-shadow: 0 10px 24px rgba(0, 0, 0, .45);
 }
 [data-bs-theme="dark"] .rodape,
