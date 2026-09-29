@@ -54,7 +54,7 @@ PRIMEIRA_VEZ=0
 echo "[3/4] Preparando o banco de dados..."
 "$VPY" manage.py migrate --noinput
 if [ "$PRIMEIRA_VEZ" = "1" ]; then
-    echo "      Carregando as 2643 questoes do ENEM. Demora ate 1 minuto, aguarde..."
+    echo "      Carregando as 2969 questoes do ENEM. Demora ate 1 minuto, aguarde..."
     "$VPY" manage.py seed_questoes
 else
     echo "      Questoes ja carregadas."

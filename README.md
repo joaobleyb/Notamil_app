@@ -6,6 +6,8 @@ O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 ## Recursos
 
 - Sorteio de questões por área (Linguagens, Humanas, Natureza, Matemática) e idioma estrangeiro.
+- Banco com 2969 questões do ENEM de 2009 a 2025, com filtro opcional por ano na hora de
+  gerar a prova (sem nenhum ano marcado, sorteia de todos).
 - Código de turma: a turma inteira responde exatamente a mesma prova.
 - Embaralhar por aluno (opcional): mesmas questões, ordem diferente em cada prova — evita cola.
 - QR Code do código, para a turma entrar pela câmera do celular.
@@ -21,8 +23,12 @@ O fluxo é: gerar prova → resolver → resultado → analisar tentativa.
 
 Depois de baixar o projeto do GitHub, entre na pasta `notamil_web` e rode o script da
 sua plataforma. Ele cria o ambiente virtual, instala as dependências, prepara o banco,
-carrega as 2643 questões do ENEM na primeira execução e sobe o servidor em
+carrega as 2969 questões do ENEM na primeira execução e sobe o servidor em
 <http://127.0.0.1:8000/>. Nas próximas vezes ele só liga o servidor.
+
+> Já tinha o projeto rodando antes das questões de 2024 e 2025? O script só carrega as
+> questões quando o banco ainda não existe, então rode uma vez
+> `python manage.py seed_questoes` para receber as novas.
 
 ### macOS e Linux
 
@@ -52,7 +58,7 @@ Para parar: `Ctrl + C`.
 ```bash
 pip install -r requirements.txt
 python manage.py migrate
-python manage.py seed_questoes     # carrega as 2643 questões do ENEM
+python manage.py seed_questoes     # carrega as 2969 questões do ENEM
 python manage.py runserver
 ```
 
@@ -164,7 +170,7 @@ set -a; . /etc/notamil.env; set +a     # carrega as variáveis no shell
 cd /caminho/do/notamil_web
 source .venv/bin/activate
 python manage.py migrate
-python manage.py seed_questoes          # as 2643 questões; sem isso o banco nasce vazio
+python manage.py seed_questoes          # as 2969 questões; sem isso o banco nasce vazio
 python manage.py collectstatic --noinput
 ```
 
@@ -187,7 +193,7 @@ python manage.py check --deploy
 python manage.py shell -c "from simulados.models import Questao, Tentativa; print(Questao.objects.count(), Tentativa.objects.count())"
 ```
 
-O esperado é `2643 0`. Com várias instâncias, rode o segundo comando em cada uma: os
+O esperado é `2969 0`. Com várias instâncias, rode o segundo comando em cada uma: os
 números têm que ser iguais. Depois gere uma prova pelo site e repita — se o contador de
 tentativas subir em **todas**, o banco está compartilhado.
 
@@ -253,7 +259,7 @@ notamil_web/
     ├── management/commands/
     │   ├── seed_questoes.py
     │   └── limpar_tentativas.py
-    ├── fixtures/questoes.json # banco inicial com 2643 questões do ENEM
+    ├── fixtures/questoes.json # banco inicial com 2969 questões do ENEM
     ├── static/simulados/      # css, js e as 1014 imagens das questões
     ├── templates/simulados/
     ├── forms.py · urls.py · views.py · admin.py · tests.py
