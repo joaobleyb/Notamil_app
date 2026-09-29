@@ -6,6 +6,7 @@ from .protecao_service import (
     tentativa_da_sessao,
 )
 from .prova_service import (
+    anos_disponiveis,
     buscar_prova_por_codigo,
     contar_questoes_por_area,
     criar_prova_compartilhada,
@@ -19,6 +20,7 @@ from .prova_service import (
 from .seed_service import carregar_questoes_iniciais
 
 __all__ = [
+    "anos_disponiveis",
     "buscar_prova_por_codigo",
     "contar_questoes_por_area",
     "criar_prova_compartilhada",

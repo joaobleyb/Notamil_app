@@ -72,6 +72,7 @@ def gerar_prova(request):
                 dados["quantidade_natureza"],
                 dados["quantidade_matematica"],
                 idioma,
+                dados["anos"],
             )
 
             if not questoes:
@@ -114,6 +115,10 @@ def gerar_prova(request):
             "areas": areas,
             "idiomas": Questao.IDIOMAS,
             "idioma_selecionado": form.data.get("idioma_estrangeiro") or Questao.IDIOMA_INGLES,
+            "anos": [ano for ano, _rotulo in form.fields["anos"].choices],
+            "anos_selecionados": [int(ano) for ano in form.data.getlist("anos") if ano.isdigit()]
+            if form.is_bound
+            else [],
             "gerar_codigo_turma": bool(form.data.get("gerar_codigo_turma")),
             "embaralhar_questoes": bool(form.data.get("embaralhar_questoes")),
             "total_disponivel": sum(disponiveis.values()),

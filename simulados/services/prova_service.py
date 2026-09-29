@@ -23,8 +23,15 @@ def contar_questoes_por_area():
     }
 
 
-def _sortear_por_area(area, quantidade, idioma_estrangeiro=None):
-    """Sorteia `quantidade` questões da área.
+def anos_disponiveis():
+    """Anos de prova presentes no banco, do mais recente ao mais antigo."""
+    return list(
+        Questao.objects.order_by("-ano").values_list("ano", flat=True).distinct()
+    )
+
+
+def _sortear_por_area(area, quantidade, idioma_estrangeiro=None, anos=None):
+    """Sorteia `quantidade` questões da área (opcionalmente só dos `anos` dados).
 
     O sorteio é feito sobre a lista de ids em vez de `ORDER BY ?`: no MySQL o
     `ORDER BY RAND()` percorre e ordena a tabela inteira a cada prova gerada.
@@ -33,6 +40,8 @@ def _sortear_por_area(area, quantidade, idioma_estrangeiro=None):
         return []
 
     questoes = Questao.objects.filter(area=area)
+    if anos:
+        questoes = questoes.filter(ano__in=anos)
     if idioma_estrangeiro:
         questoes = questoes.filter(
             Q(idioma_estrangeiro=idioma_estrangeiro) | Q(idioma_estrangeiro="")
@@ -44,13 +53,18 @@ def _sortear_por_area(area, quantidade, idioma_estrangeiro=None):
     return list(Questao.objects.filter(pk__in=ids))
 
 
-def sortear_questoes(qtd_linguagens, qtd_humanas, qtd_natureza, qtd_matematica, idioma_estrangeiro):
-    """Monta a prova completa embaralhando as questões de todas as áreas."""
+def sortear_questoes(
+    qtd_linguagens, qtd_humanas, qtd_natureza, qtd_matematica, idioma_estrangeiro, anos=None
+):
+    """Monta a prova completa embaralhando as questões de todas as áreas.
+
+    `anos` vazio ou None mantém o comportamento original: sorteia de todos os anos.
+    """
     questoes = []
-    questoes += _sortear_por_area(Questao.AREA_LINGUAGENS, qtd_linguagens, idioma_estrangeiro)
-    questoes += _sortear_por_area(Questao.AREA_HUMANAS, qtd_humanas)
-    questoes += _sortear_por_area(Questao.AREA_NATUREZA, qtd_natureza)
-    questoes += _sortear_por_area(Questao.AREA_MATEMATICA, qtd_matematica)
+    questoes += _sortear_por_area(Questao.AREA_LINGUAGENS, qtd_linguagens, idioma_estrangeiro, anos)
+    questoes += _sortear_por_area(Questao.AREA_HUMANAS, qtd_humanas, anos=anos)
+    questoes += _sortear_por_area(Questao.AREA_NATUREZA, qtd_natureza, anos=anos)
+    questoes += _sortear_por_area(Questao.AREA_MATEMATICA, qtd_matematica, anos=anos)
     random.shuffle(questoes)
     return questoes
 

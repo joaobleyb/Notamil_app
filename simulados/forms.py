@@ -2,7 +2,7 @@
 from django import forms
 
 from .models import ProvaCompartilhada, Questao
-from .services import buscar_prova_por_codigo
+from .services import anos_disponiveis, buscar_prova_por_codigo
 
 
 class GerarProvaForm(forms.Form):
@@ -27,8 +27,14 @@ class GerarProvaForm(forms.Form):
     idioma_estrangeiro = forms.ChoiceField(
         choices=Questao.IDIOMAS, initial=Questao.IDIOMA_INGLES, required=False
     )
+    # Opcional: nenhum ano marcado sorteia de todos os anos.
+    anos = forms.TypedMultipleChoiceField(coerce=int, required=False)
     gerar_codigo_turma = forms.BooleanField(required=False, initial=False)
     embaralhar_questoes = forms.BooleanField(required=False, initial=False)
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["anos"].choices = [(ano, ano) for ano in anos_disponiveis()]
 
     def clean_idioma_estrangeiro(self):
         return self.cleaned_data.get("idioma_estrangeiro") or Questao.IDIOMA_INGLES
