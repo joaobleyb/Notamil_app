@@ -901,7 +901,7 @@
   "ano": 2024,
   "numero": 141,
   "enunciado": "O valor máximo assumido pela grandeza III, quando a grandeza I varia de 1 a 3, é",
-  "imagem": "questao141_img1_matematica_2024|questao141_img1_matematica_2024",
+  "imagem": "questao141_img1_matematica_2024|questao141_img2_matematica_2024",
   "texto_apoio": "Três grandezas (I, II e III) se relacionam entre si. Os gráficos a seguir, formados por segmentos de reta, descrevem as relações de dependência existentes entre as grandezas I e II, e entre as grandezas II e III.",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -1224,7 +1224,7 @@
   "ano": 2023,
   "numero": 1,
   "enunciado": "O filme Como estrellas en la tierra aborda o tema da dislexia. Relacionando o cartaz do filme com a sinopse, constata-se que o(a)",
-  "imagem": "questao6_img1_linguagens_2023",
+  "imagem": "questao1_espanhol_img1_linguagens_2023.jpg",
   "texto_apoio": "",
   "fonte": "",
   "idioma_estrangeiro": "espanhol",
@@ -1244,12 +1244,20 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "TEXTO I"
+   },
+   {
     "tipo": "IMAGEM",
-    "conteudo": "questao6_img1_linguagens_2023"
+    "conteudo": "questao1_espanhol_img1_linguagens_2023.jpg"
    },
    {
     "tipo": "REFERENCIA",
     "conteudo": "Disponível em: www.otrasvoceseneducacion.org. Acesso em: 8 nov. 2022."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "TEXTO II"
    },
    {
     "tipo": "TEXTO_APOIO",
@@ -2423,6 +2431,10 @@
   "alternativa_e": "Entre 0 e 12 nêutrons a menos que o número de prótons.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os núcleos dos átomos são constituídos de prótons e nêutrons, sendo ambos os principais responsáveis pela sua massa. Nota-se que, na maioria dos núcleos, essas partículas não estão presentes na mesma proporção. O gráfico mostra a quantidade de nêutrons (N) em função da quantidade de prótons (Z) para os núcleos estáveis conhecidos."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao29_img1_humanas_2009.jpg"
@@ -5737,6 +5749,10 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "Compare os textos I e II a seguir, que tratam de aspectos ligados a variedades da língua portuguesa no mundo e no Brasil."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "**Texto I**  \nAcompanhando os navegadores, colonizadores e comerciantes portugueses em todas as suas incríveis viagens, a partir do século XV, o português se transformou na língua de um império. Nesse processo, entrou em contato — forçado, o mais das vezes; amigável, em alguns casos — com as mais diversas línguas, passando por processos de variação e de mudança linguística. Assim, contar a história do português do Brasil é mergulhar na sua história colonial e de país independente, já que as línguas não são mecanismos desgarrados dos povos que as utilizam. Nesse cenário, são muitos os aspectos da estrutura linguística que não só expressam a diferença entre Portugal e Brasil como também definem, no Brasil, diferenças regionais e sociais."
    },
    {
@@ -7792,6 +7808,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Sabões são sais de ácidos carboxílicos de cadeia longa utilizados com a finalidade de facilitar, durante processos de lavagem, a remoção de substâncias de baixa solubilidade em água, por exemplo, óleos e gorduras. A figura a seguir representa a estrutura de uma molécula de sabão."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao12_img1_natureza_2009.jpg"
    },
@@ -7838,6 +7858,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A eficiência de um processo de conversão de energia é definida como a razão entre a produção de energia ou trabalho útil e o total de entrada de energia no processo. A figura mostra um processo com diversas etapas. Nesse caso, a eficiência geral será igual ao produto das eficiências das etapas individuais. A entrada de energia que não se transforma em trabalho útil é perdida sob formas não utilizáveis (como resíduos de calor)."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao14_img1_natureza_2009.png"
    },
@@ -7871,6 +7895,10 @@
   "alternativa_e": "Ag e Pb.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para que apresente condutividade elétrica adequada a muitas aplicações, o cobre bruto obtido por métodos térmicos é purificado eletroliticamente. Nesse processo, o cobre bruto impuro constitui o ânodo da célula, que está imerso em uma solução de CuSO₄. À medida que o cobre impuro é oxidado no ânodo, íons Cu²⁺ da solução são depositados na forma pura no cátodo. Quanto às impurezas metálicas, algumas são oxidadas, passando à solução, enquanto outras simplesmente se desprendem do ânodo e se sedimentam abaixo dele. As impurezas sedimentadas são posteriormente processadas, e sua comercialização gera receita que ajuda a cobrir os custos do processo. A série eletroquímica a seguir lista o cobre e alguns metais presentes como impurezas no cobre bruto de acordo com suas forças redutoras relativas."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao15_img1_natureza_2009.jpg"
@@ -7982,6 +8010,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O manual de instruções de um aparelho de ar condicionado apresenta a seguinte tabela, com dados técnicos para diversos modelos:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao18_img1_natureza_2009.png"
    },
@@ -8015,6 +8047,14 @@
   "alternativa_e": "4.470.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A instalação elétrica de uma casa envolve várias etapas, desde a alocação dos dispositivos, instrumentos e aparelhos elétricos, até a escolha dos materiais que a compõem, passando pelo dimensionamento da potência requerida, da fiação necessária, dos eletrodutos*, entre outras."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para cada aparelho elétrico existe um valor de potência associado. Valores típicos de potências para alguns aparelhos elétricos são apresentados no quadro seguinte:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao19_img1_natureza_2009.png"
@@ -8057,6 +8097,10 @@
   "alternativa_e": "Usar o calor liberado com os gases pela chaminé para mover um outro gerador.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O esquema mostra um diagrama de bloco de uma estação geradora de eletricidade abastecida por combustível fóssil."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao20_img1_natureza_2009.png"
@@ -8202,6 +8246,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O ônibus espacial Atlantis foi lançado ao espaço com cinco astronautas a bordo e uma câmera nova, que iria substituir uma outra danificada por um curto-circuito no telescópio Hubble. Depois de entrarem em órbita a 560 km de altura, os astronautas se aproximaram do Hubble. Dois astronautas saíram da Atlantis e se dirigiram ao telescópio. Ao abrir a porta de acesso, um deles exclamou: “Esse telescópio tem a massa grande, mas o peso é pequeno.”"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao27_img1_natureza_2009.png"
    },
@@ -8342,6 +8390,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Considere um equipamento capaz de emitir radiação eletromagnética com comprimento de onda bem menor que a da radiação ultravioleta. Suponha que a radiação emitida por esse equipamento foi apontada para um tipo específico de filme fotográfico e entre o equipamento e o filme foi posicionado o pescoço de um indivíduo. Quanto mais exposto à radiação, mais escuro se torna o filme após a revelação. Após acionar o equipamento e revelar o filme, evidenciou-se a imagem mostrada na figura abaixo."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao32_img1_natureza_2009.png"
    },
@@ -8451,6 +8503,10 @@
   "alternativa_e": "6.700 m e 7.150 m.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O Sol representa uma fonte limpa e inesgotável de energia para o nosso planeta. Essa energia pode ser captada por aquecedores solares, armazenada e convertida posteriormente em trabalho útil. Considere determinada região cuja insolação — potência solar incidente na superfície da Terra — seja de 800 watts/m². Uma usina termossolar utiliza concentradores solares parabólicos que chegam a dezenas de quilômetros de extensão. Nesses coletores solares parabólicos, a luz refletida pela superfície parabólica espelhada é focalizada em um receptor em forma de cano e aquece o óleo contido em seu interior a 400 °C. O calor desse óleo é transferido para a água, vaporizando-a em uma caldeira. O vapor em alta pressão movimenta uma turbina acoplada a um gerador de energia elétrica."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao35_img1_natureza_2009.png"
@@ -8706,6 +8762,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Nas últimas décadas, o efeito estufa tem-se intensificado de maneira preocupante, sendo esse efeito muitas vezes atribuído à intensa liberação de CO₂ durante a queima de combustíveis fósseis para geração de energia. O quadro traz as entalpias-padrão de combustão a 25 °C (ΔH°₂₅) do metano, do butano e do octano."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao43_img1_natureza_2009.jpg"
    },
@@ -8773,6 +8833,10 @@
   "alternativa_e": "L4, L7 e L8.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Considere a seguinte situação hipotética: ao preparar o palco para a apresentação de uma peça de teatro, o iluminador deveria colocar três atores sob luzes que tinham igual brilho e os demais, sob luzes de menor brilho. O iluminador determinou, então, aos técnicos, que instalassem no palco oito lâmpadas incandescentes com a mesma especificação (L1 a L8), interligadas em um circuito com uma bateria, conforme mostra a figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao45_img1_natureza_2009.png"
@@ -12762,6 +12826,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A classificação de um país no quadro de medalhas nos jogos olímpicos depende do número de medalhas de ouro que obteve na competição, tendo como critérios de desempate o número de medalhas de prata seguido do número de medalhas de bronze conquistados. Nas Olimpíadas de 2004, o Brasil foi o décimo sexto colocado no quadro de medalhas, tendo obtido 5 medalhas de\nouro, 2 de prata e 3 de bronze. Parte desse quadro de medalhas é reproduzida a seguir."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao140_img1_matematica_2010.png"
    },
@@ -12795,6 +12863,10 @@
   "alternativa_e": "9 536",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os dados do gráfico foram coletados por meio da Pesquisa Nacional por Amostra de Domicílios."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao141_img1_matematica_2010.png"
@@ -12830,6 +12902,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em sete de abril de 2004, um jornal publicou o ranking de desmatamento, conforme gráfico, da chamada Amazônia Legal, integrada por nove estados."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao143_img1_matematica_2010.png"
    },
@@ -12863,6 +12939,22 @@
   "alternativa_e": "Inversa, direta e inversa.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A resistência elétrica e as dimensões do condutor"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A relação da resistência elétrica com as dimensões do condutor foi estudada por um grupo de cientistas por meio de vários experimentos de eletricidade. Eles verificaram que existe proporcionalidade entre:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "• resistência (R) e comprimento (ℓ ), dada a mesma secção transversal (A)\n• resistência (R) e área da secção transversal (A), dado o mesmo comprimento (ℓ) comprimento (ℓ) e\n• área da secção transversal (A), dada a mesma resistência (R)."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Considerando os resistores como fios, pode-se exemplificar o estudo das grandezas que influem na resistência elétrica utilizando as figuras seguintes."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao144_img1_matematica_2010.png"
@@ -12898,6 +12990,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os dados do gráfico seguinte foram gerados a partir de dados colhidos no conjunto de seis regiões metropolitanas pelo Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese)."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao145_img1_matematica_2010.png"
    },
@@ -12932,6 +13028,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A siderúrgica “Metal Nobre” produz diversos objetos maciços utilizando o ferro. Um tipo especial de peça feita nessa companhia tem o formato de um paralelepípedo retangular, de acordo com"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao146_img1_matematica_2010.png"
    },
@@ -12965,6 +13065,10 @@
   "alternativa_e": "E2E6",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura I abaixo mostra um esquema das principais vias que interligam a cidade A com a cidade B. Cada número indicado na figura II representa a probabilidade de pegar um engarrafamento quando se passa na via indicada. Assim, há uma probabilidade de 30% de se pegar engarrafamento no deslocamento do ponto C ao ponto B, passando pela estrada E4, e de 50%, quando se passa por E3. Essas probabilidades são independentes umas das outras"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao147_img1_matematica_2010.png"
@@ -13034,6 +13138,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma professora realizou uma atividade com seus alunos utilizando canudos de refrigerante para montar figuras, onde cada lado foi representado por um canudo. A quantidade de canudos (C) de cada figura depende da quantidade de quadrados (Q) que formam cada figura. A estrutura de formação das figuras está representada a seguir."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao149_img1_matematica_2010.png"
    },
@@ -13102,6 +13210,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Dona Maria, diarista na casa da família Teixeira, precisa fazer café para servir as vinte pessoas que se encontram numa reunião na sala. Para fazer o café, Dona Maria dispõe de uma leiteira cilíndrica e copinhos plásticos, também cilíndricos."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao151_img1_matematica_2010.png"
    },
@@ -13140,6 +13252,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um satélite de telecomunicações, t minutos após ter atingido sua órbita, está a r quilômetros de distância do centro da Terra. Quando r assume seus valores máximo e mínimo, diz-se que o satélite atingiu o apogeu e o perigeu, respectivamente. Suponha que, para esse satélite, o valor de r em função de t seja dado por"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao152_img1_matematica_2010.png"
    },
@@ -13177,6 +13293,10 @@
   "alternativa_e": "III, pela relação área/capacidade de armazenamento de 7/12",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma empresa vende tanques de combustíveis de formato cilíndrico, em três tamanhos, com medidas indicadas nas figuras. O preço do tanque é diretamente proporcional à medida da área da superfície lateral do tanque. O dono de um posto de combustível deseja encomendar um tanque com menor custo por metro cúbico de capacidade de armazenamento."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao153_img1_matematica_2010.png"
@@ -13280,6 +13400,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura a seguir é a representação de uma região por meio de curvas de nível, que são curvas fechadas representando a altitude da região, com relação ao nível do mar. As coordenadas estão expressas em graus de acordo com a longitude, no eixo horizontal, e a latitude, no eixo vertical. A escala em tons de cinza desenhada à direita está associada à altitude da região."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao156_img1_matematica_2010.jpg"
    },
@@ -13360,6 +13484,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No manejo sustentável de florestas, é preciso muitas vezes obter o volume da tora que pode ser obtida a partir de uma árvore. Para isso, existe um método prático, em que se mede a circunferência da árvore à altura do peito de um homem (1,30 m), conforme indicado na figura. A essa medida denomina-se “rodo” da árvore. O quadro a seguir indica a fórmula para se cubar, ou seja, obter o volume da tora em m³ a partir da medida do rodo e da altura da árvore."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao158_img1_matematica_2010.jpg"
    },
@@ -13401,6 +13529,10 @@
   "alternativa_e": "40 cm/kg1/3.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Embora o Índice de Massa Corporal (IMC) seja amplamente utilizado, existem ainda inúmeras restrições teóricas ao uso e às faixas de normalidade preconizadas. O Recíproco do Índice Ponderal (RIP), de acordo com o modelo alométrico, possui uma melhor fundamentação matemática, já que a massa é uma variável de dimensões cúbicas e a altura, uma variável de dimensões lineares. As fórmulas que determinam esses índices são:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao159_img1_matematica_2010.jpg"
@@ -14338,6 +14470,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Todo carro possui uma caixa de fusíveis, que são utilizados para proteção dos circuitos elétricos. Os fusíveis são constituídos de um material de baixo ponto de fusão, como o estanho, por exemplo, e se fundem quando percorridos por uma corrente elétrica igual ou maior do que aquela que são capazes de suportar. O quadro a seguir mostra uma série de fusíveis e os valores de corrente por eles suportados."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao48_img1_natureza_2010.png"
    },
@@ -14561,6 +14697,10 @@
   "alternativa_e": "Na densidade das nuvens que compõem o planeta.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Júpiter, conhecido como o gigante gasoso, perdeu uma das suas listras mais proeminentes, deixando o seus hemisfério sul estranhamente vazio. Observe a região em que a faixa sumiu, destacada pela seta."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao54_img1_natureza_2010.png"
@@ -14858,6 +14998,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O crescimento da produção de energia elétrica ao longo do tempo tem influenciado decisivamente o progresso da humanidade, mas também tem criado uma séria preocupação: o prejuízo ao meio ambiente.\nNos próximos anos, uma nova tecnologia de geração de energia elétrica deverá ganhar espaço: as células a combustível hidrogênio/oxigênio."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao63_img1_natureza_2010.jpg"
    },
@@ -15036,6 +15180,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A energia elétrica consumida nas residências é medida, em quilowatt/hora, por meio de um relógio medidor de consumo. Nesse relógio, da direita para a esquerda, tem-se o ponteiro da unidade, da dezena, da centena e do milhar. Se um ponteiro estiver entre dois números, considera-se o último número ultrapassado pelo ponteiro. Suponha que as medidas indicadas nos esquemas seguintes tenham sido feitas em uma cidade em que o preço do quilowatt/hora fosse de R$ 0,20."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao68_img1_natureza_2010.png"
    },
@@ -15070,6 +15218,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No que tange à tecnologia de combustíveis alternativos, muitos especialistas em energia acreditam que os alcoóis vão crescer em importância em um futuro próximo. Realmente, alcoóis como metanol e etenol têm encontrado alguns nichos para uso doméstico como combustíveis há muitas décadas e, recentemente, vêm obtendo uma aceitação cada vez maior como aditivos ou mesmo como substitutos para a gasolina em veículos. Algumas das propriedades físicas desses combustíveis são mostradas no quadro seguinte."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao69_img1_natureza_2010.jpg"
    },
@@ -15103,6 +15255,10 @@
   "alternativa_e": "5.500 W.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Observe a tabela seguinte. Ela traz especificações técnicas constantes no manual de instruções fornecido pelo fabricante de uma torneira elétrica."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao70_img1_natureza_2010.png"
@@ -15213,6 +15369,10 @@
   "alternativa_e": "3,6 Kg.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A composição média de uma bateria automotiva esgotada é de aproximadamente 32% Pb, 3% PbO, 17% PbO₂ e 36% PbSO₄. A média de massa da pasta residual de uma bateria usada é de 6 kg, onde 19% é, 60% PbSO4 e 21% Pb. Entre todos os compostos de chumbo presentes na pasta, o que mais preocupa é o sulfato de chumbo (II), pois nos processos pirometalúrgicos, em que os compostos de chumbo (placas das baterias) são fundidos, há a conversão de sulfato em dióxido de enxofre, gás muito poluente. Para reduzir o problema das emissões de SO2(g), a indústria pode utilizar uma planta mista, ou seja, utilizar o processo hidrometalúrgico, para a dessulfuração antes da fusão do composto de chumbo. Nesse caso, a redução de sulfato presente no PbSO4 é feita via lixiviação com solução de carbonato de sódio (Na₂CO₃) 1M a 45°C, em que se obtém o carbonato de chumbo (II) com rendimento de 91%. Após esse processo, o material segue para a fundição para obter o chumbo metálico."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao73_img1_natureza_2010.jpg"
@@ -15369,6 +15529,10 @@
   "alternativa_e": "Substituição dos íons hidrogênio por sódio na estrutura do ácido monofluoracético, sem formação de água.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No ano de 2004, diversas mortes de animais por envenenamento no zoológico de São Paulo foram evidenciadas. Estudos técnicos apontam suspeita de intoxicação por monofluoracetato de sódio, conhecido como composto 1080 e ilegalmente comercializado como raticida. O monofluorcetato de sódio é um derivado do ácido monofluoracético e age no organismo dos mamíferos bloqueando o ciclo de Krebs, que pode levar à parada da respiração celular oxidativa e ao acúmulo de amônia na circulação."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao77_img1_natureza_2010.jpg"
@@ -17610,6 +17774,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura seguinte mostra um modelo de sombrinha muito usado em países orientais."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao147_img1_humanas_2011.png"
    },
@@ -17643,6 +17811,10 @@
   "alternativa_e": "Aumentar seu nível de gordura em cerca de 27%.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Índice de Massa Corporal (IMC) é largamente utilizado há cerca de 200 anos, mas esse cálculo representa muito mais a corpulência que adiposidade, uma vez que indivíduos musculosos e obesos podem apresentar o mesmo IMC. Uma nova pesquisa aponta o Índice de Adiposidade Corporal (IAC) como uma alternativa mais fidedigna para quantificar a gordura corporal, utilizando a medida do quadril e a altura. A figura mostra como calcular essas medidas, sabendo-se que, em mulheres, a adiposidade normal está entre 19% e 26%."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao149_img1_humanas_2011.png"
@@ -17758,6 +17930,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um jovem investidor precisa escolher qual investimento lhe trará maior retorno financeiro em uma aplicação de R$ 500,00. Para isso, pesquisa o rendimento e o imposto a ser pago em dois investimentos: poupança e CDB (Certificado de Depósito Bancário). As informações obtidas estão resumidas no quadro:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao157_img1_humanas_2011.png"
    },
@@ -17791,6 +17967,10 @@
   "alternativa_e": "0,15",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico mostra a velocidade de conexão à internet utilizada em domicílios no Brasil. Esses dados são resultado da mais recente pesquisa, de 2009, realizada pelo Comitê Gestor da Internet (CGI)"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao171_img1_humanas_2011.png"
@@ -19961,6 +20141,10 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "O dono de uma oficina mecânica precisa de um pistão das partes de um motor, de 68 mm de diâmetro, para o conserto de um carro. Para conseguir um, esse dono vai até um ferro-velho e lá encontra pistões com diâmetros iguais a 68,21 mm; 68,102 mm; 68,001 mm; 68,02 mm e 68,012 mm."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "Para colocar o pistão no motor que está sendo consertado, o dono da oficina terá de adquirir aquele que tenha o diâmetro mais próximo do que precisa."
    },
    {
@@ -19993,6 +20177,10 @@
   "alternativa_e": "1027,00",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A Escala e Magnitude de Momento (abreviada como MMS e denotada como MW), introduzida em 1979 por Thomas Haks e Hiroo Kanamori, substituiu a Escala de Richter para medir a magnitude dos terremotos em termos de energia liberada. Menos conhecida pelo público, a MMS é, no entanto, a escala usada para estimar as magnitudes de todos os grandes terremotos da atualidade. Assim como a escala Richter, a MMS é uma escala logarítmica. MW e M₀ se relacionam pela fórmula:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao137_img1_matematica_2011.png"
@@ -20036,6 +20224,14 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um mecânico de uma equipe de corrida necessita que as seguintes medidas realizadas em um carro sejam obtidas em metros:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "a) distância a entre os eixos dianteiro e traseiro;\nb) altura b entre o solo e o encosto do piloto."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao138_img1_matematica_2011.png"
    },
@@ -20069,6 +20265,10 @@
   "alternativa_e": "4 162.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O medidor de energia elétrica de uma residência, conhecido por “relógio de luz”, é constituído de quatro pequenos relógios, cujos sentidos de rotação estão indicados conforme a figura:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao139_img1_matematica_2011.png"
@@ -20108,6 +20308,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma certa cidade, os moradores de um bairro carente de espaços de lazer reivindicam à prefeitura municipal a construção de uma praça. A prefeitura concorda com a solicitação e afirma que irá construí-la em formato retangular devido às características técnicas do terreno. Restrições de natureza orçamentária impõem que sejam gastos, no máximo, 180 m de tela para cercar a praça. A prefeitura apresenta aos moradores desse bairro as medidas dos terrenos disponíveis para a construção da praça:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao140_img1_matematica_2011.png"
    },
@@ -20141,6 +20345,10 @@
   "alternativa_e": "170 minutos.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Você pode adaptar as atividades do seu dia a dia de uma forma que possa queimar mais calorias do que as gastas normalmente, conforme a relação seguinte:"
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "– Enquanto você fala ao telefone, faça agachamentos: 100 calorias gastas em 20 minutos.  \n– Meia hora de supermercado: 100 calorias.  \n– Cuidar do jardim por 30 minutos: 200 calorias.  \n– Passear com o cachorro: 200 calorias em 30 minutos.  \n– Tirar o pó dos móveis: 150 calorias em 30 minutos.  \n– Lavar roupas por 30 minutos: 200 calorias."
@@ -20183,6 +20391,14 @@
   "alternativa_e": "17°C, 13,5°C e 21,5°C.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma equipe de especialistas do centro meteorológico de uma cidade mediu a temperatura do ambiente, sempre no mesmo horário, durante 15 dias intercalados, a partir do primeiro dia de um mês. Esse tipo de procedimento é frequente, uma vez que os dados coletados servem de referência para estudos e verificação de tendências climáticas ao longo dos meses e anos."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As medições ocorridas nesse período estão indicadas no quadro:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao142_img1_matematica_2011.png"
@@ -20251,6 +20467,10 @@
   "alternativa_e": "Iguais dois a dois.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma indústria fabrica brindes promocionais em forma de pirâmide. A pirâmide é obtida a partir de quatro cortes em um sólido que tem forma de um cubo. No esquema, estão indicados o sólido original e a pirâmide obtida a partir dele."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao144_img1_matematica_2011.png"
@@ -20412,6 +20632,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um bairro de uma cidade foi planejado em uma região plana, com ruas paralelas e perpendiculares, delimitando quadras de mesmo tamanho. No plano de coordenadas cartesianas seguinte, esse bairro localiza-se no segundo quadrante, e as distâncias nos eixos são dadas em quilômetros."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao150_img1_matematica_2011.png"
    },
@@ -20446,6 +20670,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A participação dos estudantes na Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP) aumenta a cada ano. O quadro indica o percentual de medalhistas de ouro, por região, nas edições da OBMEP de 2005 a 2009:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao154_img1_matematica_2011.png"
    },
@@ -20479,6 +20707,10 @@
   "alternativa_e": "2 000 √3 m.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para determinar a distância de um barco até a praia, um navegante utilizou o seguinte procedimento: a partir de um ponto A, mediu o ângulo visual α fazendo mira em um ponto fixo P da praia. Mantendo o barco no mesmo sentido, ele seguiu até um ponto B de modo que fosse possível ver o mesmo possível ver o mesmo ponto P da praia, no entanto sob um ângulo visual 2α. A figura ilustra essa situação:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao155_img1_matematica_2011.png"
@@ -20555,6 +20787,10 @@
   "alternativa_e": "R$ 0,61.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A tabela compara o consumo mensal, em kWh, dos consumidores residenciais e dos de baixa renda, antes e depois da redução da tarifa de energia no estado de Pernambuco."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao158_img1_matematica_2011.png"
@@ -20734,6 +20970,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Rafael mora no Centro de uma cidade e decidiu se mudar, por recomendações médicas, para uma das regiões: Rural, Comercial, Residencial Urbano ou Residencial Suburbano. A principal recomendação médica foi com as temperaturas das “ilhas de calor” da região, que deveriam ser inferiores a 31°C. Tais temperaturas são apresentadas no gráfico:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao163_img1_matematica_2011.png"
    },
@@ -20801,6 +21041,10 @@
   "alternativa_e": "8",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O atletismo é um dos esportes que mais se identificam com o espírito olímpico. A figura ilustra uma pista de atletismo. A pista é composta por oito raias e tem largura de 9,76 m. As raias são numeradas do centro da pista para as extremidades e são construídas de segmentos de retas paralelas e arcos de circunferência. Os dois semicírculos da pista são iguais."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao165_img1_matematica_2011.png"
@@ -20962,6 +21206,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura apresenta informações biométricas de um homem (Duílio) e de uma mulher (Sandra) que estão buscando alcançar seu peso ideal a partir das atividades físicas (corrida). Para se verificar a escala de obesididade, foi desenvolvida a fórmula que permite verificar o Índice de Massa Corporal (IMC). Esta fórmula é apresentada com IMC = m/h², onde m é a massa em quilogramas e h é altura em metros."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao169_img1_matematica_2011.png"
    },
@@ -21004,6 +21252,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Todo o país passa pela primeira fase de campanha de vacinação contra a gripe suína (H1N1). Segundo um médico infectologista do Instituto Emílio Ribas, de São Paulo, a imunização “deve mudar”, no país, a história da epidemia. Com a vacina, de acordo com ele, o Brasil tem a chance de barrar uma tendência de crescimento da doença, que já matou 17 mil no mundo. A tabela apresenta dados específicos de um único posto de vacinação."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao170_img1_matematica_2011.png"
    },
@@ -21038,6 +21290,14 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um técnico em refrigeração precisa revisar todos os pontos de saída de ar de um escritório com várias salas."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Na imagem apresentada, cada ponto indicado por uma letra é a saída do ar, e os segmentos são as tubulações."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao172_img1_matematica_2011.png"
    },
@@ -21071,6 +21331,14 @@
   "alternativa_e": "2003 e 2008",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O termo agronegócio não se refere à agricultura e à pecuária, pois as atividades ligadas a essa produção incluem fornecedores de equipamentos, serviços para a zona rural, industrialização e comercialização dos produtos."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico seguinte mostra a participação percentual do agronegócio no PIB brasileiro:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao173_img1_matematica_2011.png"
@@ -21144,6 +21412,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma enquete, realizada em março de 2010, perguntava aos internautas se eles acreditavam que as atividades humanas provocam o aquecimento global. Eram três alternativas possíveis e 279 internautas responderam à enquete, como mostra o gráfico."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao175_img1_matematica_2011.png"
    },
@@ -21177,6 +21449,14 @@
   "alternativa_e": "50 000 vezes a luminosidade do Sol.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A cor de uma estrela tem relação com a temperatura em sua superfície. Estrelas não muito quentes (cerca de 3 000 K) nos parecem avermelhadas. Já as estrelas amarelas, como o Sol, possuem temperatura em torno dos 6 000 K; as mais quentes são brancas ou azuis porque sua temperatura fica acima dos 10 000 K."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A tabela apresenta uma classificação espectral e outros dados para as estrelas dessas classes."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao176_img1_matematica_2011.png"
@@ -21212,6 +21492,26 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Considere que uma pessoa decida investir uma determinada quantia e que lhe sejam apresentadas três possibilidades de investimento, com rentabilidades líquidas garantidas pelo período de um ano, conforme descritas:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Investimento A: 3% ao mês"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Investimento B: 36% ao ano"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Investimento C: 18% ao semestre"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As rentabilidades, para esses investimentos, incidem sobre o valor do período anterior. O quadro fornece algumas aproximações para a análise das rentabilidades:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao177_img1_matematica_2011.png"
    },
@@ -21246,6 +21546,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A resistência das vigas de de dado comprimento é diretamente proporcional à largura (b) e ao quadrado da altura (d), conforme a figura. A constante de proporcionalidade k varia de acordo com o material utilizado na sua construção."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao178_img1_matematica_2011.png"
    },
@@ -21279,6 +21583,10 @@
   "alternativa_e": "A escolha do ângulo a ser girado, sendo possível, inclusive, medi-lo pelo número de dentes da engrenagem.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Partículas suspensas em um fluido apresentam contínua movimentação aleatória, chamado movimento browniano, causado pelos choques das partículas que compõe o fluido. A ideia de um inventor era construir uma série de palhetas, montadas sobre um eixo, que seriam postas em movimento pela agitação das partículas ao seu redor. Como o movimento ocorreria igualmente em ambos os sentidos de rotação, o cientista concebeu um segundo elemento, um dente de engrenagem assimétrico. Assim, em escala muito pequena, este tipo de motor poderia executar trabalho, por exemplo, puxando um pequeno peso para cima. O esquema, que já foi testado, é mostrado a seguir."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao46_img1_natureza_2011.png"
@@ -21427,6 +21735,10 @@
   "alternativa_e": "Etanol.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um dos problemas dos combustíveis que contêm carbono é que sua queima produz dióxido de carbono. Portanto, uma característica importante, ao se escolher um combustível, é analisar seu calor de combustão (Hc°) definido como a energia liberada na queima completa de um mol de combustível no estado padrão. O quadro seguinte relaciona algumas substâncias que contêm carbono e seu Hc°"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao50_img1_natureza_2011.jpg"
@@ -21716,6 +22028,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A pele humana, quando está bem hidratada, adquire boa elasticidade e aspecto macio e suave. Em contrapartida, quando está ressecada, perde sua elasticidade e se apresenta opaca e áspera. Para evitar o ressecamento da pele é necessário, sempre que possível, utilizar hidratantes umectantes, feitos geralmente à base de glicerina e polietilenoglicol:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao58_img1_natureza_2011.jpg"
    },
@@ -21787,6 +22103,10 @@
   "alternativa_e": "3,0.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um manual de um chuveiro elétrico são encontradas informações sobre algumas características técnicas, ilustradas no quadro, como a tensão de alimentação, a potência dissipada, o dimensionamento do disjuntor ou fusível, e a área da seção transversal dos condutores utilizados."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao60_img1_natureza_2011.png"
@@ -21864,6 +22184,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A eutrofização é um processo em que rios, lagos e mares adquirem níveis altos de nutrientes, especialmente fosfatos e nitratos, provocando posterior acúmulo de matéria orgânica em decomposição. Os nutrientes são assimilados pelos produtores primários e o crescimento desses é controlado pelo nutriente limítrofe, que é o elemento menos disponível em relação à abundância necessária à sobrevivência dos organismos vivos. O ciclo representado na figura seguinte reflete a dinâmica dos nutrientes em um lago."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao62_img1_natureza_2011.jpg"
    },
@@ -21897,6 +22221,10 @@
   "alternativa_e": "Vermelho.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para que uma substância seja colorida ela deve absorver luz na região do visível. Quando uma amostra absorve luz visível, a cor que percebemos é a soma das cores restantes que são refletidas ou transmitidas pelo objeto. A Figura 1 mostra o espectro de absorção para uma substância e é possível observar que há um comprimento de onda em que a intensidade de absorção é máxima. Um observador pode prever a cor dessa substância pelo uso da roda de cores (Figura 2): o comprimento de onda correspondente à cor do objeto é encontrado no lado oposto ao comprimento de onda da absorção máxima."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao63_img1_natureza_2011.png"
@@ -22046,6 +22374,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O processo de interpretação de imagens capturadas por sensores instalados a bordo de satélites que imageiam determinadas faixas ou bandas do espectro de radiação eletromagnética (REM) baseia-se na interação dessa radiação com os objetos presentes sobre a superfície terrestre. Uma das formas de avaliar essa interação é por meio da quantidade de energia refletida pelo objeto. A relação entre a refletância de um dado objeto e o comprimento de onda da REM é conhecida como curva de comportamento espectral ou assinatura espectral do objeto, como mostra na figura, para objetos comuns na superfície terrestre."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao67_img1_natureza_2011.png"
    },
@@ -22113,6 +22445,10 @@
   "alternativa_e": "(1), (2), (5).",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um curioso estudante, empolgado com a aula de circuito elétrico que assistiu na escola, resolve desmontar sua lanterna. Utilizando-se da lâmpada e da pilha, retiradas do equipamento, e de um fio com as extremidades descascadas, faz as seguintes ligações com a intenção de acender a lâmpada:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao70_img1_natureza_2011.png"
@@ -22186,6 +22522,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A bile é produzida pelo fígado, armazenada na vesícula biliar e tem papel fundamental na digestão de lipídeos. Os sais biliares são esteroides sintetizados no fígado a partir do colesterol, e sua rota de síntese envolve várias etapas. Partindo do ácido cólico representado na figura, ocorre a formação dos ácidos glicocólico e taurocólico; o prefixo glico- significa a presença de um resíduo do aminoácido glicina e o prefixo tauro-, do aminoácido taurina."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao72_img1_natureza_2011.jpg"
    },
@@ -22219,6 +22559,10 @@
   "alternativa_e": "4,8.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um experimento realizado para determinar a densidade da água de um lago, foram utilizados alguns materiais conforme ilustrado: um dinamômetro D com graduação de 0 N a 50 N e um cubo maciço e homogêneo de 10 cm de aresta e 3 kg de massa. Inicialmente, foi conferida a calibração do dinamômetro, constatando se a leitura de 30 N quando o cubo era preso ao dinamômetro e suspenso no ar. Ao mergulhar o cubo na água do lago,até que metade do seu volume ficasse submersa, foi registrada a leitura de 24 N no dinamômetro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao73_img1_natureza_2011.png"
@@ -22292,6 +22636,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os refrigerantes têm-se tornado cada vez mais o alvo de políticas públicas de saúde. Os de cola apresentam ácido-fosfórico, substância prejudicial à fixação de cálcio, o mineral que é o principal componente da matriz dos dentes. A cárie é um processo dinâmico de desequilíbrio do processo de desmineralização dentária, perda de minerais em razão da acidez. Sabe-se que o principal componente do esmalte do dente é um sal denominado hidroxiapatita. O refrigerante, pela presença da sacarose, faz decrescer o pH do biofilme (placa bacteriana), provocando a desmineralização do esmalte dentário. Os mecanismos de defesa salivar levam de 20 a 30 minutos para normalizar o nível do pH, remineralizando o dente. A equação química seguinte representa esse processo:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao75_img1_natureza_2011.jpg"
    },
@@ -22360,6 +22708,18 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para medir o tempo de reação de uma pessoa, pode-se realizar a seguinte experiência:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "• I.Mantenha uma régua (com cerca de 30 cm) suspensa verticalmente, segurando-a pela extremidade superior, de modo que o zero da régua esteja situado na extremidade inferior.\n• II. A pessoa deve colocar os dedos de sua mão, em forma de pinça, próximos do zero da régua, sem tocá-la.\n• III. Sem aviso prévio, a pessoa que estiver segurando a régua deve soltá-la. A outra pessoa deve procurar segurá-la o mais rapidamente possível e observar a posição onde conseguiu segurar a régua, isto é, a distância que ela percorre durante a queda."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O quadro seguinte mostra a posição em que três pessoas conseguiram segurar a régua e os respectivos tempos de reação"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao77_img1_natureza_2011.png"
    },
@@ -22393,6 +22753,10 @@
   "alternativa_e": "À eficiência da válvula de enchimento do tanque.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um tipo de vaso sanitário que vem substituindo as válvulas de descarga está esquematizado na figura. Ao acionar a alavanca, toda a água do tanque é escoada e aumenta o nível no vaso, até cobrir o sifão. De acordo com o Teorema de Stevin, quanto maior a profundidade, maior a pressão. Assim, a água desce levando os rejeitos até o sistema de esgoto. A válvula da caixa de descarga se fecha e ocorre o seu enchimento. Em relação às válvulas de descarga, esse tipo de sistema proporciona maior economia de água."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao78_img1_natureza_2011.png"
@@ -22504,6 +22868,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O peróxido de hidrogênio é comumente utilizado como antisséptico e alvejante. Também pode ser empregado em trabalhos de restauração de quadros enegrecidos e no clareamento de dentes. Na presença de soluções ácidas de oxidantes, como o permanganato de potássio, este óxido decompõe-se, conforme a equação a seguir:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao81_img1_natureza_2011.jpg"
    },
@@ -22610,6 +22978,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Ao diminuir o tamanho de um orifício atravessado por um feixe de luz, passa menos luz por intervalo de tempo, e próximo da situação de completo fechamento do orifício, verifica-se que a luz apresenta um comportamento como a ilustrado na figura. Sabe-se que o som, dentro de suas particularidades, também pode se comportar dessa forma."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao84_img1_natureza_2011.png"
    },
@@ -22677,6 +23049,10 @@
   "alternativa_e": "A energia potencial gravitacional, representada na etapa I, seja totalmente convertida em energia potencial elástica, representada na etapa III.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma das modalidades presentes nas olimpíadas é o salto com vara. As etapas de um dos saltos de um atleta estão representadas na figura:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao86_img1_natureza_2011.png"
@@ -24785,6 +25161,10 @@
   "alternativa_e": "5",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico fornece os valores das ações da empresa XPN, no período das 10 às 17 horas, num dia em que elas oscilaram acentuadamente em curtos intervalos de tempo."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao162_img1_humanas_2012.png"
@@ -27064,6 +27444,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O losango representado na Figura 1 foi formado pela união dos centros das quatro circunferências tangentes, de raios de mesma medida."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao137_img1_matematica_2012.png"
    },
@@ -27141,6 +27525,10 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um blog de variedades, músicas, mantras e informações diversas, foram postados “Contos de Halloween”. Após a leitura, os visitantes poderiam opinar, assinalando suas reações em: “Divertido”, “Assustador” ou “Chato”. Ao final de uma semana, o blog registrou que 500 visitantes distintos acessaram esta postagem."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "O gráfico a seguir apresenta o resultado da enquete."
    },
    {
@@ -27181,6 +27569,10 @@
   "alternativa_e": "5y + 3x − xy",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um forro retangular de tecido traz em sua etiqueta a informação de que encolherá após a primeira lavagem mantendo, entretanto, seu formato. A figura a seguir mostra as medidas originais do forro e o tamanho do encolhimento (x) no comprimento e (y) na largura. A expressão algébrica que representa a área do forro após ser lavado é (5 – x) (3 – y)."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao141_img1_matematica_2012.png"
@@ -27304,6 +27696,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um biólogo mediu a altura de cinco árvores distintas e representou-as em uma mesma malha quadriculada, utilizando escalas diferentes, conforme indicações na figura a seguir."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao145_img1_matematica_2012.png"
    },
@@ -27337,6 +27733,10 @@
   "alternativa_e": "Vermelha.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um jogo há duas urnas com 10 bolas de mesmo tamanho em cada urna. A tabela a seguir indica as quantidades de bolas de cada cor em cada urna."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao146_img1_matematica_2012.png"
@@ -27392,6 +27792,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os hidrômetros são marcadores de consumo de água em residências e estabelecimentos comerciais. Existem vários modelos de mostradores de hidrômetros, sendo que alguns deles possuem uma combinação de um mostrador e dois relógios de ponteiro. O número formado pelos quatro primeiros algarismos do mostrador fornece o consumo em m3, e os dois últimos algarismos representam, respectivamente, as centenas e dezenas de litros de água consumidos. Um dos relógios de ponteiros indica a quantidade em litros, e o outro em décimos de litros, conforme ilustrados na figura a seguir."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao147_img1_matematica_2012.png"
    },
@@ -27426,6 +27830,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O dono de uma farmácia resolveu colocar à vista do público o gráfico mostrado a seguir, que apresenta a evolução do total de vendas (em Reais) de certo medicamento ao longo do ano de 2011."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao148_img1_matematica_2012.png"
    },
@@ -27459,6 +27867,10 @@
   "alternativa_e": "Cilindro, prisma e tronco de cone.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Maria quer inovar em sua loja de embalagens e decidiu vender caixas com diferentes formatos. Nas imagens apresentadas estão as planificações dessas caixas."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao149_img1_matematica_2012.png"
@@ -27528,6 +27940,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico mostra a variação da extensão média de gelo marítimo, em milhões de quilômetros quadrados, comparando dados dos anos 1995, 1998, 2000, 2005 e 2007. Os dados correspondem aos meses de junho a setembro. O Ártico começa a recobrar o gelo quando termina o verão, em meados de setembro. O gelo do mar atua como o sistema de resfriamento da Terra, refletindo quase toda a luz solar de volta ao espaço. Águas de oceanos escuros, por sua vez, absorvem a luz solar e reforçam o aquecimento do Ártico, ocasionando derretimento crescente do gelo."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao151_img1_matematica_2012.png"
    },
@@ -27562,6 +27978,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Num projeto da parte elétrica de um edifício residencial a ser construído, consta que as tomadas deverão ser colocadas a 0,20 m acima do piso, enquanto os interruptores de luz deverão ser colocados a 1,47 m acima do piso. Um cadeirante, potencial comprador de um apartamento desse edifício, ao ver tais medidas, alerta para o fato de que elas não contemplarão suas necessidades. Os referenciais de alturas (em metros) para atividades que não exigem o uso de força são mostrados na figura seguinte."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao154_img1_matematica_2012.png"
    },
@@ -27595,6 +28015,10 @@
   "alternativa_e": "27",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma pesquisa realizada por estudantes da Faculdade de Estatística mostra, em horas por dia, como os jovens entre 12 e 18 anos gastam seu tempo, tanto durante a semana (de segunda-feira a sexta-feira), como no fim de semana (sábado e domingo). A seguinte tabela ilustra os resultados da pesquisa."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao155_img1_matematica_2012.png"
@@ -27664,6 +28088,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Alguns objetos, durante a sua fabricação, necessitam passar por um processo de resfriamento. Para que isso ocorra, uma fábrica utiliza um tanque de resfriamento, como mostrado na figura."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao158_img1_matematica_2012.png"
    },
@@ -27698,6 +28126,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Jorge quer instalar aquecedores no seu salão de beleza para melhorar o conforto dos seus clientes no inverno. Ele estuda a compra de unidades de dois tipos de aquecedores: modelo A, que consome 600 g/h (gramas por hora) de gás propano e cobre 35 m2 de área, ou modelo B, que consome 750 g/h de gás propano e cobre 45 m2 de área. O fabricante indica que o aquecedor deve ser instalado em um ambiente com área menor do que a da sua cobertura. Jorge vai instalar uma unidade por ambiente e quer gastar o mínimo possível com gás. A área do salão que deve ser climatizada encontra-se na planta seguinte (ambientes representados por três retângulos e um trapézio)."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao159_img1_matematica_2012.png"
    },
@@ -27731,6 +28163,10 @@
   "alternativa_e": "R$ 45,00",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para decorar a fachada de um edifício, um arquiteto projetou a colocação de vitrais compostos de quadrados de lado medindo 1 m, conforme a figura a seguir."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao160_img1_matematica_2012.png"
@@ -27804,6 +28240,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura a seguir apresenta dois gráficos com informações sobre as reclamações diárias recebidas e resolvidas pelo Setor de Atendimento ao Cliente (SAC) de uma empresa, em uma dada semana. O gráfico de linha tracejada informa o número de reclamações recebidas no dia, o de linha contínua é o número de reclamações resolvidas no dia. As reclamações podem ser resolvidas no mesmo dia ou demorarem mais de um dia para serem resolvidas."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao163_img1_matematica_2012.png"
    },
@@ -27845,6 +28285,10 @@
   "alternativa_e": "33",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As curvas de oferta e de demanda de um produto representam, respectivamente, as quantidades que vendedores e consumidores estão dispostos a comercializar em função do preço do produto. Em alguns casos, essas curvas podem ser representadas por retas. Suponha que as quantidades de oferta e de demanda de um produto sejam, respectivamente, representadas pelas equações:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao166_img1_matematica_2012.png"
@@ -27998,6 +28442,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A Agência Espacial Norte Americana (NASA) informou que o asteroide YU 55 cruzou o espaço entre a Terra e a Lua no mês de novembro de 2011. A ilustração a seguir sugere que o asteroide percorreu sua trajetória no mesmo plano que contém a órbita descrita pela Lua em torno da Terra. Na figura, está indicada a proximidade do asteroide em relação à Terra, ou seja, a menor distância que ele passou da superfície terrestre."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao172_img1_matematica_2012.png"
    },
@@ -28066,6 +28514,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A tabela a seguir mostra a evolução da receita bruta anual nos três últimos anos de cinco microempresas (ME) que se encontram à venda."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao174_img1_matematica_2012.png"
    },
@@ -28103,6 +28555,10 @@
   "alternativa_e": "Hiperglicemia.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um laboratório realiza exames em que é possível observar a taxa de glicose de uma pessoa. Os resultados são analisados de acordo com o quadro a seguir."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao175_img1_matematica_2012.png"
@@ -28247,6 +28703,10 @@
   "alternativa_e": "298 041.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico apresenta o comportamento de emprego formal surgido, segundo o CAGED, no período de janeiro de 2010 a outubro de 2010."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao179_img1_matematica_2012.png"
@@ -28964,6 +29424,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O manual que acompanha uma ducha higiênica informa que a pressão mínima da água para o seu funcionamento apropriado é de 20 kPa. A figura mostra a instalação hidráulica com a caixa d’água e o cano ao qual deve ser conectada a ducha."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao67_img1_natureza_2012.png"
    },
@@ -28997,6 +29461,14 @@
   "alternativa_e": "Sabão ou carbonato de sódio/barrilha.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma dona de casa acidentalmente deixou cair na geladeira a água proveniente do degelo de um peixe, o que deixou um cheiro forte e desagradável dentro do eletrodoméstico. Sabe-se que o odor característico de peixe se deve às aminas e que esses compostos se comportam como bases."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Na tabela são listadas as concentrações hidrogeniônicas de alguns materiais encontrados na cozinha, que a dona de casa pensa em utilizar na limpeza da geladeira."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao69_img1_natureza_2012.jpg"
@@ -29133,6 +29605,10 @@
   "alternativa_e": "A proximidade de Marte com Júpiter, em algumas épocas do ano, faz com que a atração gravitacional de Júpiter interfira em seu movimento.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A característica que permite identificar um planeta no céu é o seu movimento relativo às estrelas fixas. Se observarmos a posição de um planeta por vários dias, verificaremos que sua posição em relação às estrelas fixas se modifica regularmente. A figura destaca o movimento de Marte observado em intervalos de 10 dias, registrado da Terra."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao74_img1_natureza_2012.png"
@@ -29376,6 +29852,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O boato de que os lacres das latas de alumínio teriam um alto valor comercial levou muitas pessoas a juntarem esse material na expectativa de ganhar dinheiro com sua venda. As empresas fabricantes de alumínio esclarecem que isso não passa de uma “lenda urbana”, pois ao retirar o anel da lata, dificulta-se a reciclagem do alumínio. Como a liga do qual é feito o anel contém alto teor de magnésio, se ele não estiver junto com a lata, fica mais fácil ocorrer a oxidação do alumínio no forno. A tabela apresenta as semirreações e os valores de potencial padrão de redução de alguns metais:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao82_img1_natureza_2012.jpg"
    },
@@ -29447,6 +29927,10 @@
   "alternativa_e": "O intervalo de tempo após a esterilização é suficiente para que o material não emita mais radiação.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A falta de conhecimento em relação ao que vem a ser um material radioativo e quais os efeitos, consequências e usos da irradiação pode gerar o medo e a tomada de decisões equivocadas, como a apresentada no exemplo a seguir."
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "“Uma companhia aérea negou-se a transportar material médico por este portar um certificado de esterilização por irradiação.”"
@@ -31692,6 +32176,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A parte interior de uma taça foi gerada pela rotação de uma parábola em torno de um eixo z, conforme mostra a figura."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao152_img1_humanas_2013.png"
    },
@@ -32968,6 +33456,18 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "TEXTO I"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Andaram na praia, quando saímos, oito ou dez deles; e daí a pouco começaram a vir mais. E parece-me que viriam, este dia, à praia, quatrocentos ou quatrocentos e cinquenta. Alguns deles traziam arcos e flechas, que todos trocaram por carapuças ou por qualquer coisa que lhes davam. […] Andavam todos tão bem-dispostos, tão bem feitos e galantes com suas tinturas que muito agradavam."
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "CASTRO, S. A carta de Pero Vaz de Caminha. Porto Alegre: L&PM, 1996 (fragmento)."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao114_img1_linguagens_2013.png"
    },
@@ -33734,6 +34234,14 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O que a internet esconde de você"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Sites de busca manipulam resultados. Redes sociais decidem quem vai ser seu amigo — e descartam as pessoas sem avisar. E, para cada site que você pode acessar, há 400 outros invisíveis. Prepare-se para conhecer o lado oculto da internet."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao133_img1_linguagens_2013.png"
    },
@@ -33844,6 +34352,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As torres Puerta de Europa são duas torres inclinadas uma contra a outra, construídas numa avenida de Madri, na Espanha. A inclinação das torres é de 15° com a vertical e elas têm, cada uma, uma altura de 114 m (a altura é indicada na figura como o segmento AB). Estas torres são um bom exemplo de um prisma oblíquo de base quadrada e uma delas pode ser observada na imagem."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao136_img1_matematica_2013.png"
    },
@@ -33877,6 +34389,10 @@
   "alternativa_e": "2,00 pontos menor.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As notas de um professor que participou de um processo seletivo, em que a banca avaliadora era composta por cinco membros, são apresentadas no gráfico. Sabe-se que cada membro da banca atribuiu duas notas ao professor, uma relativa aos conhecimentos específicos da área de atuação e outra, aos conhecimentos pedagógicos, e que a média final do professor foi dada pela média aritmética de todas as notas atribuídas pela banca avaliadora."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao137_img1_matematica_2013.png"
@@ -33946,6 +34462,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um comerciante visita um centro de vendas para fazer cotação de preços dos produtos que deseja comprar. Verifica que se aproveita 100% da quantidade adquirida de produtos do tipo A, mas apenas 90% de produtos do tipo B. Esse comerciante deseja comprar uma quantidade de produtos, obtendo o menor custo/benefício em cada um deles. O quadro mostra o preço por quilograma, em reais, de cada produto comercializado."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao140_img1_matematica_2013.png"
    },
@@ -33979,6 +34499,10 @@
   "alternativa_e": "91,0",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um sistema de dutos, três canos iguais, de raio externo 30 cm, são soldados entre si e colocados dentro de um cano de raio maior, de medida R. Para posteriormente ter fácil manutenção, é necessário haver uma distância de 10 cm entre os canos soldados e o cano de raio maior. Essa distância é garantida por um espaçador de metal, conforme a figura:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao141_img1_matematica_2013.png"
@@ -34014,6 +34538,14 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O índice de eficiência utilizado por um produtor de leite para qualificar suas vacas é dado pelo produto do tempo de lactação (em dias) pela produção média diária de leite (em kg), dividido pelo intervalo entre partos (em meses). Para esse produtor, a vaca é qualificada como eficiente quando esse índice é, no mínimo, 281 quilogramas por mês, mantendo sempre as mesmas condições de manejo (alimentação, vacinação e outros). Na comparação de duas ou mais vacas, a mais eficiente é a que tem maior índice."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A tabela apresenta os dados coletados de cinco vacas:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao142_img1_matematica_2013.png"
    },
@@ -34047,6 +34579,10 @@
   "alternativa_e": "40",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A Secretaria de Saúde de um município avalia um programa que disponibiliza, para cada aluno de uma escola municipal, uma bicicleta, que deve ser usada no trajeto de ida e volta, entre sua casa e a escola. Na fase de implantação do programa, o aluno que morava mais distante da escola realizou sempre o mesmo trajeto, representado na figura, na escala 1 : 25 000, por um período de cinco dias."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao143_img1_matematica_2013.png"
@@ -34082,6 +34618,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A cidade de Guarulhos (SP) tem o 8º PIB municipal do Brasil, além do maior aeroporto da América do Sul. Em proporção, possui a economia que mais cresce em indústrias, conforme mostra o gráfico."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao144_img1_matematica_2013.png"
    },
@@ -34115,6 +34655,10 @@
   "alternativa_e": "70/17",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um certo teatro, as poltronas são divididas em setores. A figura apresenta a vista do setor 3 desse teatro, no qual as cadeiras escuras estão reservadas e as claras não foram vendidas."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao145_img1_matematica_2013.png"
@@ -34150,6 +34694,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma loja acompanhou o número de compradores de dois produtos, A e B, durante os meses de janeiro, fevereiro e março de 2012. Com isso, obteve este gráfico:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao146_img1_matematica_2013.png"
    },
@@ -34183,6 +34731,10 @@
   "alternativa_e": "12",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para o reflorestamento de uma área, deve-se cercar totalmente, com tela, os lados de um terreno, exceto o lado margeado pelo rio, conforme a figura. Cada rolo de tela que será comprado para confecção da cerca contém 48 metros de comprimento."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao147_img1_matematica_2013.png"
@@ -34255,6 +34807,10 @@
   "alternativa_e": "563,25.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As projeções para a produção de arroz no período de 2012 – 2021, em uma determinada região produtora, apontam para uma perspectiva de crescimento constante da produção anual. O quadro apresenta a quantidade de arroz, em toneladas, que será produzida nos primeiros anos desse período, de acordo com essa projeção."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao149_img1_matematica_2013.png"
@@ -34366,6 +34922,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Num parque aquático existe uma piscina infantil na forma de um cilindro circular reto, de 1 m de profundidade e volume igual a 12 m³, cuja base tem raio R e centro O. Deseja-se construir uma ilha de lazer seca no interior dessa piscina, também na forma de um cilindro circular reto, cuja base estará no fundo da piscina e com centro da base coincidindo com o centro do fundo da piscina, conforme a figura. O raio da ilha de lazer será r. Deseja-se que após a construção dessa ilha, o espaço destinado à água na piscina tenha um volume de, no mínimo, 4 m³."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao157_img1_matematica_2013.png"
    },
@@ -34476,6 +35036,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Cinco empresas de gêneros alimentícios encontram-se à venda. Um empresário, almejando\nampliar os seus investimentos, deseja comprar uma dessas empresas. Para escolher qual delas irá comprar, analisa o lucro (em milhões de reais) de cada uma delas, em função de seus tempos (em anos) de existência, decidindo comprar a empresa que apresente o maior lucro médio anual.\nO quadro apresenta o lucro (em milhões de reais) acumulado ao longo do tempo (em anos) de existência de cada empresa."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao160_img1_matematica_2013.png"
    },
@@ -34509,6 +35073,10 @@
   "alternativa_e": "18,05",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Deseja-se postar cartas não comerciais, sendo duas de 100 g, três de 200 g e uma de 350 g. O gráfico mostra o custo para enviar uma carta não comercial pelos Correios:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao161_img1_matematica_2013.png"
@@ -34547,6 +35115,10 @@
   "alternativa_e": "400,00.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Foi realizado um levantamento nos 200 hotéis de uma cidade, no qual foram anotados os valores, em reais, das diárias para um quarto padrão de casal e a quantidade de hotéis para cada valor da diária. Os valores das diárias foram: A = R$ 200,00; B = R$ 300,00; C = R$ 400,00 e D = R$ 600,00. No gráfico, as áreas representam as quantidades de hotéis pesquisados, em porcentagem, para cada valor da diária."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao162_img1_matematica_2013.png"
@@ -34620,6 +35192,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um artesão de joias tem à sua disposição pedras brasileiras de três cores: vermelhas, azuis e verdes.\nEle pretende produzir joias constituídas por uma liga metálica, a partir de um molde no formato de um losango não quadrado com pedras nos seus vértices, de modo que dois vértices consecutivos tenham sempre pedras de cores diferentes.\nA figura ilustra uma joia, produzida por esse artesão, cujos vértices A, B, C e D correspondem às posições ocupadas pelas pedras."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao165_img1_matematica_2013.png"
    },
@@ -34655,6 +35231,10 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "Em setembro de 1987, Goiânia foi palco do maior acidente radioativo ocorrido no Brasil, quando uma amostra de césio-137, removida de um aparelho de radioterapia abandonado, foi manipulada inadvertidamente por parte da população. A meia-vida de um material radioativo é o tempo necessário para que a massa desse material se reduza à metade. A meia-vida do césio-137 é 30 anos e a quantidade restante de massa de um material radioativo, após t anos, é calculada pela expressão M(t) = A · (2,7)ᵏᵗ, onde A é a massa inicial e k é uma constante negativa."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "Considere 0,3 como aproximação para log10 2."
    },
    {
@@ -34687,6 +35267,10 @@
   "alternativa_e": "96%",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A cerâmica constitui-se em um artefato bastante presente na história da humanidade. Uma de suas várias propriedades é a retração (contração), que consiste na evaporação da água existente em um conjunto ou bloco cerâmico quando submetido a uma determinada\ntemperatura elevada. Essa elevação de temperatura, que ocorre durante o processo de cozimento, causa uma redução de até 20% nas dimensões lineares de uma peça."
+   },
    {
     "tipo": "REFERENCIA",
     "conteudo": "Disponível em: www.arq.ufsc.br. Acesso em: 3 mar. 2012."
@@ -34726,6 +35310,18 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma fábrica de parafusos possui duas máquinas, I e II, para a produção de certo tipo de parafuso."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em setembro, a máquina I produziu 54/100 do total de parafusos produzidos pela fábrica. Dos parafusos produzidos por essa máquina, 25/1 000 eram defeituosos. Por sua vez, 38/1 000\ndos parafusos produzidos no mesmo mês pela máquina II eram defeituosos."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O desempenho conjunto das duas máquinas é classificado conforme o quadro, em que P indica a probabilidade de um parafuso escolhido ao acaso ser defeituoso."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao168_img1_matematica_2013.png"
    },
@@ -34759,6 +35355,18 @@
   "alternativa_e": "Douglas e Eduardo.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Considere o seguinte jogo de apostas:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Numa cartela com 60 números disponíveis, um apostador escolhe de 6 a 10 números. Dentre os números disponíveis, serão sorteados apenas 6. O apostador será premiado caso os 6 números sorteados estejam entre os números escolhidos por ele numa mesma cartela."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O quadro apresenta o preço de cada cartela, de acordo com a quantidade de números escolhidos."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao169_img1_matematica_2013.png"
@@ -34970,6 +35578,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura apresenta dois mapas, em que o estado do Rio de Janeiro é visto em diferentes escalas."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao174_img1_matematica_2013.png"
    },
@@ -35007,6 +35619,10 @@
   "alternativa_e": "(50 ; 30).",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Nos últimos anos, a televisão tem passado por uma verdadeira revolução, em termos de qualidade de imagem, som e interatividade com o telespectador. Essa transformação se deve à conversão do sinal analógico para o sinal digital. Entretanto, muitas cidades ainda não contam com essa nova tecnologia. Buscando levar esses benefícios a três cidades, uma emissora de televisão pretende construir uma nova torre de transmissão, que envie sinal às antenas A, B e C, já existentes nessas cidades. As localizações das antenas estão representadas no plano cartesiano:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao175_img1_matematica_2013.png"
@@ -35046,6 +35662,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma cozinheira, especialista em fazer bolos, utiliza uma forma no formato representado na figura:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao176_img1_matematica_2013.png"
    },
@@ -35084,6 +35704,14 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma falsa relação"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O cruzamento da quantidade de horas estudadas como desempenho no Programa Internacional de Avaliação de Estudantes (Pisa) mostra que mais tempo na escola não é garantia de nota acima da média."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao177_img1_matematica_2013.png"
    },
@@ -35118,6 +35746,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um restaurante utiliza, para servir bebidas, bandejas com bases quadradas. Todos os copos desse restaurante têm o formato representado na figura:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao178_img1_matematica_2013.png"
    },
@@ -35151,6 +35783,10 @@
   "alternativa_e": "2√6 m",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O dono de um sítio pretende colocar uma hastede sustentação para melhor firmar dois postes de comprimentos iguais a 6 m e 4 m. A figura representa a situação real na qual os postes são descritos pelos segmentos AC e BD e a haste é representada pelo segmento EF, todos perpendiculares ao solo, que é indicado pelo segmento de reta AB. Os segmentos AD e\nBC representam cabos de aço que serão instalados."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao179_img1_matematica_2013.png"
@@ -35265,6 +35901,10 @@
   "alternativa_e": "Maior no aquecimento e maior no resfriamento.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um experimento foram utilizadas duas garrafas PET, uma pintada de branco e a outra de preto, acopladas cada uma a um termômetro. No ponto médio da distância entre as garrafas, foi mantida acesa, durante alguns minutos, uma lâmpada incandescente. Em seguida a lâmpada foi desligada. Durante o experimento, foram monitoradas as temperaturas das garrafas: a) enquanto a lâmpada permaneceu acesa e b) após a lâmpada ser desligada e atingirem equilíbrio térmico com o ambiente."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao48_img1_natureza_2013.png"
@@ -35414,6 +36054,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O uso de embalagens plásticas descartáveis vem crescendo em todo o mundo, juntamente com o problema ambiental gerado por seu descarte inapropriado. O politereftalato de etileno (PET), cuja estrutura é mostrada, tem sido muito utilizado na indústria de refrigerantes e pode ser reciclado e reutilizado. Uma das opções possíveis envolve a produção de matérias-primas, como o etilenoglicol (1,2-etanodiol), a partir de objetos compostos de PET pós-consumo."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao54_img1_natureza_2013.png"
    },
@@ -35485,6 +36129,10 @@
   "alternativa_e": "Impede a entrada de ar, por ser menor que a pressão interna; não muda a velocidade de escoamento, que só depende da pressão da coluna de água.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para realizar um experimento com uma garrafa PET cheia d´água, perfurou-se a lateral da garrafa em três posições a diferentes alturas. Com a garrafa tampada, a água não vazou por nenhum dos orifícios, e, com a garrafa destampada, observou-se o escoamento da água conforme ilustrado na figura"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao57_img1_natureza_2013.png"
@@ -35622,6 +36270,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma manifestação comum das torcidas em estádios de futebol é a ola mexicana. Os espectadores de uma linha, sem sair do lugar e sem se deslocarem lateralmente, ficam de pé e se sentam, sincronizados com os da linha adjacente. O efeito coletivo se propaga pelos espectadores do estádio, formando uma onda progressiva, conforme ilustração."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao65_img1_natureza_2013.png"
    },
@@ -35663,6 +36315,10 @@
   "alternativa_e": "Q, pois as polias 2 e 3 giram com diferentes velocidades lineares em pontos periféricos e a que tiver maior raio terá menor frequência.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para serrar ossos e carnes congeladas, um açougueiro utiliza uma serra de fita que possui três polias e um motor. O equipamento pode ser montado de duas formas diferentes, P e Q. Por questão de segurança, é necessário que a serra possua menor velocidade linear"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao66_img1_natureza_2013.png"
@@ -36138,6 +36794,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um piano, o Dó central e a próxima nota Dó (Dó maior) apresentam sons parecidos, mas não idênticos. É possível utilizar programas computacionais para expressar o formato dessas ondas sonoras em cada uma das situações como apresentado nas figuras, em que estão indicados intervalos de tempo idênticos (T)."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao82_img1_natureza_2013.png"
    },
@@ -36171,6 +36831,10 @@
   "alternativa_e": "– 6,2 V.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Medir temperatura é fundamental em muitas aplicações, e apresentar a leitura em mostradores digitais é bastante prático. O seu funcionamento é baseado na correspondência entre valores de temperatura e de diferença de potencial elétrico. Por exemplo, podemos usar o circuito elétrico apresentado, no qual o elemento sensor de temperatura ocupa um dos braços do circuito (Rs) e a dependência da resistência com a temperatura é conhecida."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao83_img1_natureza_2013.png"
@@ -36206,6 +36870,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Desenvolve-se um dispositivo para abrir automaticamente uma porta no qual um botão, quando acionado, faz com que uma corrente elétrica i = 6 A percorra uma barra condutora de comprimento L = 5 cm, cujo ponto médio está preso a uma mola de constante elástica k = 5 × 10⁻² N/cm. O sistema mola-condutor está imerso em um campo magnético uniforme perpendicular ao plano. Quando acionado o botão, a barra sairá da posição de equilíbrio a uma velocidade média de 5 m/s e atingirá a catraca em 6 milisegundos, abrindo a porta."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao85_img1_natureza_2013.png"
    },
@@ -36239,6 +36907,10 @@
   "alternativa_e": "Interações íon-dipolo mais fortes entre o poliacrilato e as moléculas de água, em relação às ligações de hidrogênio entre a celulose e as moléculas de água.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As fraldas descartáveis que contêm o polímero poliacrilato de sódio (1) são mais eficientes na retenção de água que as fraldas de pano convencionais, constituídas de fibras de celulose (2)."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao86_img1_natureza_2013.png"
@@ -36307,6 +36979,10 @@
   "alternativa_e": "Pés.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As moléculas de nanoputians lembram figuras humanas e foram criadas para estimular o interesse de jovens na compreensão da linguagem expressa em fórmulas estruturais, muito usadas em química orgânica. Um exemplo é o NanoKid, representado na figura:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao90_img1_natureza_2013.png"
@@ -40540,6 +41216,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico apresenta taxas de desemprego durante o ano de 2011 e o primeiro semestre de 2012 na região metropolitana de São Paulo. A taxa de desemprego total é a soma das taxas de desemprego aberto e oculto."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao136_img1_matematica_2014.png"
    },
@@ -40582,6 +41262,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A taxa de fecundidade é um indicador que expressa a condição reprodutiva média das mulheres de uma região, e é importante para uma análise da dinâmica demográfica dessa região. A tabela apresenta os dados obtidos pelos Censos de 2000 e 2010, feitos pelo IBGE, com relação à taxa de fecundidade no Brasil."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao137_img1_matematica_2014.png"
    },
@@ -40619,6 +41303,10 @@
   "alternativa_e": "Centro-Oeste, Sul e Sudeste.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O Ministério da Saúde e as unidades federadas promovem frequentemente campanhas nacionais e locais de incentivo à doação voluntária de sangue, em regiões com menor número de doadores por habitante, com o intuito de manter a regularidade de estoques nos serviços hemoterápicos. Em 2010, foram recolhidos dados sobre o número de doadores e o número de habitantes de cada região conforme o quadro seguinte."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao138_img1_matematica_2014.png"
@@ -40700,6 +41388,18 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De acordo com a ONU, da água utilizada diariamente,"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "– 25% são para tomar banho, lavar as mãos e escovar os dentes.\n– 33% são utilizados em descarga de banheiro.\n– 27% são para cozinhar e beber.\n– 15% são para demais atividades."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No Brasil, o consumo de água por pessoa chega, em média, a 200 litros por dia. O quadro mostra sugestões de consumo moderado de água por pessoa, por dia, em algumas atividades."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao140_img1_matematica_2014.png"
    },
@@ -40734,6 +41434,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os candidatos K, L, M, N e P estão disputando uma única vaga de emprego em uma empresa e fizeram provas de português, matemática, direito e informática. A tabela apresenta as notas obtidas pelos cinco candidatos."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao141_img1_matematica_2014.png"
    },
@@ -40767,6 +41471,10 @@
   "alternativa_e": "260.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Na alimentação de gado de corte, o processo de cortar a forragem, colocá-la no solo, compactá-la e protegê-la com uma vedação denomina-se silagem. Os silos mais comuns são os horizontais, cuja forma é a de um prisma reto trapezoidal, conforme mostrado na figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao142_img1_matematica_2014.png"
@@ -40844,6 +41552,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma criança deseja criar triângulos utilizando palitos de fósforo de mesmo comprimento. Cada triângulo será construído com exatamente 17 palitos e pelo menos um dos lados do triângulo deve ter o comprimento de exatamente 6 palitos. A figura ilustra um triângulo construído com essas características."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao147_img1_matematica_2014.png"
    },
@@ -40912,6 +41624,14 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Conforme regulamento da Agência Nacional de Aviação Civil (Anac), o passageiro que embarcar em voo doméstico poderá transportar bagagem de mão, contudo a soma das dimensões da bagagem (altura + comprimento + largura) não pode ser superior a 115 cm."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura mostra a planificação de uma caixa que tem a forma de um paralelepípedo retângulo."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao150_img1_matematica_2014.png"
    },
@@ -40945,6 +41665,10 @@
   "alternativa_e": "64,0%",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma lata de tinta, com a forma de um paralelepípedo retangular reto, tem as dimensões, em centímetros, mostradas na figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao151_img1_matematica_2014.png"
@@ -41018,6 +41742,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma empresa de alimentos oferece três valores diferentes de remuneração a seus funcionários, de acordo com o grau de instrução necessário para cada cargo. No ano de 2013, a empresa teve uma receita de 10 milhões de reais por mês e um gasto mensal com a folha salarial de R$ 400 000,00, distribuídos de acordo com o Gráfico 1. No ano seguinte, a empresa ampliará o número de funcionários, mantendo o mesmo valor salarial para cada categoria. Os demais custos da empresa permanecerão constantes de 2013 para 2014. O número de funcionários em 2013 e 2014, por grau de instrução, está no Gráfico 2."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao153_img1_matematica_2014.png"
    },
@@ -41085,6 +41813,14 @@
   "alternativa_e": "26.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Ao final de uma competição de ciências em uma escola, restaram apenas três candidatos. De acordo com as regras, o vencedor será o candidato que obtiver a maior média ponderada entre as notas das provas finais nas disciplinas química e física, considerando, respectivamente, os pesos 4 e 6 para elas. As notas são sempre números inteiros. Por questões médicas, o candidato II ainda não fez a prova final de química. No dia em que sua avaliação for aplicada, as notas dos outros dois candidatos, em ambas as disciplinas, já terão sido divulgadas."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O quadro apresenta as notas obtidas pelos finalistas nas provas finais."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao155_img1_matematica_2014.png"
@@ -41154,6 +41890,14 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma loja que vende sapatos recebeu diversas reclamações de seus clientes relacionadas à venda de sapatos de cor branca ou preta. Os donos da loja anotaram as numerações dos sapatos com defeito e fizeram um estudo estatístico com intuito de reclamar com o fabricante."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A tabela contém a média, a mediana e a moda desses dados anotados pelos donos."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao157_img1_matematica_2014.png"
    },
@@ -41195,6 +41939,22 @@
   "alternativa_e": "95,0%.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para analisar o desempenho de um método diagnóstico, realizam-se estudos em populações contendo pacientes sadios e doentes. Quatro situações distintas podem acontecer nesse contexto de teste:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "1) Paciente TEM a doença e o resultado do teste é POSITIVO.\n2) Paciente TEM a doença e o resultado do teste é NEGATIVO.\n3) Paciente NÃO TEM a doença e o resultado do teste é POSITIVO.\n4) Paciente NÃO TEM a doença e o resultado do teste é NEGATIVO."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um índice de desempenho para avaliação de um teste diagnóstico é a sensibilidade, definida como a probabilidade de o resultado do teste ser POSITIVO se o paciente estiver com a doença."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O quadro refere-se a um teste diagnóstico para a doença A, aplicado em uma amostra duzentos indivíduos."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao158_img1_matematica_2014.png"
@@ -41272,6 +42032,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um pesquisador está realizando várias séries de experimentos com alguns reagentes para verificar qual o mais adequado para a produção de um determinado produto. Cada série consiste em avaliar um dado reagente em cinco experimentos diferentes. O pesquisador está especialmente interessado naquele reagente que apresentar a maior quantidade dos resultados de seus experimentos acima da média encontrada para aquele reagente. Após a realização de cinco séries de experimentos, o pesquisador encontrou os seguintes resultados:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao161_img1_matematica_2014.png"
    },
@@ -41305,6 +42069,10 @@
   "alternativa_e": "143,1",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma cidade, o valor total da conta de energia elétrica é obtido pelo produto entre o consumo (em kWh) e o valor da tarifa do kWh (com tributos), adicionado à Cosip (contribuição para custeio da iluminação pública), conforme a expressão:"
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "_Valor do kWh (com tributos)_ x _consumo (em kWh) + Cosip_"
@@ -41386,6 +42154,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No Brasil há várias operadoras e planos de telefonia celular. Uma pessoa recebeu 5 propostas (A, B, C, D e E) de planos telefônicos. O valor mensal de cada plano está em função do tempo mensal das chamadas, conforme o gráfico."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao166_img1_matematica_2014.png"
    },
@@ -41423,6 +42195,14 @@
   "alternativa_e": "514.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma empresa farmacêutica produz medicamentos em pílulas, cada uma na forma de um cilindro com uma semiesfera com o mesmo raio do cilindro em cada uma de suas extremidades. Essas pílulas são moldadas por uma máquina programada para que os cilindros tenham sempre 10 mm de comprimento, adequando o raio de acordo com o volume desejado."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um medicamento é produzido em pílulas com 5 mm de raio. Para facilitar a deglutição, deseja-se produzir esse medicamento diminuindo o raio para 4 mm, e, por consequência, seu volume. Isso exige a reprogramação da máquina que produz essas pílulas."
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "Use 3 como valor aproximado para π."
@@ -41496,6 +42276,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A Figura 1 representa uma gravura retangular com 8 m de comprimento e 6 m de altura."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao169_img1_matematica_2014.png"
    },
@@ -41545,6 +42329,10 @@
   "alternativa_e": "10π d",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma empresa que organiza eventos de formatura confecciona canudos de diplomas a partir de folhas de papel quadradas. Para que todos os canudos fiquem idênticos, cada folha é enrolada em torno de um cilindro de madeira de diâmetro d em centímetros, sem folga, dando-se 5 voltas completas em torno de tal cilindro. Ao final, amarra-se um cordão no meio do diploma, bem ajustado, para que não ocorra o desenrolamento, como ilustrado na figura:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao170_img1_matematica_2014.png"
@@ -41617,6 +42405,10 @@
   "alternativa_e": "4 603.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os incas desenvolveram uma maneira de registrar quantidades e representar números utilizando um sistema de numeração decimal posicional: um conjunto de cordas com nós denominado quipus. O quipus era feito de uma corda matriz, ou principal (mais grossa que as demais), na qual eram penduradas outras cordas, mais finas, de diferentes tamanhos e cores (cordas pendentes). De acordo com a sua posição, os nós significavam unidades, dezenas, centenas e milhares. Na Figura 1, o quipus representa o número decimal 2 453. Para representar o “zero” em qualquer posição, não se coloca nenhum nó."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao172_img1_matematica_2014.png"
@@ -41691,6 +42483,14 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "Durante uma epidemia de uma gripe viral, o secretário de saúde de um município comprou 16 galões de álcool em gel, com 4 litros de capacidade cada um, para distribuir igualmente em recipientes para 10 escolas públicas do município. O fornecedor dispõe à venda diversos tipos de recipientes, com suas respectivas capacidades listadas:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "• Recipiente I: 0,125 litro\n• Recipiente II: 0,250 litro\n• Recipiente III: 0,320 litro\n• Recipiente IV: 0,500 litro\n• Recipiente V: 0,800 litro"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "O secretário de saúde comprará recipientes de um mesmo tipo, de modo a instalar 20 deles em cada escola, abastecidos com álcool em gel na sua capacidade máxima, de forma a utilizar todo o gel dos galões de uma só vez."
    },
    {
@@ -41758,6 +42558,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um cientista trabalha com as espécies I e II de bactérias em um ambiente de cultura. Inicialmente, existem 350 bactérias da espécie I e 1 250 bactérias da espécie ll. O gráfico representa as quantidades de bactérias de cada espécie, em função do dia, durante uma semana."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao176_img1_matematica_2014.png"
    },
@@ -41791,6 +42595,10 @@
   "alternativa_e": "24",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um fazendeiro tem um depósito para armazenar leite formado por duas partes cúbicas que se comunicam, como indicado na figura. A aresta da parte cúbica de baixo tem medida igual ao dobro da medida da aresta da parte cúbica de cima. A torneira utilizada para encher o depósito tem vazão constante e levou 8 minutos para encher metade da parte de baixo."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao177_img1_matematica_2014.png"
@@ -42003,6 +42811,10 @@
   "alternativa_e": "Reação de substituição de um dos átomos de oxigênio na molécula de ozônio por átomos de cloro.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A liberação de gases clorofuorcarbonos (CFC) na atmosfera pode provocar depleção de ozônio (O₃) na estratosfera. O ozônio estratosférico é responsável por absorver parte da radiação ultravioleta emitida pelo Sol, a qual é nociva aos seres vivos. Esse processo, na camada de ozônio, é ilustrado simplificadamente na figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao48_img1_natureza_2014.png"
@@ -42220,6 +43032,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O biodiesel não é classificado como uma substância pura, mas como uma mistura de ésteres derivados dos ácidos graxos presentes em sua matéria-prima. As propriedades do biodiesel variam com a composição do óleo vegetal ou gordura animal que lhe deu origem, por exemplo, o teor de ésteres saturados é responsável pela maior estabilidade do biodiesel frente à oxidação, o que resulta em aumento da vida útil do biocombustível. O quadro ilustra o teor médio de ácidos graxos de algumas fontes oleaginosas."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao54_img1_natureza_2014.png"
    },
@@ -42296,6 +43112,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um sistema de iluminação foi construído com um circuito de três lâmpadas iguais conectadas a um gerador (G) de tensão constante. Esse gerador possui uma chave que pode ser ligada nas posições A ou B."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao57_img1_natureza_2014.png"
    },
@@ -42367,6 +43187,10 @@
   "alternativa_e": "Zn2+(aq)",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A revelação das chapas de raios X gera uma solução que contém íons prata na forma de Ag(S₂O₃)₂³⁻. Para evitar a descarga desse metal no ambiente, a recuperação de prata metálica pode ser feita tratando eletroquimicamente essa solução com uma espécie adequada. O quadro apresenta semirreações de redução de alguns íons metálicos"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao59_img1_natureza_2014.png"
@@ -42478,6 +43302,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um sistema de pistão contendo um gás é mostrado na figura. Sobre a extremidade superior do êmbolo, que pode movimentar-se livremente sem atrito, encontra-se um objeto. Através de uma chapa de aquecimento é possível fornecer calor ao gás e, com auxílio de um manômetro, medir sua pressão. A partir de diferentes valores de calor fornecido, considerando o sistema como hermético, o objeto elevou-se em valores Δh, como mostrado no gráfico. Foram estudadas, separadamente, quantidades equimolares de dois diferentes gases, denominados M e V."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao62_img1_natureza_2014.png"
    },
@@ -42584,6 +43412,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para entender os movimentos dos corpos, Galileu discutiu o movimento de uma esfera de metal em dois planos inclinados sem atritos e com a possibilidade de se alterarem os ângulos de inclinação, conforme mostra a figura. Na descrição do experimento, quando a esfera de metal é abandonada para descer um plano inclinado de um determinado nível, ela sempre atinge, no plano ascendente, no máximo, um nível igual àquele em que foi abandonada."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao67_img1_natureza_2014.png"
    },
@@ -42685,6 +43517,10 @@
   "alternativa_e": "Esquerda e manter o ímã em repouso com mesma polaridade.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O funcionamento dos geradores de usinas elétricas baseia-se no fenômeno da indução eletromagnética, descoberto por Michael Faraday no século XIX. Pode-se observar esse fenômeno ao se movimentar um ímã e uma espira em sentidos opostos com módulo da velocidade igual a v, induzindo uma corrente elétrica de intensidade i, como ilustrado na figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao72_img1_natureza_2014.png"
@@ -42936,6 +43772,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O principal processo industrial utilizado na produção de fenol é a oxidação do cumeno (isopropilbenzeno). A equação mostra que esse processo envolve a formação do hidroperóxido de cumila, que em seguida é decomposto em fenol e acetona, ambos usados na indústria química como precursores de moléculas mais complexas. Após o processo de síntese, esses dois insumos devem ser separados para comercialização individual."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao80_img1_natureza_2014.png"
    },
@@ -43008,6 +43848,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um professor utiliza essa história em quadrinhos para discutir com os estudantes o movimento de satélites. Nesse sentido, pede a eles que analisem o movimento do coelhinho, considerando o módulo da velocidade constante."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao82_img1_natureza_2014.png"
    },
@@ -43041,6 +43885,10 @@
   "alternativa_e": "Água III.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A utilização de processos de biorremediação de resíduos gerados pela combustão incompleta de compostos orgânicos tem se tornado crescente, visando minimizar a poluição ambiental. Para a ocorrência de resíduos de naftaleno, algumas legislações limitam sua concentração em até 30 mg/kg para solo agrícola e 0,14 mg/L para água subterrânea. resíduo foi realizada em diferentes ambientes, utilizando-se amostras de 500 g de solo e 100 mL de água, conforme apresentado no quadro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao83_img1_natureza_2014.png"
@@ -43277,6 +44125,10 @@
   "alternativa_e": "5",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "As lentes fotocromáticas escurecem quando expostas à luz solar por causa de reações químicas reversíveis entre uma espécie incolor e outra colorida. Diversas reações podem ser utilizadas, e a escolha do melhor do menor reagente para esse fim se baseia em três principais aspectos: (i) o quanto escurece a lente; (ii) o tempo de escurecimento quando exposta à luz solar; e (iii) o tempo de esmaecimento em ambiente sem forte luz solar. A transmitância indica a razão entre a quantidade de luz que atravessa o meio e a quantidade de luz que incide sobre ele."
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "Durante um teste de controle para o desenvolvimento de novas lentes fotocromáticas, foram analisadas cinco amostras, que utilizam reagentes químicos diferentes. No quadro, são apresentados os resultados."
@@ -45301,6 +46153,14 @@
   "alternativa_e": "1 201,9.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Alguns medicamentos para felinos são administrados com base na superfície corporal do animal. Foi receitado a um felino pesando 3,0 kg um medicamento na dosagem diária de 250 mg por metro quadrado de superfície corporal."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O quadro apresenta a relação entre a massa do felino, em quilogramas, e a área de sua superfície corporal, em metros quadrados."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao177_img1_humanas_2015.png"
@@ -47530,6 +48390,26 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um investidor inicia um dia com x ações de uma empresa. No decorrer desse dia, ele efetua apenas dois tipos de operações, comprar ou vender ações. Para realizar essas operações, ele segue estes critérios:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "I. vende metade das ações que possui, assim que seuvalor fica acima do valor ideal (Vi);"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "II. compra a mesma quantidade de ações que possui, assim que seu valor fica abaixo do valor mínimo (Vm);"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "III. vende todas as ações que possui, quando seu valor fica acima do valor ótimo (Vo)."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico apresenta o período de operações e a variação do valor de cada ação, em reais, no decorrer daquele dia e a indicação dos valores ideal, mínimo e ótimo."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao136_img1_matematica_2015.png"
    },
@@ -47565,6 +48445,14 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "O tampo de vidro de uma mesa quebrou-se e deverá ser substituído por outro que tenha a forma de círculo. O suporte de apoio da mesa tem o formato de um prisma reto, de base em forma de triângulo equilátero com lados medindo 30 cm."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma loja comercializa cinco tipos de tampos de vidro circulares com cortes já padronizados, cujos raios medem 18 cm, 26 cm, 30 cm, 35 cm e 60 cm. O proprietário da mesa deseja adquirir nessa loja o tampo de menor diâmetro que seja suficiente para cobrir a base superior do suporte da mesa."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "Considere 1,7 como aproximação para √3."
    },
    {
@@ -47597,6 +48485,10 @@
   "alternativa_e": "De 40 a 80 e de 130 a 160.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Atualmente existem diversas locadoras de veículos, permitindo uma concorrência saudável para o mercado, fazendo com que os preços se tornem acessíveis. Nas locadoras P e Q, o valor da diária de seus carros depende da distância percorrida, conforme o gráfico."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao138_img1_matematica_2015.png"
@@ -47632,6 +48524,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No contexto da matemática recreativa, utilizando diversos materiais didáticos para motivar seus alunos, uma professora organizou um jogo com um tipo de baralho modificado. No início do jogo, vira-se uma carta do baralho na mesa e cada jogador recebe em mãos nove cartas. Deseja-se formar pares de cartas, sendo a primeira carta a da mesa e a segunda, uma carta na mão do jogador, que tenha um valor equivalente àquele descrito na carta da mesa. O objetivo do jogo é verificar qual jogador consegue o maior número de pares. Iniciado o jogo, a carta virada na mesa e as cartas da mão de um jogador são como no esquema:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao139_img1_matematica_2015.png"
    },
@@ -47665,6 +48561,10 @@
   "alternativa_e": "Rádio/TV e rádio/TV.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma pesquisa de mercado foi realizada entre os consumidores das classes sociais A, B, C e D que costumam participar de promoções tipo sorteio ou concurso. Os dados comparativos, expressos no gráfico, revelam a participação desses consumidores em cinco categorias: via Correios (juntando embalagens ou recortando códigos de barra), via internet (cadastrando-se no site da empresa/marca promotora), via mídias sociais (redes sociais), via SMS (mensagem por celular) ou via rádio/TV."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao140_img1_matematica_2015.png"
@@ -47772,6 +48672,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma seletiva para a final dos 100 metros livres de natação, numa olimpíada, os atletas, em suas respectivas raias, obtiveram os seguintes tempos:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao143_img1_matematica_2015.png"
    },
@@ -47805,6 +48709,10 @@
   "alternativa_e": "Diminuição de 272 600 cm².",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O Esquema I mostra a configuração de uma quadra de basquete. Os trapézios em cinza, chamados de garrafões, correspondem a áreas restritivas."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao144_img1_matematica_2015.png"
@@ -47882,6 +48790,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Numa cidade, cinco escolas de samba (I, II, III, IV e V) participaram do desfile de Carnaval. Quatro quesitos são julgados, cada um por dois jurados, que podem atribuir somente uma dentre as notas 6, 7, 8, 9 ou 10. A campeã será a escola que obtiver maior pontuação na soma de todas as notas emitidas. Em caso de empate, a campeã será a que alcançar a maior soma das notas atribuídas pelos jurados no quesito Enredo e Harmonia. A tabela mostra as notas do desfile desse ano no momento em que faltava somente a divulgação das notas do jurado B no quesito Bateria."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao147_img1_matematica_2015.png"
    },
@@ -47915,6 +48827,10 @@
   "alternativa_e": "32,5 m.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma carga de 100 contêineres, idênticos ao modelo apresentado na Figura 1, deverá ser descarregada no porto de uma cidade. Para isso, uma área retangular de 10 m por 32 m foi cedida para o empilhamento desses contêineres (Figura 2)."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao148_img1_matematica_2015.png"
@@ -47989,6 +48905,10 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma padaria vende, em média, 100 pães especiais por dia e arrecada com essas vendas, em média, R$ 300,00. Constatou-se que a quantidade de pães especiais vendidos diariamente aumenta, caso o preço seja reduzido, de acordo com a equação"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "q = 400 – 100_p_,"
    },
    {
@@ -48029,6 +48949,14 @@
   "alternativa_e": "V.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O HPV é uma doença sexualmente transmissível. Uma vacina com eficácia de 98% foi criada com o objetivo de prevenir a infecção por HPV e, dessa forma, reduzir o número de pessoas que venham a desenvolver câncer de colo de útero. Uma campanha de vacinação foi lançada em 2014 pelo SUS, para um público-alvo de meninas de 11 a 13 anos de idade. Considera-se que, em uma população não vacinada, o HPV acomete 50% desse público ao longo de suas vidas. Em certo município, a equipe coordenadora da campanha decidiu vacinar meninas entre 11 e 13 anos de idade em quantidade suficiente para que a probabilidade de uma menina nessa faixa etária, escolhida ao acaso, vir a desenvolver essa doença seja, no máximo, de 5,9%. Houve cinco propostas de cobertura, de modo a atingir essa meta:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Proposta I: vacinação de 90% do público-alvo.\nProposta II: vacinação de 55,8% do público-alvo.\nProposta III: vacinação de 88,2% do público-alvo.\nProposta IV: vacinação de 49% do público-alvo.\nProposta V: vacinação de 95,9% do público-alvo."
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "Para diminuir os custos, a proposta escolhida deveria ser também aquela que vacinasse a menor quantidade possível de pessoas."
@@ -48102,6 +49030,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para uma alimentação saudável, recomenda-se ingerir, em relação ao total de calorias diárias, 60% de carboidratos, 10% de proteínas e 30% de gorduras. Uma nutricionista, para melhorar a visualização dessas porcentagens, quer dispor esses dados em um polígono. Ela pode fazer isso em um triângulo equilátero, um losango, um pentágono regular, um hexágono regular ou um octógono regular, desde que o polígono seja dividido em regiões cujas áreas sejam proporcionais às porcentagens mencionadas. Ela desenhou as seguintes figuras:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao153_img1_matematica_2015.png"
    },
@@ -48135,6 +49067,10 @@
   "alternativa_e": "64π.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma empresa de telefonia celular possui duas antenas que serão por uma nova, mais potente. As áreas de cobertura das antenas que serão substituídas são círculos de raio 2 km, cujas circunferências se tangenciam no ponto O, como mostra a figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao155_img1_matematica_2015.png"
@@ -48246,6 +49182,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A expressão “Fórmula de Young” é utilizada calcular a dose infantil de um medicamento, dada a dose do adulto:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao158_img1_matematica_2015.png"
    },
@@ -48322,6 +49262,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um pesquisador, ao explorar uma floresta, fotografou uma caneta de 16,8 cm de comprimento ao lado de uma pegada. O comprimento da caneta (c), a largura (L) e o comprimento (C) da pegada, na fotografia, estão indicados no esquema."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao160_img1_matematica_2015.png"
    },
@@ -48355,6 +49299,14 @@
   "alternativa_e": "2/3",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma indústria produz malhas de proteção solar para serem aplicadas em vidros, de modo a diminuir a passagem de luz, a partir de fitas plásticas entrelaçadas perpendicularmente. Nas direções vertical e horizontal, são aplicadas fitas de 1 milímetro de largura, tal que a distância entre elas é de (d – 1) milímetros, conforme a figura. O material utilizado não permite a passagem da luz, ou seja, somente o raio de luz que atingir as lacunas deixadas pelo entrelaçamento consegue transpor essa proteção."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A taxa de cobertura do vidro é o percentual da área da religião coberta pelas fitas da mala, que são colocadas paralelamente às bordas do vidro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao161_img1_matematica_2015.png"
@@ -48428,6 +49380,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A insulina é utilizada no tratamento de pacientes com diabetes para o controle glicêmico. Para facilitar sua aplicação, foi desenvolvida uma “caneta” na qual pode ser inserido um refil contendo 3 mL de insulina, como mostra a imagem."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao163_img1_matematica_2015.png"
    },
@@ -48469,6 +49425,10 @@
   "alternativa_e": "49.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O proprietário de um parque aquático deseja construir uma piscina em suas dependências. A figura representa a vista superior dessa piscina, que é formada por três setores circulares idênticos, com ângulo central igual a 60°. O raio R deve ser um número natural."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao165_img1_matematica_2015.png"
@@ -48584,6 +49544,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O polímero de PET (Politereftalato de Etileno) é um dos plásticos mais reciclados em todo o mundo devido à sua extensa gama de aplicações, entre elas, fibras têxteis, tapetes, embalagens, filmes e cordas. Os gráficos mostram o destino do PET reciclado no Brasil, sendo que, no ano de 2010, o total de PET reciclado foi de 282 kton (quilotoneladas)."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao169_img1_matematica_2015.png"
    },
@@ -48617,6 +49581,10 @@
   "alternativa_e": "E, C, D, B, A.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um concurso é composto por cinco etapas. Cada etapa vale 100 pontos. A pontuação final de cada candidato é a média de suas notas nas cinco etapas. A classificação obedece à ordem decrescente das pontuações finais. O critério de desempate baseia-se na maior pontuação na quinta etapa."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao170_img1_matematica_2015.png"
@@ -48653,6 +49621,10 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "O índice pluviométrico é utilizado para mensurar a precipitação da água da chuva, em milímetros, em determinado período de tempo. Seu cálculo é feito de acordo com o nível de água da chuva acumulada em 1 m², ou seja, se o índice for de 10 mm, significa que a altura do nível de água acumulada em um tanque aberto, em formato de um cubo com 1 m² de área de base, é de 10 mm. Em uma região, após um forte temporal, verificou-se que a quantidade de chuva acumulada em uma lata de formato cilíndrico, com raio 300 mm e altura 1 200 mm, era de um terço da sua capacidade."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "Utilize 3,0 como aproximação para π."
    },
    {
@@ -48685,6 +49657,10 @@
   "alternativa_e": "(440 ; 20).",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Devido ao aumento do fluxo de passageiros, uma empresa de transporte coletivo urbano está fazendo estudos para a implantação de um novo ponto de parada em uma determinada rota. A figura mostra o percurso, indicado pelas setas, realizado por um ônibus nessa rota e a localização de dois de seus atuais pontos de parada, representados por P e Q."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao172_img1_matematica_2015.png"
@@ -48758,6 +49734,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um estudante está pesquisando o desenvolvimento de certo tipo de bactéria. Para essa pesquisa, ele utiliza uma estufa para armazenar as bactérias. A temperatura no interior dessa estufa, em graus Celsius, é dada pela expressão T(h) = – h² + 22h – 85, em que h representa as horas do dia. Sabe-se que o número de bactérias é o maior possível quando a estufa atinge sua temperatura máxima e, nesse momento, ele deve retirá-las da estufa. A tabela associa intervalos de temperatura, em graus Celsius, com as classificações: muito baixa, baixa, média, alta e muito alta."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao174_img1_matematica_2015.png"
    },
@@ -48791,6 +49771,10 @@
   "alternativa_e": "2b³",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura representa a vista superior de uma bola de futebol americano, cuja forma é um elipsoide obtido pela rotação de uma elipse em torno do eixo das abscissas. Os valores a e b são, respectivamente, a metade do seu comprimento horizontal e a metade do seu comprimento vertical. Para essa bola, a diferença entre os comprimentos horizontal e vertical é igual à metade do comprimento vertical."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao175_img1_matematica_2015.png"
@@ -48864,6 +49848,14 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), produtos sazonais são aqueles que apresentam ciclos bem definidos de produção, consumo e preço. Resumidamente, existem épocas do ano em que a sua disponibilidade nos mercados varejistas ora é escassa, com preços elevados, ora é abundante, com preços mais baixos, o que ocorre no mês de produção máxima da safra."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A partir de uma série histórica, observou-se que o preço P, em reais, do quilograma de um certo produto sazonal pode ser descrito pela função"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao180_img1_matematica_2015.png"
    },
@@ -48936,6 +49928,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um carro solar é um veículo que utiliza apenas a energia solar para a sua locomoção. Tipicamente, o carro contém um painel fotovoltaico que converte a energia do Sol em energia elétrica que, por sua vez, alimenta um motor elétrico. A imagem mostra o carro solar Tokai Challenger, desenvolvido na Universidade de Tokai, no Japão, e que venceu o World Solar Challenge de 2009, uma corrida internacional de carros solares, tendo atingido uma velocidade média acima de 100 km/h."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao49_img1_natureza_2015.png"
    },
@@ -48973,6 +49969,10 @@
   "alternativa_e": "I.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A radiação ultravioleta (UV) é dividida, de acordo com três faixas de frequência, em UV-A, UV-B e UV-C, conforme a figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao50_img1_natureza_2015.png"
@@ -49091,6 +50091,10 @@
   "alternativa_e": "2λ.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Certos tipos de superfícies na natureza podem refletir luz de forma a gerar um efeito de arco-íris. Essa característica é conhecida como iridescência e ocorre por causa do fenômeno da interferência de película fina. A figura ilustra o esquema de uma fina camada iridescente de óleo sobre uma poça d’água. Parte do feixe de luz branca incidente (1) reflete na interface ar/óleo e sofre inversão de fase (2), o que equivale a uma mudança de meio comprimento de onda. A parte refratada do feixe (3) incide na interface óleo/água e sofre reflexão sem inversão de fase (4). O observador indicado enxergará aquela região do filme com coloração equivalente à do comprimento de onda que sofre interferência completamente construtiva entre os raios (2) e (5), mas essa condição só é possível para uma espessura mínima da película. Considere que o caminho percorrido em (3) e (4) corresponde ao dobro da espessura E da película de óleo."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao53_img1_natureza_2015.png"
@@ -49274,6 +50278,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma forma de organização de um sistema biológico é a presença de sinais diversos utilizados pelos indivíduos para se comunicarem. No caso das abelhas da espécie Apis mellifera, os sinais utilizados podem ser feromônios. Para saírem e voltarem de suas colmeias, usam um feromônio que indica a trilha percorrida por elas (Composto A). Quando pressentem o perigo, expelem um feromônio de alarme (Composto B), que serve de sinal para um combate coletivo. O que diferencia cada um desses sinais utilizados pelas abelhas são as estruturas e funções orgânicas dos feromônios."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao59_img1_natureza_2015.png"
    },
@@ -49307,6 +50315,10 @@
   "alternativa_e": "Ácido 2-feniletanoico e ácido propanoico.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O permanganato de potássio (KMnO₄) é um agente oxidante forte muito empregado tanto em nível laboratorial quanto industrial. Na oxidação de alcenos de cadeia normal, como o 1-fenil-propeno, ilustrado na figura, o KMnO₄ é utilizado para a produção de ácidos carboxílicos."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao60_img1_natureza_2015.png"
@@ -49490,6 +50502,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma garrafa térmica tem como função evitar a troca de calor entre o líquido nela contido e o ambiente, mantendo a temperatura de seu conteúdo constante. Uma forma de orientar os consumidores na compra de uma garrafa térmica seria criar um selo de qualidade, como se faz atualmente para informar o consumo de energia de eletrodomésticos. O selo identificaria cinco categorias e informaria a variação de temperatura do conteúdo da garrafa, depois de decorridas seis horas de seu fechamento, por meio de uma porcentagem do valor inicial da temperatura de equilíbrio do líquido na garrafa. O quadro apresenta as categorias e os intervalos de variação percentual da temperatura."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao65_img1_natureza_2015.png"
    },
@@ -49596,6 +50612,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Normalmente, as células do organismo humano realizam a respiração aeróbica, na qual o consumo de uma molécula de glicose gera 38 moléculas de ATP. Contudo, em condições anaeróbicas, o consumo de uma molécula de glicose pelas células é capaz de gerar apenas duas moléculas de ATP."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao69_img1_natureza_2015.png"
    },
@@ -49663,6 +50683,10 @@
   "alternativa_e": "2,2x1026",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Vários ácidos são utilizados em indústrias que descartam seus efluentes nos corpos d’água, como rios e lagos, podendo afetar o equilíbrio ambiental. Para neutralizar a acidez, o sal carbonato de cálcio pode ser adicionado ao efluente, em quantidades apropriadas, pois produz bicarbonato, que neutraliza a água. As equações envolvidas no processo são apresentadas:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao71_img1_natureza_2015.png"
@@ -49851,6 +50875,14 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "Para proteger estruturas de aço da corrosão, a indústria utiliza uma técnica chamada galvanização. Um metal bastante utilizado nesse processo é o zinco, que pode ser obtido a partir de um minério denominado esfalerita (ZnS), de pureza 75%. Considere que a conversão do minério em zinco metálico tem rendimento de 80% nesta sequência de equações químicas:"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "2 ZnS + 3 O₂ → 2 ZnO + 2 SO₂"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "Considere as massas molares: ZnS (97 g/mol); O2 (32 g/mol); ZnO (81 g/mol); SO2 (64 g/mol); CO (28 g/mol); CO2 (44 g/mol); e Zn (65 g/mol)."
    },
    {
@@ -49883,6 +50915,10 @@
   "alternativa_e": "2,2,4,4-tetrametil-hexano.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Hidrocarbonetos podem ser obtidos em laboratório por descarboxilação oxidativa anódica, processo conhecido como eletrossíntese de Kolbe. Essa reação é utilizada na síntese de hidrocarbonetos diversos, a partir de óleos vegetais, os quais podem ser empregados como fontes alternativas de energia, em substituição aos hidrocarbonetos fósseis. O esquema ilustra simplificadamente esse processo."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao77_img1_natureza_2015.png"
@@ -49986,6 +51022,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A calda bordalesa é uma alternativa empregada no combate a doenças que afetam folhas de plantas. Sua produção consiste na mistura de uma solução aquosa de sulfato de cobre(II), CuSO4, com óxido de cálcio, CaO, e sua aplicação só deve ser realizada se estiver levemente básica. A avaliação rudimentar da basicidade dessa solução é realizada pela adição de três gotas sobre uma faca de ferro limpa. Após três minutos, caso surja uma mancha avermelhada no local da aplicação, afirma-se que a calda bordalesa ainda não está com a basicidade necessária. O quadro apresenta os valores de potenciais padrão de redução (E°) para algumas semirreações de redução."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao81_img1_natureza_2015.png"
    },
@@ -50019,6 +51059,10 @@
   "alternativa_e": "15,00 kg",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um experimento, um professor levou para a sala de aula um saco de arroz, um pedaço de madeira triangular e uma barra de ferro cilíndrica e homogênea. Ele propôs que fizessem a mediação da massa da barra utilizando esses objetos. Para isso, os alunos fizeram marcações na barra, dividindo-a em oito partes iguais, e em seguida apoiaram-na sobre a base triangular, com o saco de arroz pendurado em uma de suas extremidades, até atingir a situação de equilíbrio."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao82_img1_natureza_2015.png"
@@ -50088,6 +51132,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O aproveitamento de resíduos florestais vem se tornando cada dia mais atrativo, pois eles são uma fonte renovável de energia. A figura representa a queima de um bio-óleo extraído do resíduo de madeira, sendo ΔH1 a variação de entalpia devido à queima de 1g desse bio-óleo, resultando em gás carbônico e água líquida, e ΔH2 a variação de entalpia envolvida na conversão de 1g de água no estado gasoso para o estado líquido."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao84_img1_natureza_2015.png"
    },
@@ -50121,6 +51169,10 @@
   "alternativa_e": "Cristalino.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Entre os anos de 1028 e 1038, Alhazen (Ibn al-Haytham; 965-1040 d.C.) escreveu sua principal obra, o Livro da Óptica, que, com base em experimentos, explicava o funcionamento da visão e outros aspectos da ótica, por exemplo, o funcionamento da câmara escura. O livro foi traduzido e incorporado aos conhecimentos científicos ocidentais pelos europeus. Na figura, retirada dessa obra, é representada a imagem invertida de edificações em um tecido utilizado como anteparo."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao85_img1_natureza_2015.png"
@@ -50261,6 +51313,10 @@
   "alternativa_e": "Gasto de energia nulo na separação do produto.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A química verde permite o desenvolvimento tecnológico com danos reduzidos ao meio ambiente, e encontrar rotas limpas tem sido um grande desafio. Considere duas rotas diferentes utilizadas para a obtenção de ácido adípico, um insumo muito importante para a indústria têxtil e de lubrificantes"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao90_img1_natureza_2015.png"
@@ -54248,6 +55304,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em regiões agrícolas, é comum a presença de silos para armazenamento e secagem da produção de grãos, no formato de um cilindro reto, sobreposto por um cone, e dimensões indicadass na figura. O silo fica cheio e o transporte dos grãos é feito em caminhões de carga cuja\ncapacidade é de 20 m³. Uma região possui um silo cheio e apenas um caminhão para transportar os grãos para a usina de beneficiamento."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao136_img1_matematica_2016.png"
    },
@@ -54316,6 +55376,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A London Eye é uma enorme roda-gigante na capital inglesa. Por ser um dos monumentos\nconstruídos para celebrar a entrada do terceiro milênio, ela também é conhecida\ncomo Roda do Milênio. Um turista brasileiro, em visita à Inglaterra, perguntou a um londrino\no diâmetro (destacado na imagem) da Roda do Milênio e ele respondeu que ele tem\n443 pés."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao138_img1_matematica_2016.png"
    },
@@ -54349,6 +55413,10 @@
   "alternativa_e": "2 500",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma cisterna de 6 000 L foi esvaziada em um período de 3 h. Na primeira hora foi utilizada apenas uma bomba, mas nas duas horas seguintes, a fim de reduzir o tempo de esvaziamento, outra bomba foi ligada junto com a primeira. O gráfico, formado por dois segmentos de reta, mostra o volume de água presente na cisterna, em função do tempo."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao139_img1_matematica_2016.png"
@@ -54384,6 +55452,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O procedimento de perda rápida de “peso” é comum entre os atletas dos esportes de combate. Para participar de um torneio, quatro atletas da categoria até 66 kg, Peso-Pena, foram submetidos a dietas balanceadas e atividades físicas. Realizaram três “pesagens” antes do início do torneio. Pelo regulamento do torneio, a primeira luta deverá ocorrer entre o atleta mais regular e o menos regular quanto aos “pesos”. As informações com base nas pesagens dos atletas estão no quadro."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao140_img1_matematica_2016.png"
    },
@@ -54417,6 +55489,14 @@
   "alternativa_e": "185/60R15",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De forma geral, os pneus radiais trazem em sua lateral uma marcação do tipo abc/deRfg, como 185/65R15. Essa marcação identifica as medidas do pneu da seguinte forma:\n• abc é a medida da largura do pneu, em milímetro;\n• de é igual ao produto de 100 pela razão entre a medida da altura (em milímetro) e a medida\nda largura do pneu (em milímetro);\n• R significa radial;\n• fg é a medida do diâmetro interno do pneu, em polegada."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura ilustra as variáveis relacionadas com esses dados."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao141_img1_matematica_2016.png"
@@ -54452,6 +55532,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma família resolveu comprar um imóvel num bairro cujas ruas estão representadas na figura. As ruas com nomes de letras são paralelas entre si e perpendiculares às ruas identificadas com números. Todos os quarteirões são quadrados, com as mesmas medidas, e todas as ruas têm a mesma largura, permitindo caminhar somente nas direções vertical e horizontal. Desconsidere a largura das ruas."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao142_img1_matematica_2016.png"
    },
@@ -54486,6 +55570,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um senhor, pai de dois filhos, deseja comprar dois terrenos, com áreas de mesma medida, um para cada filho. Um dos terrenos visitados já está demarcado e, embora não tenha um formato convencional (como se observa na Figura B), agradou ao filho mais velho e, por isso, foi comprado. O filho mais novo possui um projeto arquitetônico de uma casa que quer construir, mas, para isso, precisa de um terreno na forma retangular (como mostrado na Figura A) cujo comprimento seja 7 m maior do que a largura."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao143_img1_matematica_2016.png"
    },
@@ -54519,6 +55607,10 @@
   "alternativa_e": "VII",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Preocupada com seus resultados, uma empresa fez um balanço dos lucros obtidos nos últimos sete meses, conforme dados do quadro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao144_img1_matematica_2016.png"
@@ -54557,6 +55649,10 @@
   "alternativa_e": "53",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O setor de recursos humanos de uma empresa pretende fazer contratações para adequar-se ao artigo 93 da Lei nº 8.213/91, que dispõe:"
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "_Art. 93. A empresa com 100 (cem) ou mais empregados está obrigada a preencher de 2% (dois por cento) a 5% (cinco por cento) dos seus cargos com beneficiários reabilitados ou pessoas com deficiência, habilitadas, na seguinte proporção:_  \n_I. até 200 empregados……………….. 2%;_  \n_II. de 201 a 500 empregados…………… 3%;_  \n_III. de 501 a 1 000 empregados………… 4%;_  \n_IV. de 1 001 em diante………………. 5%._"
@@ -54638,6 +55734,14 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O ábaco é um antigo instrumento de cálculo que usa notação posicional de base dez para representar números naturais. Ele pode ser apresentado em vários modelos, um deles é formado por hastes apoiadas em uma base. Cada haste corresponde a uma posição no sistema decimal e nelas são colocadas argolas; a quantidade de argolas na haste representa o algarismo daquela posição. Em geral, colocam-se adesivos abaixo das hastes com os símbolos U, D, C, M, DM e CM que correspondem, respectivamente, a unidades, dezenas, centenas, unidades de milhar, dezenas de milhar e centenas de milhar, sempre começando com a unidade na haste da direita e as demais ordens do número no sistema decimal nas hastes subsequentes (da direita para esquerda), até a haste que se encontra mais à esquerda."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Entretanto, no ábaco da figura, os adesivos não seguiram a disposição usual."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao148_img1_matematica_2016.png"
    },
@@ -54671,6 +55775,10 @@
   "alternativa_e": "Aumentar em 8 unidades.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para uma feira de ciências, dois projéteis de foguetes, A e B, estão sendo construídos para serem lançados. O planejamento é que eles sejam lançados juntos, com o objetivo de o projétil B interceptar o A quando esse alcançar sua altura máxima. Para que isso aconteça, um dos projéteis descreverá uma trajetória parabólica, enquanto o outro irá descrever uma trajetória supostamente retilínea. O gráfico mostra as alturas alcançadas por esses projéteis em função do tempo, nas simulações realizadas."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao149_img1_matematica_2016.png"
@@ -54710,6 +55818,14 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A fim de acompanhar o crescimento de crianças, foram criadas pela Organização Mundial da Saúde (OMS) tabelas de altura, também adotadas pelo Ministério da Saúde do Brasil. Além de informar os dados referentes ao índice de crescimento, a tabela traz gráficos com curvas, apresentando padrões de crescimento estipulados pela OMS."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico apresenta o crescimento de meninas, cuja análise se dá pelo ponto de intersecção\nentre o comprimento, em centímetro, e a idade, em mês completo e ano, da criança."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao151_img1_matematica_2016.png"
    },
@@ -54748,6 +55864,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um adolescente vai a um parque de diversões tendo, prioritariamente, o desejo de ir a um brinquedo que se encontra na área IV, dentre as áreas I, II, III, IV e V existentes. O esquema ilustra o mapa do parque, com a localização da entrada, das cinco áreas com os brinquedos disponíveis e dos possíveis caminhos para se chegar a cada área. O adolescente não tem conhecimento do mapa do parque e decide ir caminhando da entrada até chegar à área IV."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao152_img1_matematica_2016.png"
    },
@@ -54785,6 +55905,10 @@
   "alternativa_e": "80",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma cidade, o número de casos de dengue confirmados aumentou consideravelmente nos últimos dias. A prefeitura resolveu desenvolver uma ação contratando funcionários para ajudar no combate à doença, os quais orientarão os moradores a eliminarem criadouros do mosquito Aedes aegypti, transmissor da dengue. A tabela apresenta o número atual de casos confirmados, por região da cidade."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao153_img1_matematica_2016.png"
@@ -54827,6 +55951,10 @@
   "alternativa_e": "E",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Cinco marcas de pão integral apresentam as seguintes concentrações de fibras (massa de fibra por massa de pão):"
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "• Marca A: 2 g de fibras a cada 50 g de pão;  \n• Marca B: 5 g de fibras a cada 40 g de pão;  \n• Marca C: 5 g de fibras a cada 100 g de pão;  \n• Marca D: 6 g de fibras a cada 90 g de pão;  \n• Marca E: 7 g de fibras a cada 70 g de pão."
@@ -54904,6 +56032,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A permanência de um gerente em uma empresa está condicionada à sua produção no semestre. Essa produção é avaliada pela média do lucro mensal do semestre. Se a média for, no mínimo, de 30 mil reais, o gerente permanece no cargo, caso contrário, ele será despedido. O quadro mostra o lucro mensal, em milhares de reais, dessa empresa, de janeiro a maio do ano em curso."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao157_img1_matematica_2016.png"
    },
@@ -54937,6 +56069,10 @@
   "alternativa_e": "1 mês.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um dos grandes desafios do Brasil é o gerenciamento dos seus recursos naturais, sobretudo os recursos hídricos. Existe uma demanda crescente por água e o risco de racionamento não pode ser descartado. O nível de água de um reservatório foi monitorado por um período, sendo o resultado mostrado no gráfico. Suponha que essa tendência linear observada no monitoramento se prolongue pelos próximos meses."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao158_img1_matematica_2016.png"
@@ -55040,6 +56176,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um petroleiro possui reservatório em formato de um paralelepípedo retangular com as dimensões dadas por 60 m × 10 m de base e 10 m de altura. Com o objetivo de minimizar o impacto ambiental de um eventual vazamento, esse reservatório é subdividido em três compartimentos, A, B e C, de mesmo volume, por duas placas de aço retangulares com dimensões de 7 m de altura e 10 m de base, de modo que os compartimentos são interligados, conforme a figura. Assim, caso haja rompimento no casco do reservatório, apenas uma parte de sua carga vazará."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao161_img1_matematica_2016.png"
    },
@@ -55073,6 +56213,14 @@
   "alternativa_e": "Dezembro",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O cultivo de uma flor rara só é viável se do mês do plantio para o mês subsequente\no clima da região possuir as seguintes peculiaridades:\n• a variação do nível de chuvas (pluviosidade), nesses meses, não for superior a 50 mm;\n• a temperatura mínima, nesses meses, for superior a 15 °C;\n• ocorrer, nesse período, um leve aumento não superior a 5 °C na temperatura máxima."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um floricultor, pretendendo investir no plantio dessa flor em sua região, fez uma consulta a um meteorologista que lhe apresentou o gráfico com as condições previstas para os 12 meses seguintes nessa região."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao162_img1_matematica_2016.png"
@@ -55141,6 +56289,10 @@
   "alternativa_e": "150",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "No tanque de um certo carro de passeio cabem até 50 L de combustível, e o rendimento médio deste carro na estrada é de 15 km/L de combustível. Ao sair para uma viagem de 600 km o motorista observou que o marcador de combustível estava exatamente sobre uma das marcas da escala divisória do medidor, conforme figura a seguir."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao164_img1_matematica_2016.png"
@@ -55213,6 +56365,10 @@
   "alternativa_e": "4 000.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma cidade será construída uma galeria subterrânea que receberá uma rede de canos para o transporte de água de uma fonte (F) até o reservatório de um novo bairro (B).\nApós avaliações, foram apresentados dois projetos para o trajeto de construção da galeria: um segmento de reta que atravessaria outros bairros ou uma semicircunferência que contornaria esses bairros, conforme ilustrado no sistema de coordenadas xOy da figura, em que a unidade de medida nos eixos é o quilômetro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao166_img1_matematica_2016.png"
@@ -55290,6 +56446,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A distribuição de salários pagos em uma empresa pode ser analisada destacando-se a parcela do total da massa salarial que é paga aos 10% que recebem os maiores salários. Isso pode ser representado na forma de um gráfico formado por dois segmentos de reta, unidos em um ponto P, cuja abscissa tem valor igual a 90, como ilustrado na figura.\nNo eixo horizontal do gráfico tem-se o percentual de funcionários, ordenados de forma crescente pelos valores de seus salários, e no eixo vertical tem-se o percentual do total da massa salarial de todos os funcionários."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao169_img1_matematica_2016.png"
    },
@@ -55336,6 +56496,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Ao iniciar suas atividades, um ascensorista registra tanto o número de pessoas que entram quanto o número de pessoas que saem do elevador em cada um dos andares do edifício onde ele trabalha. O quadro apresenta os registros do ascensorista durante a primeira subida do térreo, de onde partem ele e mais três pessoas, ao quinto andar do edifício."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao170_img1_matematica_2016.png"
    },
@@ -55369,6 +56533,10 @@
   "alternativa_e": "800%",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O censo demográfico é um levantamento estatístico que permite a coleta de várias informações. Atabela apresenta os dados obtidos pelo censo demográfico brasileiro nos anos de 1940 e 2000, referentes à concentração da população total, na capital e no interior, nas cinco grandes regiões."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao171_img1_matematica_2016.png"
@@ -55404,6 +56572,14 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um marceneiro está construindo um material didático que corresponde ao encaixe de peças de madeira com 10 cm de altura e formas geométricas variadas, num bloco de madeira em que cada peça se posicione na perfuração com seu formato correspondente, conforme ilustra a figura. O bloco de madeira já possui três perfurações prontas de bases distintas: uma quadrada (Q), de lado 4 cm, uma retangular (R), com base 3 cm e altura 4 cm, e uma em forma de um triângulo equilátero (T), de lado 6,8 cm. Falta realizar uma perfura- ção de base circular (C)."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O marceneiro não quer que as outras peças caibam na perfuração circular e nem que a peça de base circular caiba nas demais perfurações e, para isso, escolherá o diâmetro do círculo que atenda a tais condições. Procurou em suas ferramentas uma serra copo (broca com formato circular) para perfurar a base em madeira, encontrando cinco exemplares, com diferentes medidas de diâmetros, como segue: (I) 3,8 cm; (II) 4,7 cm; (III) 5,6 cm; (IV) 7,2 cm e (V) 9,4 cm."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao172_img1_matematica_2016.png"
    },
@@ -55437,6 +56613,10 @@
   "alternativa_e": "14",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um exame, foi feito o monitoramento dos níveis de duas substâncias presentes (A e B) na corrente sanguínea de uma pessoa, durante um período de 24 h, conforme o resultado apresentado na figura. Um nutricionista, no intuito de prescrever uma dieta para essa pessoa, analisou os níveis dessas substâncias, determinando que, para uma dieta semanal eficaz, deverá ser estabelecido um parâmetro cujo valor será dado pelo número de vezes em\nque os níveis de A e de B forem iguais, porém, maiores que o nível mínimo da substância A durante o período de duração da dieta."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao173_img1_matematica_2016.png"
@@ -55543,6 +56723,10 @@
   "alternativa_e": "De 0 a 25.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um reservatório é abastecido com água por uma torneira e um ralo faz a drenagem da água desse reservatório. Os gráficos representam as vazões Q, em litro por minuto, do volume de água que entra no reservatório pela torneira e do volume que sai pelo ralo, em função do tempo t, em minuto."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao176_img1_matematica_2016.png"
@@ -55658,6 +56842,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em 2011, um terremoto de magnitude 9,0 na escala Richter causou um devastador tsunami no Japão, provocando um alerta na usina nuclear de Fukushima. Em 2013, outro terremoto, de magnitude 7,0 na mesma escala, sacudiu Sichuan (sudoeste da China), deixando centenas de mortos e milhares de feridos. A magnitude de um terremoto na escala Richter pode ser calculada por"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao180_img1_matematica_2016.png"
    },
@@ -55733,6 +56921,10 @@
   "alternativa_e": "Fixação de carbono em moléculas orgânicas.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A coleta das fezes dos animais domésticos em sacolas plásticas e o seu descarte em lixeiras convencionais podem criar condições de degradação que geram produtos prejudiciais ao meio ambiente (Figura 1)."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao48_img1_natureza_2016.jpg"
@@ -55848,6 +57040,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os feromônios são substâncias utilizadas na comunicação entre indivíduos de uma espécie. O primeiro feromônio isolado de um inseto foi o bombicol, substância produzida pela mariposa do bicho-da-seda."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao52_img1_natureza_2016.png"
    },
@@ -55889,6 +57085,10 @@
   "alternativa_e": "Os grãos com diferentes composições químicas sejam padronizados.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O esquema representa, de maneira simplificada, o processo de produção de etanol utilizando milho como matéria-prima."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao53_img1_natureza_2016.jpg"
@@ -55957,6 +57157,10 @@
   "alternativa_e": "Aumenta na faixa das frequências médias baixas.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura 1 apresenta o gráfico da intensidade, em decibéis (dB), da onda sonora emitida por um alto-falante, que está em repouso, e medida por um microfone em função da frequência da onda para diferentes distâncias: 3 mm, 25 mm, 51 mm e 60 mm. A Figura 2 apresenta um diagrama com a indicação das diversas faixas do espectro de frequência sonora para o modelo de alto-falante utilizado neste experimento."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao55_img1_natureza_2016.png"
@@ -56063,6 +57267,10 @@
   "alternativa_e": "75%.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A minimização do tempo e custo de uma reação química, bem como o aumento na sua taxa de conversão, caracterizam a eficiência de um processo químico. Como consequência, produtos podem chegar ao consumidor mais baratos. Um dos parâmetros que mede a eficiência de uma reação química é o seu rendimento molar (R, em %) definido como"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao58_img1_natureza_2016.png"
@@ -56315,6 +57523,10 @@
   "alternativa_e": "162.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A invenção e o acoplamento entre engrenagens revolucionaram a ciência na época e propiciaram a invenção de várias tecnologias, como os relógios. Ao construir um pequeno cronômetro, um relojoeiro usa o sistema de engrenagens mostrado. De acordo com a figura, um motor é ligado ao eixo e movimenta as engrenagens fazendo o ponteiro girar. A frequência do motor é de 18 RPM, e o número de dentes das engrenagens está apresentado no quadro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao66_img1_natureza_2016.png"
@@ -56620,6 +57832,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Três lâmpadas idênticas foram ligadas no circuito esquematizado. A bateria apresenta resistência interna desprezível, e os fios possuem resistência nula. Um técnico fez uma análise do circuito para prever a corrente elétrica nos pontos: A, B, C, D e E; e rotulou essas correntes de IA, IB, IC, ID e IE, respectivamente."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao74_img1_natureza_2016.png"
    },
@@ -56653,6 +57869,10 @@
   "alternativa_e": "Transpiração.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A figura ilustra o movimento da seiva xilêmica em uma planta."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao75_img1_natureza_2016.jpg"
@@ -56688,6 +57908,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Nucleófilos (Nu⁻) são bases de Lewis que reagem com haletos de alquila, por meio de uma reação chamada substituição nucleofílica (SN), como mostrado no esquema:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao76_img1_natureza_2016.png"
    },
@@ -56721,6 +57945,10 @@
   "alternativa_e": "600,0 g",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O trilho de ar é um dispositivo utilizado em laboratórios de física para analisar movimentos em que corpos de prova (carrinhos) podem se mover com atrito desprezivel. A figura ilustra um trilho horizontal com dois carrinhos (1 e 2) em que se realiza um experimento para obter a massa do carrinho 2. No instante em que o carrinho 1, de massa 150,0 g, passa a se mover com velocidade escalar constante, o carrinho 2 está em repouso. No momento em que o carrinho 1 se choca com o carrinho 2, ambos passam a se movimentar juntos com velocidade escalar constante. Os sensores eletrônicos distribuídos ao longo do trilho determinam as posições e registram os instantes associados à passagem de cada carrinho, gerando os dados do quadro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao77_img1_natureza_2016.png"
@@ -56759,6 +57987,10 @@
   "alternativa_e": "Hidrogenosulfato de potássio.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Após seu desgaste completo, os pneus podem ser queimados para a geração de energia. Dentre os gases gerados na combustão completa da borracha vulcanizada, alguns são poluentes e provocam a chuva ácida. Para evitar que escapem para a atmosfera, esses gases podem ser borbulhados em uma solução aquosa contendo uma substância adequada. Considere as informações das substâncias listadas no quadro."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao78_img1_natureza_2016.png"
@@ -56832,6 +58064,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A lipofilia é um dos fatores fundamentais para o planejamento de um fármaco. Ela mede o grau de afinidade que a substância tem com ambientes apolares, podendo ser avaliada por seu coeficiente de partição."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao81_img1_natureza_2016.png"
    },
@@ -56865,6 +58101,10 @@
   "alternativa_e": "10.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma invenção que significou um grande avanço tecnológico na Antiguidade, a polia composta ou a associação de polias, é atribuída a Arquimedes (287 a.C. a 212 a.C.). O aparato consiste em associar uma série de polias móveis a uma fixa. A figura exemplifica um arranjo possível para esse aparato. É relatado que Arquimedes teria demonstrado para o rei Hierão um outro arranjo desse aparato, movendo sozinho, sobre a areia da praia, um navio repleto de passageiros e cargas, algo que seria impossível sem a participação de muitos homens. Suponha que a massa do navio era de 3 000 kg, que o coeficiente de atrito estático entre o navio e a areia era de 0,8 e que Arquimedes tenha puxado o navio com uma força F, paralela à direção do movimento e de módulo igual a 400 N. Considere os fios e as polias ideais, a aceleração da gravidade igual a 10 m/s² e que a superfície da praia é perfeitamente horizontal."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao82_img1_natureza_2016.png"
@@ -56971,6 +58211,10 @@
   "alternativa_e": "II e V",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um experimento para comprovar a natureza ondulatória da radiação de micro-ondas foi realizado da seguinte forma: anotou-se a frequência de operação de um forno de micro-ondas e, em seguida, retirou-se sua plataforma giratória. No seu lugar, colocou-se uma travessa refratária com uma camada grossa de manteiga. Depois disso, o forno foi ligado por alguns segundos. Ao se retirar a travessa refratária do forno, observou-se que havia três pontos de manteiga derretida alinhados sobre toda a travessa. Parte da onda estacionária gerada no interior do forno é ilustrada na figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao86_img1_natureza_2016.png"
@@ -62371,6 +63615,10 @@
    },
    {
     "tipo": "TEXTO_APOIO",
+    "conteudo": "TIPO DE CURVA\nSemirreta oblíqua\nSemirreta horizontal\nRamo de parábola\nArco de circunferência\nRamo de hipérbola"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
     "conteudo": "O fisioterapeuta analisou a dependência entre v e p na equação de Hill e a classificou de acordo com sua representação geométrica no plano cartesiano, utilizando o par de coordenadas (p. V). Admita que K> 0."
    },
    {
@@ -62407,6 +63655,10 @@
   "alternativa_e": "4,45",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em um parque há dois mirantes de alturas distintas que são acessados por elevador panorâmico. O topo do mirante 1 é acessado pelo elevador 1, enquanto que o topo do mirante 2 é acessado pelo elevador 2. Eles encontram-se a uma distância possível de ser percorrida a pé, e entre os mirantes há um teleférico que os liga que pode ou não ser utilizado pelo visitante."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao163_img1_matematica_2017.png"
@@ -62488,6 +63740,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O resultado de uma pesquisa eleitoral, sobre a preferência dos eleitores em relação a dois candidatos, foi representado por meio do Gráfico 1."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao165_img1_matematica_2017.png"
    },
@@ -62534,6 +63790,14 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um cientista, em seus estudos para modelar a pressão arterial de uma pessoa, utiliza uma função do tipo P(t) = A + Bcos(kt) em que A, B e K são constantes reais positivas e t representa a variável tempo, medida em segundo. Considere que um batimento cardíaco representa o intervalo de tempo entre duas sucessivas pressões máximas."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Ao analisar um caso específico, o cientista obteve os dados:"
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao166_img1_matematica_2017.png"
    },
@@ -62567,6 +63831,10 @@
   "alternativa_e": "5",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para decorar uma mesa de festa infantil, um chefe de cozinha usará um melão esférico com diâmetro medindo 10 cm, o qual servirá de suporte para espetar diversos doces. Ele irá retirar uma calota esférica do melão, conforme ilustra a figura, e, para garantir a estabilidade deste suporte, dificultando que o melão role sobre a mesa, o chefe fará o corte de modo que o raio r da seção circular de corte seja de pelo menos 3 cm. Por outro lado, o chefe desejará dispor da maior área possível da região em que serão afixados os doces."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao167_img1_matematica_2017.png"
@@ -62602,6 +63870,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A Igreja de São Francisco de Assis, obra arquitetônica modernista de Oscar Niemeyer, localizada na Lagoa da Pampulha, em Belo Horizonte, possui abóbadas parabólicas. A seta na Figura 1 ilustra uma das abóbadas na entrada principal da capela. A Figura 2 fornece uma vista frontal desta abóbada, com medidas hipotéticas para simplificar os cálculos."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao168_img1_matematica_2017.png"
    },
@@ -62635,6 +63907,10 @@
   "alternativa_e": "U.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Quanto tempo você fica conectado à internet? Para responder a essa pergunta foi criado um miniaplicativo de computador que roda na área de trabalho, para gerar automaticamente um gráfico de setores, mapeando o tempo que uma pessoa acessa cinco sites visitados. Em um computador, foi observado que houve um aumento significativo do tempo de acesso da sexta-feira para o sábado, nos cinco sites mais acessados. A seguir, temos os dados do miniaplicativo para esses dias."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao169_img1_matematica_2017.png"
@@ -62720,6 +63996,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Pivô central é um sistema de irrigação muito usado na agricultura, em que uma área circular é projetada para receber uma estrutura suspensa. No centro dessa área, há uma tubulação vertical que transmite água através de um cano horizontal longo, apoiado em torres de sustentação, as quais giram, sobre rodas, em torno do centro do pivô, também chamado de base, conforme mostram as figuras. Cada torre move-se com velocidade constante."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao171_img1_matematica_2017.png"
    },
@@ -62757,6 +64037,10 @@
   "alternativa_e": "6.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Dois reservatórios A e B são alimentados por bombas distintas por um período de 20 horas. A quantidade de água contida em cada reservatório nesse período pode ser visualizada na figura."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao172_img1_matematica_2017.png"
@@ -62829,6 +64113,10 @@
   "alternativa_e": "7,6%",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O gráfico apresenta a taxa de desemprego (em %) para o período de março de 2008 a abril de 2009, obtida com base nos dados observados nas regiões metropolitanas de Recife, Salvador, Belo Horizonte, Rio de Janeiro, São Paulo e Porto Alegre."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao174_img1_matematica_2017.png"
@@ -62906,6 +64194,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma empresa construirá sua página na internet e espera atrair um público de aproximadamente um milhão de clientes. Para acessar essa página, será necessária uma senha com formato a ser definido pela empresa. Existem cinco opções de formato oferecidas pelo programador, descritas no quadro, em que “L” e “D” representam, respectivamente, letra maiúscula e dígito."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao177_img1_matematica_2017.png"
    },
@@ -62943,6 +64235,10 @@
   "alternativa_e": "28",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Como não são adeptos da prática de esportes, um grupo de amigos resolveu fazer um torneio de futebol utilizando videogame. Decidiram que cada jogador joga uma única vez com cada um dos outros jogadores. O campeão será aquele que conseguir o maior número de pontos. Observaram que o número de partidas jogadas depende do número de jogadores, como mostra o quadro:"
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao178_img1_matematica_2017.png"
@@ -75634,7 +76930,7 @@
   "ano": 2019,
   "numero": 146,
   "enunciado": "Em qual(is) desses dias o(s) aviso(s) foi(ram) emitido(s) corretamente?",
-  "imagem": "",
+  "imagem": "questao146_img1_matematica_2019.png",
   "texto_apoio": "O serviço de meteorologia de uma cidade emite relatórios diários com a previsão do tempo. De posse dessas informações, a prefeitura emite três tipos de alertas para a população:\n\n• Alerta cinza: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura será\n\ninferior a 10 °C, e a umidade relativa do ar for inferior a 40%;\n\n• Alerta laranja: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura deve\n\nvariar entre 35 °C e 40 °C, e a umidade relativa do ar deve ficar abaixo de 30%;\n\n• Alerta vermelho: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura será superior a 40 ºC, e a umidade relativa do ar for inferior a 25%.\n\nUm resumo da previsão do tempo nessa cidade, para um período de 15 dias, foi apresentado no gráfico.\n\nDecorridos os 15 dias de validade desse relatório, um funcionário percebeu que, no período a que se refere o gráfico, foram emitidos os seguintes alertas:\n\n• Dia 1: alerta cinza;\n\n• Dia 12: alerta laranja;\n\n• Dia 13: alerta vermelho.",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -75659,27 +76955,15 @@
    },
    {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "• Alerta cinza: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura será"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "inferior a 10 °C, e a umidade relativa do ar for inferior a 40%;"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• Alerta laranja: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura deve"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "variar entre 35 °C e 40 °C, e a umidade relativa do ar deve ficar abaixo de 30%;"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• Alerta vermelho: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura será superior a 40 ºC, e a umidade relativa do ar for inferior a 25%."
+    "conteudo": "• Alerta cinza: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura será inferior a 10 °C, e a umidade relativa do ar for inferior a 40%;\n• Alerta laranja: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura deve variar entre 35 °C e 40 °C, e a umidade relativa do ar deve ficar abaixo de 30%;\n• Alerta vermelho: deverá ser emitido sempre que a previsão do tempo estimar que a temperatura será superior a 40 °C, e a umidade relativa do ar for inferior a 25%."
    },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "Um resumo da previsão do tempo nessa cidade, para um período de 15 dias, foi apresentado no gráfico."
+   },
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao146_img1_matematica_2019.png"
    },
    {
     "tipo": "TEXTO_APOIO",
@@ -75687,15 +76971,7 @@
    },
    {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "• Dia 1: alerta cinza;"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• Dia 12: alerta laranja;"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• Dia 13: alerta vermelho."
+    "conteudo": "• Dia 1: alerta cinza;\n• Dia 12: alerta laranja;\n• Dia 13: alerta vermelho."
    },
    {
     "tipo": "ENUNCIADO",
@@ -88435,7 +89711,7 @@
   "alternativa_c": "Incipiente atribuição de prestígio social a músicas instrumentais feitas para a dança.",
   "alternativa_d": "Tensa relação entre o erudito e o popular na constituição da música brasileira.",
   "alternativa_e": "Importância atribuída à música clássica a sociedade brasileira do século XIX.",
-  "resposta_correta": "E",
+  "resposta_correta": "D",
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
@@ -91556,7 +92832,7 @@
   "ano": 2021,
   "numero": 107,
   "enunciado": "Considerando desprezível a resistência do ar, qual versão apresenta a maior potência?",
-  "imagem": "",
+  "imagem": "questao107_img1_natureza_2021.png",
   "texto_apoio": "Analisando a ficha técnica de um automóvel popular, verificam-se algumas características em relação ao seu desempenho. Considerando o mesmo automóvel em duas versões, uma delas funcionando a álcool e outra, a gasolina, tem-se os dados apresentados no quadro, em relação ao desempenho de cada motor.",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -91580,6 +92856,10 @@
     "conteudo": "Analisando a ficha técnica de um automóvel popular, verificam-se algumas características em relação ao seu desempenho. Considerando o mesmo automóvel em duas versões, uma delas funcionando a álcool e outra, a gasolina, tem-se os dados apresentados no quadro, em relação ao desempenho de cada motor."
    },
    {
+    "tipo": "IMAGEM",
+    "conteudo": "questao107_img1_natureza_2021.png"
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Considerando desprezível a resistência do ar, qual versão apresenta a maior potência?"
    }
@@ -91590,7 +92870,7 @@
   "ano": 2021,
   "numero": 108,
   "enunciado": "Considerando os versos de sextilha e as informações da tabela, a qual planeta o cordel faz referência?",
-  "imagem": "",
+  "imagem": "questao108_img1_natureza_2021.png",
   "texto_apoio": "**TEXTO I**\n\nNo cordel intitulado Senhor dos Anéis, de autoria de Gonçalo Ferreira da Silva, lê-se a sextilha:\n\nA distância em relação  \nAo nosso planeta amado  \nPouco menos que a do Sol  \nEle está distanciado  \nE menos denso que a água  \nQuando no normal estado\n\nMEDEIROS, A.; AGRA, J. T. M., A astronomia na literatura de cordel,\n\n**Física na Escola,** n. 1, abr. 2010 (fragmento)\n\n**TEXTO II**\n\nDistâncias médias dos planetas ao Sol e suas densidades médias\n\n**Características dos planetas.** Disponível em: www.astronoo.com.",
   "fonte": "Acesso em: 8 de nov. 2019 (adaptado)",
   "idioma_estrangeiro": "",
@@ -91636,6 +92916,10 @@
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "Distâncias médias dos planetas ao Sol e suas densidades médias"
+   },
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao108_img1_natureza_2021.png"
    },
    {
     "tipo": "REFERENCIA",
@@ -97874,6 +99158,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O governo de um estado pretende realizar uma obra de infraestrutura para auxiliar na integração e no processo de escoamento da produção agrícola de duas cidades. O projeto consiste na interligação direta das cidades A e B com a Rodovia 003, pela construção das Rodovias 001 e 002. As duas rodovias serão construídas em linha reta e deverão se conectar à Rodovia 003 em um mesmo ponto, conforme esboço apresentado na figura, na qual estão também indicadas as posições das cidades A e B, considerando o eixo x posicionado sobre a Rodovia 003, e cinco localizações sugeridas para o ponto de conexão entre as três rodovias."
+   },
+   {
     "tipo": "IMAGEM",
     "conteudo": "questao176_img1_matematica_2022.png"
    },
@@ -99894,7 +101182,7 @@
   "ano": 2023,
   "numero": 56,
   "enunciado": "A charge ilustra um anseio presente na sociedade contemporânea, que se caracteriza pela",
-  "imagem": "",
+  "imagem": "questao56_img1_humanas_2023.png",
   "texto_apoio": "",
   "fonte": "LAERTE. Disponível em: www.laerte.art.br. Acesso em: 23 nov. 2021 (adaptado)",
   "idioma_estrangeiro": "",
@@ -99913,6 +101201,10 @@
   "alternativa_e": "Conivência em interesses partidários.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao56_img1_humanas_2023.png"
+   },
    {
     "tipo": "REFERENCIA",
     "conteudo": "LAERTE. Disponível em: www.laerte.art.br. Acesso em: 23 nov. 2021 (adaptado)"
@@ -100228,9 +101520,9 @@
   "ano": 2023,
   "numero": 65,
   "enunciado": "As transformações pelas quais passaram as sociedades ocidentais e que possibilitaram o reconhecimento recente do trabalho da arquiteta mencionada no texto foram resultado das mobilizações sociais pela",
-  "imagem": "",
+  "imagem": "questao65_img1_humanas_2023.jpg",
   "texto_apoio": "Nas reportagens publicadas sobre a inauguração de Museu de Arte de São Paulo, em 1947, quando ele ainda ocupava um edifício na rua Sete de Abril, Lina Bo Bardi não foi mencionada nenhuma vez. A arquiteta era responsável pelo projeto do museu que mudaria para sempre a posição de São Paulo no circuito mundial das artes. Mas não houve nenhum registro disso. O louvor se concentrou em seu marido e parceiro profissional, o respeitado crítico de arte Pietro Maria Bardi. Passados 75 anos, a mulher então ignorada recebeu um Leão de Ouro póstumo, a maior homenagem da Bienal de Arquitetura de Veneza, e tem agora sua história contada em duas biografias de peso, que procuram destrinchar uma carreira marcada pela ousadia e pela contradição.",
-  "fonte": "PORTO, W. L**ina Bo Bardi tem sua arquitetura contraditória destrinchada em biografias**. Disponível em: www1.folha.uol.com.br. Acesso em: 10 nov. 2021 (adaptado).",
+  "fonte": "PORTO, W. Lina Bo Bardi tem sua arquitetura contraditória destrinchada em biografias. Disponível em: www1.folha.uol.com.br. Acesso em: 10 nov. 2021 (adaptado).",
   "idioma_estrangeiro": "",
   "texto_apoio_1": "",
   "texto_apoio_2": "",
@@ -100248,12 +101540,16 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "IMAGEM",
+    "conteudo": "questao65_img1_humanas_2023.jpg"
+   },
+   {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "Nas reportagens publicadas sobre a inauguração de Museu de Arte de São Paulo, em 1947, quando ele ainda ocupava um edifício na rua Sete de Abril, Lina Bo Bardi não foi mencionada nenhuma vez. A arquiteta era responsável pelo projeto do museu que mudaria para sempre a posição de São Paulo no circuito mundial das artes. Mas não houve nenhum registro disso. O louvor se concentrou em seu marido e parceiro profissional, o respeitado crítico de arte Pietro Maria Bardi. Passados 75 anos, a mulher então ignorada recebeu um Leão de Ouro póstumo, a maior homenagem da Bienal de Arquitetura de Veneza, e tem agora sua história contada em duas biografias de peso, que procuram destrinchar uma carreira marcada pela ousadia e pela contradição."
+    "conteudo": "Nas reportagens publicadas sobre a inauguração do Museu de Arte de São Paulo, em 1947, quando ele ainda ocupava um edifício na rua Sete de Abril, Lina Bo Bardi não foi mencionada nenhuma vez. A arquiteta era responsável pelo projeto do museu que mudaria para sempre a posição de São Paulo no circuito mundial das artes. Mas não houve nenhum registro disso. O louvor se concentrou em seu marido e parceiro profissional, o respeitado crítico de arte Pietro Maria Bardi. Passados 75 anos, a mulher então ignorada recebeu um Leão de Ouro póstumo, a maior homenagem da Bienal de Arquitetura de Veneza, e tem agora sua história contada em duas biografias de peso, que procuram destrinchar uma carreira marcada pela ousadia e pela contradição."
    },
    {
     "tipo": "REFERENCIA",
-    "conteudo": "PORTO, W. L**ina Bo Bardi tem sua arquitetura contraditória destrinchada em biografias**. Disponível em: www1.folha.uol.com.br. Acesso em: 10 nov. 2021 (adaptado)."
+    "conteudo": "PORTO, W. Lina Bo Bardi tem sua arquitetura contraditória destrinchada em biografias. Disponível em: www1.folha.uol.com.br. Acesso em: 10 nov. 2021 (adaptado)."
    },
    {
     "tipo": "ENUNCIADO",
@@ -102134,7 +103430,7 @@
   "ano": 2023,
   "numero": 44,
   "enunciado": "Essa campanha publicitária do Ministério da Saúde visa",
-  "imagem": "",
+  "imagem": "questao44_img1_linguagens_2023.jpg",
   "texto_apoio": "",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -102153,6 +103449,14 @@
   "alternativa_e": "Informar sobre o aumento de anticorpos nas mães.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao44_img1_linguagens_2023.jpg"
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "Disponível em: www.facebook.com/minsaude. Acesso em: 13 jun. 2018."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Essa campanha publicitária do Ministério da Saúde visa"
@@ -102258,7 +103562,7 @@
   "ano": 2023,
   "numero": 129,
   "enunciado": "Em qual dos fluidos o pesquisador provavelmente encontrou a maior concentração dessa substância?",
-  "imagem": "",
+  "imagem": "questao129_img1_natureza_2023.png",
   "texto_apoio": "O Aldrin é um inseticida agrícola organoclorado sintético de baixa polaridade, cuja estrutura molecular simétrica, de fórmula\n\n, está representada na figura. Introduzido na agricultura a partir da década de 1950, esse composto apresenta alta persistência no meio ambiente e acumulação nos organismos, sendo danoso para a saúde.\n\nVIEGAS JÚNIOR, C. Terpenos com atividade inseticida: uma alternativa para o controle químico de insetos. **Química Nova**, v. 26, n. 3, 2003 (adaptado).\n\nUm pesquisador coletou fluidos biológicos de indivíduos de uma população contaminada por esse inseticida agrícola. Ele analisou amostras de saliva, sangue, lágrima, urina e leite quanto à presença dessa substância.",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -102279,15 +103583,15 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "O Aldrin é um inseticida agrícola organoclorado sintético de baixa polaridade, cuja estrutura molecular simétrica, de fórmula"
+    "conteudo": "O Aldrin é um inseticida agrícola organoclorado sintético de baixa polaridade, cuja estrutura molecular simétrica, de fórmula C₁₂H₈Cl₆, está representada na figura. Introduzido na agricultura a partir da década de 1950, esse composto apresenta alta persistência no meio ambiente e acumulação nos organismos, sendo danoso para a saúde."
    },
    {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": ", está representada na figura. Introduzido na agricultura a partir da década de 1950, esse composto apresenta alta persistência no meio ambiente e acumulação nos organismos, sendo danoso para a saúde."
+    "tipo": "IMAGEM",
+    "conteudo": "questao129_img1_natureza_2023.png"
    },
    {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "VIEGAS JÚNIOR, C. Terpenos com atividade inseticida: uma alternativa para o controle químico de insetos. **Química Nova**, v. 26, n. 3, 2003 (adaptado)."
+    "tipo": "REFERENCIA",
+    "conteudo": "VIEGAS JÚNIOR, C. Terpenos com atividade inseticida: uma alternativa para o controle químico de insetos. Química Nova, v. 26, n. 3, 2003 (adaptado)."
    },
    {
     "tipo": "TEXTO_APOIO",
@@ -102715,6 +104019,10 @@
   "alternativa_e": "Há somente duas soluções possíveis, uma em que as somas em cada lado do triângulo são iguais a 10 e outra em que as somas são iguais a 11.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O triângulo da figura é denominado triângulo mágico. Nos círculos, escrevem-se os números de 1 a 6, sem repetição, com um número em cada círculo. O objetivo é distribuir os números de forma que as somas dos números em cada lado do triângulo sejam iguais."
+   },
    {
     "tipo": "IMAGEM",
     "conteudo": "questao146_img1_matematica_2023.jpg"
@@ -105730,7 +107038,7 @@
   "ano": 2024,
   "numero": 25,
   "enunciado": "Eliseu D’Angelo Visconti (1866-1944) desenvolveu diversas obras no Brasil, com grande influência das escolas europeias. Em sua pintura Três meninas no jardim, há",
-  "imagem": "",
+  "imagem": "questao25_img1_linguagens_2024.jpg",
   "texto_apoio": "",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -105749,6 +107057,10 @@
   "alternativa_e": "tematização de elementos cotidianos, que resgata modelos de representação da arte realista.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao25_img1_linguagens_2024.jpg"
+   },
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "VISCONTI, E. Três meninas no jardim. Óleo sobre tela, 81 × 65 cm. Museu Nacional de Belas Artes,\nRio de Janeiro, 1935."
@@ -106252,7 +107564,7 @@
   "ano": 2024,
   "numero": 36,
   "enunciado": "A leitura comparativa das duas esculturas, separadas por mais de 2 500 anos, indica a",
-  "imagem": "questao36_img1_linguagens_2024.jpg|questao36_img2_linguagens_2024.jpg",
+  "imagem": "questao36_img2_linguagens_2024.jpg|questao36_img1_linguagens_2024.jpg",
   "texto_apoio": "",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -106273,11 +107585,7 @@
   "elementos": [
    {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "TEXTO I\nTEXTO II"
-   },
-   {
-    "tipo": "IMAGEM",
-    "conteudo": "questao36_img1_linguagens_2024.jpg"
+    "conteudo": "TEXTO I"
    },
    {
     "tipo": "IMAGEM",
@@ -106285,7 +107593,19 @@
    },
    {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "MODIGLIANI, A. Cabeça de mulher. Circa 1910-1911. Anônimo. Cabeça de uma figura feminina.\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\nCirca 2700-2500 a.C. Escultura em mármore, 8 × 3,2 cm.\nNational Gallery of Art, Washington.\nMetropolitan Museum of Art, Nova Iorque."
+    "conteudo": "Anônimo. Cabeça de uma figura feminina.\nCirca 2700-2500 a.C. Escultura em mármore, 8 × 3,2 cm.\nMetropolitan Museum of Art, Nova Iorque."
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "TEXTO II"
+   },
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao36_img1_linguagens_2024.jpg"
+   },
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "MODIGLIANI, A. Cabeça de mulher. Circa 1910-1911.\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\nNational Gallery of Art, Washington."
    },
    {
     "tipo": "REFERENCIA",
@@ -108694,7 +110014,7 @@
   "ano": 2024,
   "numero": 113,
   "enunciado": "Em qual etapa numerada ocorre uma transformação redox como a que ocorre nos procariontes nitrificantes?",
-  "imagem": "",
+  "imagem": "questao113_img1_natureza_2024.jpg|questao113_img2_natureza_2024.jpg",
   "texto_apoio": "",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -108722,6 +110042,14 @@
     "conteudo": "O esquema representa a ação de organismos no ciclo do nitrogênio e no ciclo do carbono. Os números correspondem a algumas etapas dos dois ciclos distintos."
    },
    {
+    "tipo": "IMAGEM",
+    "conteudo": "questao113_img1_natureza_2024.jpg"
+   },
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao113_img2_natureza_2024.jpg"
+   },
+   {
     "tipo": "REFERENCIA",
     "conteudo": "Disponível em: https://pt.khanacademy.org. Acesso em: 27 jun. 2024 (adaptado)."
    },
@@ -108736,7 +110064,7 @@
   "ano": 2024,
   "numero": 114,
   "enunciado": "Na condição de razão ar/combustível igual a 18, haverá uma emissão",
-  "imagem": "",
+  "imagem": "questao114_img1_natureza_2024.png",
   "texto_apoio": "",
   "fonte": "",
   "idioma_estrangeiro": "",
@@ -108758,6 +110086,10 @@
    {
     "tipo": "TEXTO_APOIO",
     "conteudo": "Um dos agentes que mais contribui para a poluição do ar é o automóvel a combustão interna. Em áreas urbanas, isso é demonstrado dramaticamente pela fumaça fotoquímica, resultante da interação entre óxidos de nitrogênio, hidrocarbonetos e luz solar, para formar produtos de oxidação, que causam irritação aos olhos, ao aparelho respiratório e danos às plantas. As condições de operação de motores a combustão, como a razão da mistura ar/combustível no cilindro, influenciam na composição dos gases lançados pelo escapamento na atmosfera. O gráfico ilustra a variação nas composições dos principais gases, dióxido de carbono (CO₂), hidrocarbonetos (HC), monóxido de carbono (CO), monóxido de nitrogênio (NO) e oxigênio molecular (O₂), emitidos por um motor a gasolina, em diferentes razões ar/combustível, em massa."
+   },
+   {
+    "tipo": "IMAGEM",
+    "conteudo": "questao114_img1_natureza_2024.png"
    },
    {
     "tipo": "REFERENCIA",
@@ -110763,27 +112095,7 @@
    },
    {
     "tipo": "TEXTO_APOIO",
-    "conteudo": "O alcance de cada uma das cinco câmeras é:"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• câmera I: 1\ndo percurso;\n5"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• câmera II: 3\n10 do percurso;"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• câmera III: 1\ndo percurso;\n10"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• câmera IV: 1\n10 do percurso;"
-   },
-   {
-    "tipo": "TEXTO_APOIO",
-    "conteudo": "• câmera V: 3\ndo percurso.\n10"
+    "conteudo": "O alcance de cada uma das cinco câmeras é:\n• câmera I: 1/5 do percurso;\n• câmera II: 3/10 do percurso;\n• câmera III: 1/10 do percurso;\n• câmera IV: 1/10 do percurso;\n• câmera V: 3/10 do percurso."
    },
    {
     "tipo": "TEXTO_APOIO",

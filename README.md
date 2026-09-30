@@ -265,7 +265,7 @@ notamil_web/
     │   ├── seed_questoes.py
     │   └── limpar_tentativas.py
     ├── fixtures/questoes.json # banco inicial com 2969 questões do ENEM
-    ├── static/simulados/      # css, js e as 1187 imagens das questões
+    ├── static/simulados/      # css, js e as 1199 imagens das questões
     ├── templates/simulados/
     ├── forms.py · urls.py · views.py · admin.py · tests.py
 ```
