@@ -27106,6 +27106,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "José, Carlos e Paulo devem transportar em suas bicicletas uma certa quantidade de laranjas. Decidiram dividir o trajeto a ser percorrido em duas partes, sendo que ao final da primeira parte eles redistribuiriam a quantidade de laranjas que cada um carregava dependendo do cansaço de cada um. Na primeira parte do trajeto José, Carlos e Paulo dividiram as laranjas na proporção 6 : 5 : 4, respectivamente. Na segunda parte do trajeto José, Carlos e Paulo dividiram as laranjas na proporção 4 : 4 : 2, respectivamente."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Sabendo-se que um deles levou 50 laranjas a mais no segundo trajeto, qual a quantidade de laranjas que José, Carlos e Paulo, nessa ordem, transportaram na segunda parte do trajeto?"
    }
@@ -33908,6 +33912,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma torneira não foi fechada corretamente e ficou pingando, da meia-noite às seis horas da manhã, com a frequência de uma gota a cada três segundos. Sabe-se que cada gota d’agua tem volume de 0,2 mL."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual foi o valor mais aproximado do total de água desperdiçada nesse período, em litros?"
    }
@@ -34847,6 +34855,10 @@
   "alternativa_e": "3X − 2Y + 10 = 0",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Na aferição de um novo semáforo, os tempos são ajustados de modo que, em cada ciclo completo (verde-amarelo- vermelho), a luz amarela permaneça acesa por 5 segundos, e o tempo em que a luz verde permaneça acesa seja igual a 2/3 do tempo em que a luz vermelha fique acesa. A luz verde fica acesa, em cada ciclo, durante X segundos e cada ciclo dura Y segundos."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é a expressão que representa a relação entre X e Y"
@@ -40654,6 +40666,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um carpinteiro fabrica portas retangulares maciças, feitas de um mesmo material. Por ter recebido de seus clientes pedidos de portas mais altas, aumentou sua altura em ⅛, preservando suas espessuras. A fim de manter o custo com o material de cada porta, precisou reduzir a largura."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "A razão entre a largura da nova porta e a largura da porta anterior é"
    }
@@ -40794,6 +40810,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Durante a Segunda Guerra Mundial, para decifrarem as mensagens secretas, foi utilizada a técnica de decomposição em fatores primos. Um número N é dado pela expressão 2ˣ · 5ʸ · 7ᶻ, na qual x, y e z são números inteiros não negativos. Sabe-se que N é múltiplo de 10 e não é múltiplo de 7."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O número de divisores de N, diferentes de N, é"
    }
@@ -40857,6 +40877,10 @@
   "alternativa_e": "6 horas e 15 minutos.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um show especial de Natal teve 45 000 ingressos vendidos. Esse evento ocorrerá em um estádio de futebol que disponibilizará 5 portões de entrada, com 4 catracas eletrônicas por portão. Em cada uma dessas catracas, passará uma única pessoa a cada 2 segundos. O público foi igualmente dividido pela quantidade de portões e catracas, indicados no ingresso para o show, para a efetiva entrada no estádio. Suponha que todos aqueles que compraram ingressos irão ao show e que todos passarão pelos portões e catracas eletrônicas indicados."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é o tempo mínimo para que todos passem pelas catracas?"
@@ -40960,6 +40984,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma organização não governamental divulgou um levantamento de dados realizado em algumas cidades brasileiras sobre saneamento básico. Os resultados indicam que somente 36% do esgoto gerado nessas cidades é tratado, o que mostra que 8 bilhões de litros de esgoto sem nenhum tratamento são lançados todos os dias nas águas.\nUma campanha para melhorar o saneamento básico nessas cidades tem como meta a redução da quantidade de esgoto lançado nas águas diariamente, sem tratamento, para 4 bilhões de litros nos próximos meses."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Se o volume de esgoto gerado permanecer o mesmo e a meta dessa campanha se concretizar, o percentual de esgoto tratado passará a ser"
    }
@@ -41024,6 +41052,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Boliche é um jogo em que se arremessa uma bola sobre uma pista para atingir dez pinos, dispostos em uma formação de base triangular, buscando derrubar o maior número de pinos. A razão entre o total de vezes em que o jogador derruba todos os pinos e o número de jogadas determina seu desempenho.\nEm uma disputa entre cinco jogadores, foram obtidos os seguintes resultados:\n• Jogador I – Derrubou todos os pinos 50 vezes em 85 jogadas.\n• Jogador II – Derrubou todos os pinos 40 vezes em 65 jogadas.\n• Jogador III – Derrubou todos os pinos 20 vezes em 65 jogadas.\n• Jogador IV – Derrubou todos os pinos 30 vezes em 40 jogadas.\n• Jogador V – Derrubou todos os pinos 48 vezes em 90 jogadas."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual desses jogadores apresentou maior desempenho?"
    }
@@ -41087,6 +41119,10 @@
   "alternativa_e": "6 000 000.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O condomínio de um edifício permite que cada proprietário de apartamento construa um armário em sua vaga de garagem. O projeto da garagem, na escala 1 : 100, foi disponibilizado aos interessados já com as especificações das dimensões do armário, que deveria ter o formato de um paralelepípedo retângulo reto, com dimensões, no projeto, iguais a 3 cm, 1 cm e 2 cm."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "O volume real do armário, em centímetros cúbicos, será"
@@ -41202,6 +41238,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma pessoa possui um espaço retangular de lados 11,5 m e 14 m no quintal de sua casa e pretende fazer um pomar doméstico de maçãs. Ao pesquisar sobre o plantio dessa fruta, descobriu que as mudas de maçã devem ser plantadas em covas com uma única muda e com espaçamento mínimo de 3 metros entre elas e entre elas e as laterais do terreno. Ela sabe que conseguirá plantar um número maior de mudas em seu pomar se dispuser as covas em filas alinhadas paralelamente ao lado de maior extensão."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O número máximo de mudas que essa pessoa poderá plantar no espaço disponível é"
    }
@@ -41311,6 +41351,10 @@
   "alternativa_e": "0,49152.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O psicólogo de uma empresa aplica um teste para analisar a aptidão de um candidato a determinado cargo. O teste consiste em uma série de perguntas cujas respostas devem ser verdadeiro ou falso e termina quando o psicólogo fizer a décima pergunta ou quando o candidato der a segunda resposta errada. Com base em testes anteriores, o psicólogo sabe que a probabilidade de o candidato errar uma resposta é 0,20."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "A probabilidade de o teste terminar na quinta pergunta é"
@@ -41540,6 +41584,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma ponte precisa ser dimensionada de forma que possa ter três pontos de sustentação. Sabe-se que a carga máxima suportada pela ponte será de 12 t. O ponto de sustentação central receberá 60% da carga da ponte, e o restante da carga será distribuído igualmente entre os outros dois pontos de sustentação."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "No caso de carga máxima, as cargas recebidas pelos três pontos de sustentação serão, respectivamente,"
    }
@@ -41608,6 +41656,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A maior piscina do mundo, registrada no livro Guiness, está localizada no Chile, em San Alfonso del Mar, cobrindo um terreno de 8 hectares de área.\nSabe-se que 1 hectare corresponde a 1 hectômetro quadrado."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é o valor, em metros quadrados, da área coberta pelo terreno da piscina?"
    }
@@ -41671,6 +41723,10 @@
   "alternativa_e": "[70 ; 90].",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Os vidros para veículos produzidos por certo fabricante têm transparências entre 70% e 90%, dependendo do lote fabricado. Isso significa que, quando um feixe luminoso incide no vidro, uma parte entre 70% e 90% da luz consegue atravessá-lo. Os veículos equipados com vidros desse fabricante terão instaladas, nos vidros das portas, películas protetoras cuja transparência, dependendo do lote fabricado, estará entre 50% e 70%. Considere que uma porcentagem P da intensidade da luz, proveniente de uma fonte externa, atravessa o vidro e a película."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "De acordo com as informações, o intervalo das porcentagens que representam a variação total possível de P é"
@@ -41770,6 +41826,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Diariamente, uma residência consome 20 160 Wh. Essa residência possui 100 células solares retangulares (dispositivos capazes de converter a luz solar em energia elétrica) de dimensões 6 cm × 8 cm. Cada uma das tais células produz, ao longo do dia, 24 Wh por centímetro de diagonal. O proprietário dessa residência quer produzir, por dia, exatamente a mesma quantidade de energia que sua casa consome."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual deve ser a ação desse proprietário para que ele atinja o seu objetivo?"
    }
@@ -41800,6 +41860,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma pessoa compra semanalmente, numa mesma loja, sempre a mesma quantidade de um produto que custa R$ 10,00 a unidade. Como já sabe quanto deve gastar, leva sempre R$ 6,00 a mais do que a quantia necessária para comprar tal quantidade, para o caso de eventuais despesas extras. Entretanto, um dia, ao chegar à loja, foi informada de que o preço daquele produto havia aumentado 20%. Devido a esse reajuste, concluiu que o dinheiro levado era a quantia exata para comprar duas unidades a menos em relação à quantidade habitualmente comprada."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "A quantia que essa pessoa levava semanalmente para fazer a compra era"
    }
@@ -41829,6 +41893,10 @@
   "alternativa_e": "1h.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um executivo sempre viaja entre as cidades A e B, que estão localizadas em fusos horários distintos. O tempo de duração da viagem de avião entre as duas cidades é de 6 horas. Ele sempre pega um voo que sai de A às 15h e chega à cidade B às 18h (respectivos horários locais).\nCerto dia, ao chegar à cidade B, soube que precisava estar de volta à cidade A, no máximo, até as 13h do dia seguinte (horário local de A)."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Para que o executivo chegue à cidade A no horário correto e admitindo que não haja atrasos, ele deve pegar um voo saindo da cidade B, em horário local de B, no máximo à(s)"
@@ -42584,6 +42652,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Visando minimizar impactos ambientais, a legislação brasileira determina que resíduos químicos lançados diretamente no corpo receptor tenham pH entre 5,0 e 9,0. Um resíduo líquido aquoso gerado em um processo industrial tem concentração de íons hidroxila igual a 1,0 × 10⁻¹⁰ mol/L. Para atender a legislação, um químico separou as seguintes substâncias, disponibilizadas no almoxarifado da empresa: CH₃COOH, Na₂SO₄, CH₃OH, K₂CO₃ e NH₄Cl."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Para que o resíduo possa ser lançado diretamente no corpo receptor, qual substância poderia ser empregada no ajuste do pH?"
    }
@@ -42720,6 +42792,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um pesquisador percebe que o rótulo de um dos vidros em que guarda um concentrado de enzimas digestivas está ilegível. Ele não sabe qual enzima o vidro contém, mas desconfia de que seja uma protease gástrica, que age no estômago digerindo proteínas. Sabendo que a digestão no estômago é ácida e no intestino é básica, ele monta cinco tubos de ensaio com alimentos diferentes, adiciona o concentrado de enzimas em soluções com pH determinado e aguarda para ver se a enzima age em algum deles."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O tubo de ensaio em que a enzima deve agir para indicar que a hipótese do pesquisador está correta é aquele que contém"
    }
@@ -42787,6 +42863,10 @@
   "alternativa_e": "C6 H5 –CH2 –CO–NH–CH3.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O estudo de compostos orgânicos permite aos analistas definir propriedades físicas e químicas responsáveis pelas características de cada substância descoberta. Um laboratório investiga moléculas quirais cuja cadeia carbônica seja insaturada, heterogênea e ramificada."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "A fórmula que se enquadra nas características da molécula investigada é"
@@ -45256,6 +45336,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma competição esportiva envolveu 20 equipes com 10 atletas cada. Uma denúncia à organização dizia que um dos atletas havia utilizado substância proibida. Os organizadores, então, decidiram fazer um exame antidoping. Foram propostos três modos diferentes para escolher os atletas que irão realizá-lo:\nModo I: sortear três atletas dentre todos os participantes;\nModo II: sortear primeiro uma das equipes e, desta, sortear três atletas;\nModo III: sortear primeiro três equipes e, então, sortear um atleta de cada uma dessas três equipes.\nConsidere que todos os atletas têm igual probabilidade de serem sorteados e que P(I), P(II) e P(III) sejam as probabilidades de o atleta que utilizou a substância proibida seja um dos escolhidos para o exame no caso do sorteio ser feito pelo modo I, II ou III."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Comparando-se essas probabilidades, obtém-se"
    }
@@ -47620,6 +47704,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma fábrica de sorvetes utiliza embalagens plásticas no formato de paralelepípedo retangular reto. Internamente, a embalagem tem 10 cm de altura e base de 20 cm por 10 cm. No processo de confecção do sorvete, uma mistura é colocada na embalagem no estado líquido e, quando levada ao congelador, tem seu volume aumentado em 25%, ficando com consistência cremosa.\nInicialmente é colocada na embalagem uma mistura sabor chocolate com volume de 1 000 cm³ e, após essa mistura ficar cremosa, será adicionada uma mistura sabor morango, de modo que, ao final do processo de congelamento, a embalagem fique completamente preenchida com sorvete, sem transbordar."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O volume máximo, em cm³, da mistura sabor morango que deverá ser colocado na embalagem é"
    }
@@ -47649,6 +47737,10 @@
   "alternativa_e": "80/100",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma central de atendimento, cem pessoas receberam senhas numeradas de 1 até 100. Uma das senhas é sorteada ao acaso."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é a probabilidade de a senha sorteada ser um número de 1 a 20?"
@@ -47756,6 +47848,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para resolver o problema de abastecimento de água foi decidida, numa reunião do condomínio, a construção de uma nova cisterna. A cisterna atual tem formato cilíndrico, com 3 m de altura e 2 m de diâmetro, e estimou-se que a nova cisterna deverá comportar 81 m³ de água, mantendo o formato cilíndrico e a altura da atual. Após a inauguração da nova cisterna a antiga será desativada. Utilize 3,0 como aproximação para π."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual deve ser o aumento, em metros, no raio da cisterna para atingir o volume desejado?"
    }
@@ -47857,6 +47953,10 @@
   "alternativa_e": "30",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para o modelo de um troféu foi escolhido um poliedro P, obtido a partir de cortes nos vértices de um cubo. Com um corte plano em cada um dos cantos do cubo, retira-se o canto, que é um tetraedro de arestas menores do que metade da aresta do cubo. Cada face do poliedro P, então, é pintada usando uma cor distinta das demais faces."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Com base nas informações, qual é a quantidade de cores que serão utilizadas na pintura das faces do troféu?"
@@ -47968,6 +48068,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O acréscimo de tecnologias no sistema produtivo industrial tem por objetivo reduzir custos e aumentar a produtividade. No primeiro ano de funcionamento, uma indústria fabricou 8 000 unidades de um determinado produto. No ano seguinte, investiu em tecnologia adquirindo novas máquinas e aumentou a produção em 50%. Estima-se que esse aumento percentual se repita nos próximos anos, garantindo um crescimento anual de 50%. Considere P a quantidade anual de produtos fabricados no ano t de funcionamento da indústria."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Se a estimativa for alcançada, qual é a expressão que determina o número de unidades produzidas P em função de t, para t ≥ 1?"
    }
@@ -48069,6 +48173,10 @@
   "alternativa_e": "2 300,00.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um casal realiza um financiamento imobiliário de R$ 180 000,00, a ser pago em 360 prestações mensais, com taxa de juros efetiva de 1% ao mês. A primeira prestação é paga um mês após a liberação dos recursos e o valor da prestação mensal é de R$ 500,00 mais juro de 1% sobre o saldo devedor (valor devido antes do pagamento). Observe que, a cada pagamento, o saldo devedor se reduz em R$ 500,00 e considere que não há prestação em atraso."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Efetuando o pagamento dessa forma, o valor, em reais, a ser pago ao banco na décima prestação é de"
@@ -48286,6 +48394,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um arquiteto está reformando uma casa. De modo a contribuir com o meio ambiente, decide reaproveitar tábuas de madeira retiradas da casa. Ele dispõe de 40 tábuas de 540 cm, 30 de 810 cm e 10 de 1 080 cm, todas de mesma largura e espessura. Ele pediu a um carpinteiro que cortasse as tábuas em pedaços de mesmo comprimento, sem deixar sobras, e de modo que as novas peças ficassem com o maior tamanho possível, mas de comprimento menor que 2 m."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Atendendo o pedido do arquiteto, o carpinteiro deverá produzir"
    }
@@ -48404,6 +48516,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Alguns exames médicos requerem uma ingestão de água maior do que a habitual. Por recomendação médica, antes do horário do exame, uma paciente deveria ingerir 1 copo de água de 150 mililitros a cada meia hora, durante as 10 horas que antecederiam um exame. A paciente foi a um supermercado comprar água e verificou que havia garrafas dos seguintes tipos:\n• Garrafa I: 0,15 litro\n• Garrafa II: 0,30 litro\n• Garrafa III: 0,75 litro\n• Garrafa IV: 1,50 litro\n• Garrafa V: 3,00 litros\nA paciente decidiu comprar duas garrafas do mesmo tipo, procurando atender à recomendação médica e, ainda, de modo a consumir todo o líquido das duas garrafas antes do exame."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual o tipo de garrafa escolhida pela paciente?"
    }
@@ -48433,6 +48549,10 @@
   "alternativa_e": "90,0%",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma escola, a probabilidade de um aluno compreender e falar inglês é de 30%. Três alunos dessa escola, que estão em fase final de seleção de intercâmbio, aguardam, em uma sala, serem chamados para uma entrevista. Mas, ao invés de chamá-los um a um, o entrevistador entra na sala e faz, oralmente, uma pergunta em inglês que pode ser respondida por qualquer um dos alunos."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "A probabilidade de o entrevistador ser entendido e ter sua pergunta oralmente respondida em inglês é"
@@ -48604,6 +48724,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Deseja-se comprar lentes para óculos. As lentes devem ter espessuras mais próximas possíveis da medida 3 mm. No estoque de uma loja, há lentes de espessuras: 3,10 mm; 3,021 mm; 2,96 mm; 2,099 mm e 3,07 mm."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Se as lentes forem adquiridas nessa loja, a espessura escolhida será, em milímetros, de"
    }
@@ -48706,6 +48830,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para economizar em suas contas mensais de água, uma família de 10 pessoas deseja construir um reservatório para armazenar a água captada das chuvas, que tenha capacidade suficiente para abastecer a família por 20 dias. Cada pessoa da família consome, diariamente, 0,08 m³ de água."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Para que os objetivos da família sejam atingidos, a capacidade mínima, em litros, do reservatório a ser construído deve ser"
    }
@@ -48773,6 +48901,10 @@
   "alternativa_e": "Aumento da quantidade de gases dissolvidos.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A indústria têxtil utiliza grande quantidade de corantes no processo de tingimento dos tecidos. O escurecimento das águas dos rios causado pelo despejo desses corantes pode desencadear uma série de problemas no ecossistema aquático."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Considerando esse escurecimento das águas, o impacto negativo inicial que ocorre é o(a)"
@@ -48926,6 +49058,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A soda cáustica pode ser usada no desentupimento de encanamentos domésticos e tem, em sua composição, o hidróxido de sódio como principal componente, além de algumas impurezas. A soda normalmente é comercializada na forma sólida, mas que apresenta aspecto “derretido” quando exposta ao ar por certo período."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O fenômeno de “derretimento” decorre da"
    }
@@ -49027,6 +49163,10 @@
   "alternativa_e": "82",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A hidroponia pode ser definida como uma técnica de produção de vegetais sem necessariamente a presença de solo. Uma das formas de implementação é manter as plantas com suas raízes suspensas em meio líquido, de onde retiram os nutrientes essenciais. Suponha que um produtor de rúcula hidropônica precise ajustar a concentração do íon nitrato (NO₃⁻) para 0,009 mol/L em um tanque de 5 000 litros e, para tanto, tem em mãos uma solução comercial nutritiva de nitrato de cálcio 90 g/L. As massas molares dos elementos N, O e Ca são iguais a 14 g/mol, 16 g/mol e 40 g/mol, respectivamente."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual o valor mais próximo do volume da solução nutritiva, em litros, que o produtor deve adicionar ao tanque?"
@@ -51950,6 +52090,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Apesar da grande diversidade biológica, a hipótese de que a vida na Terra tenha tido uma única origem comum é aceita pela comunidade científica. Uma evidência que apoia essa hipótese é a observação de processos biológicos comuns a todos os seres vivos atualmente existentes."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Um exemplo de tal processo é o(a)"
    }
@@ -54138,6 +54282,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Em uma empresa de móveis, um cliente encomenda um guarda-roupa nas dimensões 220 cm de altura, 120 cm de largura e 50 cm de profundidade. Alguns dias depois, o projetista, com o desenho elaborado na escala 1 : 8, entra em contato com o cliente para fazer sua apresentação. No momento da impressão, o profissional percebe que o desenho não caberia na folha de papel que costumava usar. Para resolver o problema, configurou a impressora para que a figura fosse reduzida em 20%."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "A altura, a largura e a profundidade do desenho impresso para a apresentação serão, respectivamente,"
    }
@@ -54456,6 +54604,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma pessoa comercializa picolés. No segundo dia de certo evento ela comprou 4 caixas de picolés, pagando R$ 16,00 a caixa com 20 picolés para revendê-los no evento. No dia anterior, ela havia comprado a mesma quantidade de picolés, pagando a mesma quantia, e obtendo um lucro de R$ 40,00 (obtido exclusivamente pela diferença entre o valor de venda e o de compra dos picolés) com a venda de todos os picolés que possuía.\nPesquisando o perfil do público que estará presente no evento, a pessoa avalia que será possível obter um lucro 20% maior do que o obtido com a venda no primeiro dia do evento."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Para atingir seu objetivo, e supondo que todos os picolés disponíveis foram vendidos no segundo dia, o valor de venda de cada picolé, no segundo dia, deve ser"
    }
@@ -54718,6 +54870,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Para garantir a segurança de um grande evento público que terá início às 4 h da tarde, um organizador precisa monitorar a quantidade de pessoas presentes em cada instante. Para cada 2 000 pessoas se faz necessária a presença de um policial. Além disso, estima-se uma densidade de quatro pessoas por metro quadrado de área de terreno ocupado. Às 10 h da manhã, o organizador verifica que a área de terreno já ocupada equivale a um quadrado com lados medindo 500 m. Porém, nas horas seguintes, espera-se que o público aumente a uma taxa de 120 000 pessoas por hora até o início do evento, quando não será mais permitida a entrada de público."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Quantos policiais serão necessários no início do evento para garantir a segurança?"
    }
@@ -54816,6 +54972,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um posto de saúde registrou a quantidade de vacinas aplicadas contra febre amarela nos últimos cinco meses:\n• 1º mês: 21;\n• 2º mês: 22;\n• 3º mês: 25;\n• 4º mês: 31;\n• 5º mês: 21.\nNo início do primeiro mês, esse posto de saúde tinha 228 vacinas contra febre amarela em estoque. A política de reposição do estoque prevê a aquisição de novas vacinas, no início do sexto mês, de tal forma que a quantidade inicial em estoque para os próximos meses seja igual a 12 vezes a média das quantidades mensais dessas vacinas aplicadas nos últimos cinco meses."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Para atender essas condições, a quantidade de vacinas contra febre amarela que o posto de saúde deve adquirir no início do sexto mês é"
    }
@@ -54845,6 +55005,10 @@
   "alternativa_e": "400",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Uma liga metálica sai do forno a uma temperatura de 3 000℃ e diminui 1% de sua temperatura a cada 30 min."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Use 0,477 como aproximação para log10 3 e 1,041 como aproximação para log10 11.\nO tempo decorrido, em hora, até que a liga atinja 30℃ é mais próximo de"
@@ -54936,13 +55100,17 @@
   "referencia_texto_2": "",
   "referencia_texto_3": "",
   "referencia_texto_4": "",
-  "alternativa_a": "DB < dA < dC",
-  "alternativa_b": "DB = dA < dC",
-  "alternativa_c": "DC < dB = dA",
-  "alternativa_d": "DB < dC < dA",
-  "alternativa_e": "DC < dB < dA",
+  "alternativa_a": "dB < dA < dC",
+  "alternativa_b": "dB = dA < dC",
+  "alternativa_c": "dC < dB = dA",
+  "alternativa_d": "dB < dC < dA",
+  "alternativa_e": "dC < dB < dA",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Densidade absoluta (d) é a razão entre a massa de um corpo e o volume por ele ocupado. Um professor propôs à sua turma que os alunos analisassem a densidade de três corpos: dA, dB e dC. Os alunos verificaram que o corpo A possuía 1,5 vez a massa do corpo B e esse, por sua vez, tinha 3/4 da massa do corpo C. Observaram, ainda, que o volume do corpo A era o mesmo do corpo B e 20% maior do que o volume do corpo C."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Após a análise, os alunos ordenaram corretamente as densidades desses corpos da seguinte maneira"
@@ -55011,6 +55179,10 @@
   "alternativa_e": "120",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Sob a orientação de um mestre de obras, João e Pedro trabalharam na reforma de um edifício. João efetuou reparos na parte hidráulica nos andares 1, 3, 5, 7, e assim sucessivamente, de dois em dois andares. Pedro trabalhou na parte elétrica nos andares 1, 4, 7, 10, e assim sucessivamente, de três em três andares. Coincidentemente, terminaram seus trabalhos no último andar. Na conclusão da reforma, o mestre de obras informou, em seu relatório, o número de andares do edifício. Sabe-se que, ao longo da execução da obra, em exatamente 20 andares, foram realizados reparos nas partes hidráulica e elétrica por João e Pedro."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é o número de andares desse edifício?"
@@ -55083,6 +55255,10 @@
   "alternativa_e": "54",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um túnel deve ser lacrado com uma tampa de concreto. A seção transversal do túnel e a tampa de concreto têm contornos de um arco de parábola e mesmas dimensões. Para determinar o custo da obra, um engenheiro deve calcular a área sob o arco parabólico em questão. Usando o eixo horizontal no nível do chão e o eixo de simetria da parábola como eixo vertical, obteve a seguinte equação para a parábola: y = 9 – x², sendo x e y medidos em metros.\nSabe-se que a área sob uma parábola como esta é igual a 2/3 da área do retângulo cujas dimensões são, respectivamente, iguais à base e à altura da entrada do túnel."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é a área da parte frontal da tampa de concreto, em metro quadrado?"
@@ -55300,6 +55476,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um paciente necessita de reidratação endovenosa feita por meio de cinco frascos de soro durante 24 h. Cada frasco tem um volume de 800 mL de soro. Nas primeiras quatro horas, deverá receber 40% do total a ser aplicado. Cada mililitro de soro corresponde a 12 gotas."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O número de gotas por minuto que o paciente deverá receber após as quatro primeiras horas será"
    }
@@ -55329,6 +55509,10 @@
   "alternativa_e": "Triângulos, quadrados, trapézios, quadriláteros irregulares e pentágonos, apenas.",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "É comum os artistas plásticos se apropriarem de entes matemáticos para produzirem, por exemplo, formas e imagens por meio de manipulações. Um artista plástico, em uma de suas obras, pretende retratar os diversos polígonos obtidos pelas intersecções de um plano com uma pirâmide regular de base quadrada."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Segundo a classificação dos polígonos, quais deles são possíveis de serem obtidos pelo artista plástico?"
@@ -55439,6 +55623,10 @@
   "alternativa_e": "F5.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Diante da hipótese do comprometimento da qualidade da água retirada do volume morto de alguns sistemas hídricos, os técnicos de um laboratório decidiram testar cinco tipos de filtros de água. Dentre esses, os quatro com melhor desempenho serão escolhidos para futura comercialização.\nNos testes, foram medidas as massas de agentes contaminantes, em miligrama, que não são capturados por cada filtro em diferentes períodos, em dia, como segue:\n• Filtro 1 (F1): 18 mg em 6 dias;\n• Filtro 2 (F2): 15 mg em 3 dias;\n• Filtro 3 (F3): 18 mg em 4 dias;\n• Filtro 4 (F4): 6 mg em 3 dias;\n• Filtro 5 (F5): 3 mg em 2 dias.\nAo final, descarta-se o filtro com a maior razão entre a medida da massa de contaminantes não capturados e o número de dias, o que corresponde ao de pior desempenho."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "O filtro descartado é o"
@@ -55588,6 +55776,10 @@
   "resposta_correta": "B",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O benzeno, um importante solvente para a indústria química, é obtido industrialmente pela destilação do petróleo. Contudo, também pode ser sintetizado pela trimerização do acetileno catalisada por ferro metálico sob altas temperaturas, conforme a equação química:\n3 C₂H₂(g) → C₆H₆(l)\nA energia envolvida nesse processo pode ser calculada indiretamente pela variação de entalpia das reações de combustão das substâncias participantes, nas mesmas condições experimentais:\nI. C₂H₂(g) + 5/2 O₂(g) → 2 CO₂(g) + H₂O(l) ΔHc° = –310 kcal/mol\nII. C₆H₆(l) + 15/2 O₂(g) → 6 CO₂(g) + 3 H₂O(l) ΔHc° = –780 kcal/mol"
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "A variação de entalpia do processo de trimerização, em kcal, para a formação de um mol de benzeno é mais próxima de"
    }
@@ -55732,6 +55924,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Durante a primeira fase do projeto de uma usina de geração de energia elétrica, os engenheiros da equipe de avaliação de impactos ambientais procuram saber se esse projeto está de acordo com as normas ambientais. A nova planta estará localizada à beira de um rio, cuja temperatura média da água é de 25 °C, e usará a sua água somente para refrigeração. O projeto pretende que a usina opere com 1,0 MW de potência elétrica e, em razão de restrições técnicas, o dobro dessa potência será dissipada por seu sistema de arrefecimento, na forma de calor. Para atender a resolução número 430, de 13 de maio de 2011, do Conselho Nacional do Meio Ambiente, com uma ampla margem de segurança, os engenheiros determinaram que a água só poderá ser devolvida ao rio com um aumento de temperatura de, no máximo, 3 °C em relação à temperatura da água do rio captada pelo sistema de arrefecimento. Considere o calor especifico da água igual a 4 kJ/(kg °C)."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Para atender essa determinação, o valor minimo do fluxo de água, em kg/s, para a refrigeração da usina deve ser mais próximo de"
    }
@@ -55833,6 +56029,10 @@
   "alternativa_e": "Intensidade aumentada, o tempo de retorno aumentado e a frequência percebida aumentada.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O morcego emite pulsos de curta duração de ondas ultrassônicas, os quais voltam na forma de ecos após atingirem objetos no ambiente, trazendo informações a respeito das suas dimensões, suas localizações e dos seus possíveis movimentos. Isso se dá em razão da sensibilidade do morcego em detectar o tempo gasto para os ecos voltarem, bem como das pequenas variações nas frequências e nas intensidades dos pulsos ultrassônicos. Essas características lhe permitem caçar pequenas presas mesmo quando estão em movimento em relação a si. Considere uma situação unidimensional em que uma mariposa se afasta, em movimento retilíneo e uniforme, de um morcego em repouso."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "A distância e velocidade da mariposa, na situação descrita, seriam detectadas pelo sistema de um morcego por quais alterações nas características dos pulsos ultrassônicos?"
@@ -55952,6 +56152,10 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "O carvão ativado é um material que possui elevado teor de carbono, sendo muito utilizado para a remoção de compostos orgânicos voláteis do meio, como o benzeno. Para a remoção desses compostos, utiliza-se a adsorção. Esse fenômeno ocorre por meio de interações do tipo intermoleculares entre a superfície do carvão (adsorvente) e o benzeno (adsorvato, substância adsorvida)."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "No caso apresentado, entre o adsorvente e a substância adsorvida ocorre a formação de:"
    }
@@ -55981,6 +56185,10 @@
   "alternativa_e": "Peixes.",
   "resposta_correta": "A",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Ao percorrer o trajeto de uma cadeia alimentar, o carbono, elemento essencial e majoritário da matéria orgânica que compõe os indivíduos, ora se encontra em sua forma inorgânica, ora se encontra em sua forma orgânica. Em uma cadeia alimentar composta por fitoplâncton, zooplâncton, moluscos, crustáceos e peixes ocorre a transição desse elemento da forma inorgânica para a orgânica."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "Em qual grupo de organismos ocorre essa transição?"
@@ -56730,6 +56938,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Num experimento, um professor deixa duas bandejas de mesma massa, uma de plástico e outra de alumínio, sobre a mesa do laboratório. Após algumas horas, ele pede aos alunos que avaliem a temperatura das duas bandejas, usando para isso o tato. Seus alunos afirmam, categoricamente, que a bandeja de alumínio encontra-se numa temperatura mais baixa. Intrigado, ele propõe uma segunda atividade, em que coloca um cubo de gelo sobre cada uma das bandejas, que estão em equilíbrio térmico com o ambiente, e os questiona em qual delas a taxa de derretimento do gelo será maior."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "O aluno que responder corretamente ao questionamento do professor dirá que o derretimento ocorrerá"
    }
@@ -56794,6 +57006,10 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Portadores de diabetes insipidus reclamam da confusão feita pelos profissionais da saúde quanto aos dois tipos de diabetes: mellitus e insipidus. Enquanto o primeiro tipo está associado aos níveis ou à ação da insulina, o segundo não está ligado à deficiência desse hormônio. O diabetes insipidus é caracterizado por um distúrbio na produção ou no funcionamento do hormônio antidiurético (na sigla em inglês, ADH), secretado pela neuro-hipófise para controlar a reabsorção de água pelos túbulos renais."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Tendo em vista o papel funcional do ADH, qual é um sintoma clássico de um paciente acometido por diabetes insipidus?"
    }
@@ -56823,6 +57039,10 @@
   "alternativa_e": "As nanopartículas são aceleradas em um único sentido em razão da interação com o campo magnético, fazendo-as colidir com as células e transferir calor.",
   "resposta_correta": "B",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A magnetohipertermia é um procedimento terapêutico que se baseia na elevação da temperatura das células de uma região especifica do corpo que estejam afetadas por um tumor. Nesse tipo de tratamento, nanopartículas magnéticas são fagocitadas pelas células tumorais, e um campo magnético alternado externo é utilizado para promover a agitação das nanopartículas e consequente aquecimento da célula."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "A elevação de temperatura descrita ocorre porque"
@@ -62758,6 +62978,10 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Um morador de uma região metropolitana tem 50% de probabilidade de atrasar-se para o trabalho quando chove na região; caso não chova, sua probabilidade de atraso é de 25%. Para um determinado dia, o serviço de meteorologia estima em 30% a probabilidade da ocorrência de chuva nessa região."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é a probabilidade de esse morador se atrasar para o serviço no dia para o qual foi dada a estimativa de chuva?"
    }
@@ -62787,6 +63011,10 @@
   "alternativa_e": "18 h 40 min e 19 h.",
   "resposta_correta": "D",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "Às 17 h 15 min começa uma forte chuva, que cai com intensidade constante. Uma piscina em forma de um paralelepípedo retângulo, que se encontrava inicialmente vazia, começa a acumular a água da chuva e, às 18 horas, o nível da água em seu interior alcança 20 cm de altura. Nesse instante, é aberto o registro que libera o escoamento da água por um ralo localizado no fundo dessa piscina, cuja vazão é constante. Às 18 h 40 min a chuva cessa e, nesse exato instante, o nível da água na piscina baixou para 15 cm."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "O instante em que a água dessa piscina terminar de escoar completamente está compreendido entre"
@@ -102374,6 +102602,10 @@
   "resposta_correta": "A",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "A água utilizada pelos 75 moradores de um vilarejo provém de um reservatório de formato cilíndrico circular reto cujo raio da base mede 5 metros, sempre abastecido no primeiro dia de cada mês por caminhões-pipa. Cada morador desse vilarejo consome, em média, 200 litros de água por dia.\nNo mês de junho de um determinado ano, o vilarejo festejou o dia do seu padroeiro e houve um gasto extra de água nos primeiros 20 dias. Passado esse período, as pessoas verificaram a quantidade de água presente no reservatório e constataram que o nível da coluna de água estava em 1,5 metro. Decidiram, então, fazer um racionamento de água durante os 10 dias seguintes. Considere 3 como aproximação para π."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Qual é a quantidade mínima de água, em litro, que cada morador, em média, deverá economizar por dia, de modo que o reservatório não fique sem água nos próximos 10 dias?"
    }
@@ -111332,6 +111564,14 @@
   "resposta_correta": "E",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De próprio punho\nA escrita e suas tecnologias sofrem interessantes metamorfoses, numa ciranda que vai do simples bilhete aos originais de um livro\nEstranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade, o que importava era a autenticidade da minha caligrafia, que à época ainda era mais fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra, hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca, mais rotunda e mais cheia de arestas.\nÉ claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita, manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje, são elas que batucam meu teclado de computador ou que tocam suavemente duas ou três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus e o mundo.\nA despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico comigo mesma, a evitar um comportamento esquecido e relapso.\nNo escritório, costumo ser mais suave comigo mesma, mas também muito mais lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais ainda as adultas) precisa conviver.\nAs formas de escrever mudam, as necessidades também, e o resultado é um elenco complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando, mudando de status, numa ciranda interessante e importante que pode ser vista à luz de certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados, e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma frase filosoficamente correta. O negócio é mais “o punho e o pixel”."
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "No que diz respeito ao gênero bilhete, a autora dessa crônica"
    }
@@ -111361,6 +111601,14 @@
   "alternativa_e": "apresentação de acontecimentos segundo a ordem de sucessão no tempo.",
   "resposta_correta": "C",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De próprio punho\nA escrita e suas tecnologias sofrem interessantes metamorfoses, numa ciranda que vai do simples bilhete aos originais de um livro\nEstranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade, o que importava era a autenticidade da minha caligrafia, que à época ainda era mais fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra, hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca, mais rotunda e mais cheia de arestas.\nÉ claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita, manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje, são elas que batucam meu teclado de computador ou que tocam suavemente duas ou três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus e o mundo.\nA despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico comigo mesma, a evitar um comportamento esquecido e relapso.\nNo escritório, costumo ser mais suave comigo mesma, mas também muito mais lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais ainda as adultas) precisa conviver.\nAs formas de escrever mudam, as necessidades também, e o resultado é um elenco complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando, mudando de status, numa ciranda interessante e importante que pode ser vista à luz de certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados, e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma frase filosoficamente correta. O negócio é mais “o punho e o pixel”."
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "O elemento que caracteriza esse texto como uma crônica é a"
@@ -111392,6 +111640,14 @@
   "resposta_correta": "D",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De próprio punho\nA escrita e suas tecnologias sofrem interessantes metamorfoses, numa ciranda que vai do simples bilhete aos originais de um livro\nEstranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade, o que importava era a autenticidade da minha caligrafia, que à época ainda era mais fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra, hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca, mais rotunda e mais cheia de arestas.\nÉ claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita, manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje, são elas que batucam meu teclado de computador ou que tocam suavemente duas ou três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus e o mundo.\nA despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico comigo mesma, a evitar um comportamento esquecido e relapso.\nNo escritório, costumo ser mais suave comigo mesma, mas também muito mais lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais ainda as adultas) precisa conviver.\nAs formas de escrever mudam, as necessidades também, e o resultado é um elenco complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando, mudando de status, numa ciranda interessante e importante que pode ser vista à luz de certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados, e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma frase filosoficamente correta. O negócio é mais “o punho e o pixel”."
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "Nesse texto, o que caracteriza a escrita “de próprio punho” é a letra manuscrita, enquanto a escrita digital é ilustrada pelo(a)"
    }
@@ -111422,6 +111678,14 @@
   "resposta_correta": "C",
   "elementos": [
    {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De próprio punho\nA escrita e suas tecnologias sofrem interessantes metamorfoses, numa ciranda que vai do simples bilhete aos originais de um livro\nEstranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade, o que importava era a autenticidade da minha caligrafia, que à época ainda era mais fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra, hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca, mais rotunda e mais cheia de arestas.\nÉ claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita, manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje, são elas que batucam meu teclado de computador ou que tocam suavemente duas ou três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus e o mundo.\nA despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico comigo mesma, a evitar um comportamento esquecido e relapso.\nNo escritório, costumo ser mais suave comigo mesma, mas também muito mais lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais ainda as adultas) precisa conviver.\nAs formas de escrever mudam, as necessidades também, e o resultado é um elenco complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando, mudando de status, numa ciranda interessante e importante que pode ser vista à luz de certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados, e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma frase filosoficamente correta. O negócio é mais “o punho e o pixel”."
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+   },
+   {
     "tipo": "ENUNCIADO",
     "conteudo": "A autora conclui que as novas tecnologias de escrita"
    }
@@ -111451,6 +111715,14 @@
   "alternativa_e": "substituição da expressão “Do punho ao pixel” (l. 44) pela expressão “o punho e o pixel”. (l. 45)",
   "resposta_correta": "E",
   "elementos": [
+   {
+    "tipo": "TEXTO_APOIO",
+    "conteudo": "De próprio punho\nA escrita e suas tecnologias sofrem interessantes metamorfoses, numa ciranda que vai do simples bilhete aos originais de um livro\nEstranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade, o que importava era a autenticidade da minha caligrafia, que à época ainda era mais fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra, hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca, mais rotunda e mais cheia de arestas.\nÉ claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita, manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje, são elas que batucam meu teclado de computador ou que tocam suavemente duas ou três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus e o mundo.\nA despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico comigo mesma, a evitar um comportamento esquecido e relapso.\nNo escritório, costumo ser mais suave comigo mesma, mas também muito mais lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais ainda as adultas) precisa conviver.\nAs formas de escrever mudam, as necessidades também, e o resultado é um elenco complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando, mudando de status, numa ciranda interessante e importante que pode ser vista à luz de certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados, e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma frase filosoficamente correta. O negócio é mais “o punho e o pixel”."
+   },
+   {
+    "tipo": "REFERENCIA",
+    "conteudo": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+   },
    {
     "tipo": "ENUNCIADO",
     "conteudo": "O recurso linguístico usado para marcar a síntese da opinião da autora sobre a temática desenvolvida foi o(a)"
